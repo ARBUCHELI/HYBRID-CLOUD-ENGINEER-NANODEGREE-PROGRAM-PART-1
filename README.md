@@ -37,3 +37,22 @@ In this course, we're going to cover:
 Let's get started!
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/1.jpg)
+
+
+# LESSON 2 JOURNEY TO THE MODERN HYBRID CLOUD
+
+# Lesson Overview
+
+Lesson Overview
+Welcome to the Journey to the Modern Hybrid Cloud!
+
+In this lesson, we’re going to cover:
+
+* What the role of a Hybrid Cloud Engineer is
+
+* The different models to support various Cloud initiatives
+
+* The Engineer’s role in Service Level Agreements related to Cloud apps
+
+* How to choose the optimal Cloud platform for an app, based on business requirements and SLAs
+
