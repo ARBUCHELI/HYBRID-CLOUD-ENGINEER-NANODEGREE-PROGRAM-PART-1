@@ -35,3 +35,5 @@ In this course, we're going to cover:
 * Managing Virtual Machines in the Hybrid Cloud
 * Data Protection
 Let's get started!
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/1.jpg)
