@@ -2,7 +2,7 @@
 
 # LESSON 1 INTRODUCTION TO THE HYBRID CLOUD
 
-# Reflexions by the Instructor
+## Reflexions by the Instructor
 
 Many customers newly discovered virtualization in relation to Cloud. Suddenly, many companies branded their products as Cloud-ready, not saying what “ready” really meant:
 only backup in the Cloud, migration between physical systems and the Public Cloud, migration within  the Cloud, inclusion of Private Clouds, or Disaster Recovery in the Cloud.
@@ -17,14 +17,14 @@ execute on them.
 After an introduction in technology history related to the Cloud, we will discuss what makes a company cloud-ready, what the differences are between private/public/multi/hyper
 cloud, what the pros and cons are of the various Cloud implementation, and how to place and migrate data.
 
-# Prerequisites
+## Prerequisites
 
 In order to take this course, you should be comfortable with command line on Linux or Windows. It would also be helpful for you to have a background in working with VMs as well as
 AWS or GCP cloud.
 
 Please note: There are no AWS credits needed for this Nanodegree.
 
-# Course Outline
+## Course Outline
 
 In this course, we're going to cover:
 
@@ -41,7 +41,7 @@ Let's get started!
 
 # LESSON 2 JOURNEY TO THE MODERN HYBRID CLOUD
 
-# Lesson Overview
+## Lesson Overview
 
 Lesson Overview
 Welcome to the Journey to the Modern Hybrid Cloud!
@@ -57,4 +57,26 @@ In this lesson, we’re going to cover:
 * How to choose the optimal Cloud platform for an app, based on business requirements and SLAs
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/2.jpg)
+
+## Why are Hybrid Cloud Engineers needed?
+
+Most companies have plans for transitioning their IT to a cloud-focused model. There are a few challenges when it comes to this because carrying out these plans and reaching these goals are a little easier said than done.
+
+Here are the two main reasons for the difficulties:
+
+* The first one is a lack of organizational readiness. Having a cloud-focused model affects many aspects of the organization outside of the tech-side, like people and processes. Each business has to prepare for these impacts during their Cloud adoption plans.
+
+* Second, adding technology doesn't necessarily add value unless there's a clear goal or outcome to be achieved.
+
+To avoid these challenges, you need to focus on business requirements first. Once you've figured out the business requirements, you can then match those requirements to technologies that help achieve those goals or requirements. Then, you need the right mix of skills to carry the plan out.
+
+This is where the Hybrid Cloud Engineer comes in. The engineer is needed to help organizations successfully plan and implement their cloud transformation.
+
+A hybrid cloud engineer can bring in new technologies quickly, analyze competition, and create comparisons between old and new ways of doing business. Hybrid cloud engineers are able to modernize any organization, but they will find every business increasingly requiring hybrid capabilities to compete on a global scale.
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/3.jpg)
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/4.jpg)
+
+
 
