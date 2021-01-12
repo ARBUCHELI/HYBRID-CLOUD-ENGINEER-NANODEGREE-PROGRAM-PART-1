@@ -56,3 +56,5 @@ In this lesson, we’re going to cover:
 
 * How to choose the optimal Cloud platform for an app, based on business requirements and SLAs
 
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/2.jpg)
+
