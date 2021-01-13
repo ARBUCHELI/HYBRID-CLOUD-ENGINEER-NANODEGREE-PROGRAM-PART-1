@@ -126,7 +126,37 @@ You'll be able to help an organization’s growth by recognizing, understanding,
 
 ### The Cloud is an Experience and a Mindset
 
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/9.jpg)
 
+NIST defines cloud computing as "a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources. For instance: networks, servers, storage, applications, and services that can be rapidly provisioned and released with minimal management effort or service provider interaction."
+
+According to NIST, the cloud model has 5 essential characteristics, 3 service models, and 4 deployment models.
+
+### Service Models
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/10.jpg)
+
+You're able to run both traditional and newer cloud-focused applications in a variety of places. The progression of managed service providers up the technology stack were driven by technology waves. From delivering Infrastructure as a Service, to on demand Virtual Machines, to platforms, and to full software.
+
+Running applications on bare-metal are involved in traditional on-prem IT. An example of this is when, in the co-location mode, you can choose to run your applications in a third-party managed data center. This type of hosting model involves managing only your applications instead of the underlying hardware. The virtualization layer and above is the focus.
+
+* With <strong>Infrastructure as a Service</strong>, or IaaS, you are only managing the workloads and applications that are running on virtual machines and containers.
+
+* With <strong>Platform as a Service</strong>, or PaaS, you are only responsible for applications and their data.
+
+* Finally, with a <strong>Software as a Service</strong>, or SaaS, model, every aspect of the infrastructure is provided to you. The only thing that you are required to manage is the data. Everything else is being managed by a provider.
+
+Understanding all of these models is an area of expertise for hybrid cloud engineers in order to know which the best ones are to leverage.
+
+You need to answer 4 main questions to start the organization's digital transformation:
+
+How do you leave traditional IT behind and become a Cloud consumer?
+How do you choose between application hosts? Infrastructure as a Service, Platform as a Service, or Software as a Service?
+How does your choice impact workload design, deployment, management, and costs?
+Can you leverage multiple models effectively?
+Once you receive the answers, you're a lot closer.
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/11.jpg)
 
 
 
