@@ -158,6 +158,23 @@ Once you receive the answers, you're a lot closer.
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/11.jpg)
 
+## Application Design: The Monolith
 
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/12.jpg)
 
-## Adaptation as a repository: Andrés R. Bucheli.
+Application development has been influenced by the technology stack. The application design was both constrained to one infrastructure vendor with past monolithic infrastructure. When we refer to <strong>monolithic</strong>, we mean there is one, single source of every component in the stack.
+
+Only big businesses or government agencies could afford the monolithic infrastructure because the costs were so high. These applications are still around. For example, there's a banking application written in COBOL for a mainframe and that's been in use for the last 40 years.
+
+Some challenges with applications like this are:
+
+* It is a single application written in a single language.
+* It is run in a batch, or is constantly executed on a single instance of infrastructure.
+* To address performance issues and bottlenecks, it is necessary to scale up by increasing compute, storage, and memory resources. These resources are always constrained to a monolithic server’s capabilities.
+* The infrastructure is also monolithic. It is provided by a single vendor, who potentially also controls the application development tools, database, and operating system layers that are running on their hardware.
+
+These challenges can be mitigated despite monoliths existing everywhere and being both difficult and expensive to maintain.
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/13.jpg)
+
+# Adaptation as a repository: Andrés R. Bucheli.
