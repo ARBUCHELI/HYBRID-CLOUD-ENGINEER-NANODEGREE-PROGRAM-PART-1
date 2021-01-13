@@ -110,6 +110,16 @@ Now, companies that have on-prem data centers have more difficulty evolving than
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/7.jpg)
 
+Businesses have changed their course of operations due to disruptive technology waves with digital transformation. According to a recent IDC study, digital transformation will consume half of all information technology budgets by 2023. Both delivery times and <strong>Moore’s Law</strong> have been show to disrupt how businesses operations historically.
 
+An example of this is how data centers with their thousands of physical servers overtook mainframes.
+
+Procuring, installing, configuring, and bring up a new server in their data center would take months. In order to significantly reduce the amount of time, data centers consolidated hundreds of physical servers running virtual machine workloads. The rise of public and private clouds came from the delivery of virtualization with on-demand consumption. This only needed half of the resources required from the virtualized data center.
+
+<strong>As a hybrid cloud engineer, your role will be to help an organization modernize its operations and infrastructure, regardless of where they are at IT-wise.</strong>
+
+You'll be able to help an organization’s growth by recognizing, understanding, and capitalizing on opportunities to migrate to more efficient technologies.
+
+![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/8.jpg)
 
 
