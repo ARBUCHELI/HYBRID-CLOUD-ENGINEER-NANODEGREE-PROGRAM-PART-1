@@ -297,5 +297,28 @@ You can leverage the essential characteristics of the cloud over various deploym
 
 That is the difference between Cloud First – where everyone starts – and Cloud Smart.
 
+## Why Cloud Smart?
+
+Cloud First was wasteful for many early adopters.
+
+Organizations that used a lift-and-shift approach to the process took a VM disk, a snapshot of a server, and moved them to a single public cloud. This meant that there was downtime and that they were locking into a single public cloud. Running a workload 24 hours a day, 7 days a week was a huge operating expenditure. It's cheaper to run this type of workload on-prem.
+
+The lock-in combined with the increased OpEx required a second lift and shift, to return to the on-prem CaPex model. This wound up wasting time, money, and effort on moving their workloads back and forth. After all this, they found themselves right back to where they started.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb33600_screen-shot-2020-05-06-at-6.11.02-pm/screen-shot-2020-05-06-at-6.11.02-pm.png)
+
+<strong>What needs to change?</strong>
+The short version is that lifting-and-shifting all of your workloads to a single provider is a mistake. What’s required is the cloud-smart model, which the US Government advocated in 2019.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb43a99_screen-shot-2020-05-07-at-12.42.50-pm/screen-shot-2020-05-07-at-12.42.50-pm.png)
+
+What you’re seeing here is directly from the CIO of the US Government.
+
+* It comes down to needing to move towards hybrid, multi-cloud environments to avoid lock-in.
+* There’s a need to address the long-term inefficiencies of migrating applications as-is. This is what caused the OpEx burden from lifting and shifting into the public cloud.
+* It’s necessary to rationalize the work and identify the immediate financial cost of modernization, so that it is easier to identify where the right place is to run a specific workload.
+
+This is how you use the Cloud Smart model to move towards successful digital transformation.
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
