@@ -320,5 +320,9 @@ What you’re seeing here is directly from the CIO of the US Government.
 
 This is how you use the Cloud Smart model to move towards successful digital transformation.
 
+## Legacy IT: The Mainframe
+
+![](
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
