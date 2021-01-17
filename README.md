@@ -324,5 +324,35 @@ This is how you use the Cloud Smart model to move towards successful digital tra
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/23.jpg)
 
+To really look at how technology evolved to give us the cloud, let's start with the mainframe. Mainframes are still integral to many enterprises’ IT infrastructure. The mainframe is monolithic architecture that first appeared on the computing landscape in the 1940s.
+
+Over 70% of the Fortune 500 companies still use mainframes for business-critical applications. Common use cases include Online Transaction Processing, or OLTP, for banking, Government, Utilities, Education, and Research. Mainframes also support Linux, Java, Scala, Python, TensorFlow, and Apache SparkML for machine learning and Artificial Intelligence. Their tremendous processing power and security capabilities also make mainframes ideal Blockchain hosts.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb43d03_slide-58-mainframes-advantages/slide-58-mainframes-advantages.png)
+
+<strong>Advantages</strong>
+
+There are several reasons for the mainframe’s continued popularity.
+
+The enormous resources and computing power that is provides via its monolithic, converged architecture. It is, for example, 18 times faster than an x86 platform.
+
+It also provides decades of uptime and provides high levels of security.
+
+It also supports virtualization, which is an increasingly critical element of computing infrastructure today.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb43de5_slide-59-mainframes-disadvantages/slide-59-mainframes-disadvantages.png)
+
+<strong>Disadvantages</strong>
+
+Despite its many advantages, the mainframe isn’t the perfect solution for all computing needs.
+
+Having access to the extensive amount of resources a mainframe provides requires a massive capital investment.
+
+Mainframes only get more expensive when they need to scale, because their monolithic architectures require massive blocks to expand.
+
+There’s also the concern of vendor lock-in, due to the use of proprietary hardware and software.
+
+Finally, operating, managing, and maintaining such a complex piece of computing technology requires highly specialized skills.
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
