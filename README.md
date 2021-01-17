@@ -354,5 +354,11 @@ There’s also the concern of vendor lock-in, due to the use of proprietary hard
 
 Finally, operating, managing, and maintaining such a complex piece of computing technology requires highly specialized skills.
 
+## Quiz - Legacy IT: The Mainframe
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/24.jpg)
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
