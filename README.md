@@ -384,5 +384,13 @@ Mass-produced microprocessors were suddenly everywhere. Commodity operating syst
 * The inherent scalability of the distributed systems also led to sprawl, which made them difficult to secure and manage.
 * Finally, because of the sheer number of components involved in different systems, IT organizations experienced sprawl as well, becoming disjointed and siloed.
 
+## Quiz - Legacy IT: Distributed Computing
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/26.jpg)
+
+## Legacy IT: Centralized Storage and 3-tier
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
