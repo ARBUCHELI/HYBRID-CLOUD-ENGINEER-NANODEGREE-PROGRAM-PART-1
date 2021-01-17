@@ -322,7 +322,7 @@ This is how you use the Cloud Smart model to move towards successful digital tra
 
 ## Legacy IT: The Mainframe
 
-![](
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/23.jpg)
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
