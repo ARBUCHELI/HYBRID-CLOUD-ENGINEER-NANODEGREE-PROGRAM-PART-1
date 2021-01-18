@@ -617,6 +617,8 @@ You spend the next hour with Nayana and some of her team going over details of t
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/36.jpg)
 
+
+
 ## The Rise of Public Cloud
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/37.jpg)
@@ -681,6 +683,7 @@ You ask what the IBM Public Cloud integration is going to bring to the table. â€
 You leave AtlanticBank with a lot of answers and some ideas about how to jump-start your teamâ€™s Cloud Transformation.
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/40.jpg)
+
 
 
 
