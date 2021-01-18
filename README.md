@@ -335,11 +335,11 @@ Over 70% of the Fortune 500 companies still use mainframes for business-critical
 
 There are several reasons for the mainframe’s continued popularity.
 
-The enormous resources and computing power that is provides via its monolithic, converged architecture. It is, for example, 18 times faster than an x86 platform.
+* The enormous resources and computing power that is provides via its monolithic, converged architecture. It is, for example, 18 times faster than an x86 platform.
 
-It also provides decades of uptime and provides high levels of security.
+* It also provides decades of uptime and provides high levels of security.
 
-It also supports virtualization, which is an increasingly critical element of computing infrastructure today.
+* It also supports virtualization, which is an increasingly critical element of computing infrastructure today.
 
 ![](https://video.udacity-data.com/topher/2020/May/5eb43de5_slide-59-mainframes-disadvantages/slide-59-mainframes-disadvantages.png)
 
@@ -347,11 +347,11 @@ It also supports virtualization, which is an increasingly critical element of co
 
 Despite its many advantages, the mainframe isn’t the perfect solution for all computing needs.
 
-Having access to the extensive amount of resources a mainframe provides requires a massive capital investment.
+* Having access to the extensive amount of resources a mainframe provides requires a massive capital investment.
 
-Mainframes only get more expensive when they need to scale, because their monolithic architectures require massive blocks to expand.
+* Mainframes only get more expensive when they need to scale, because their monolithic architectures require massive blocks to expand.
 
-There’s also the concern of vendor lock-in, due to the use of proprietary hardware and software.
+* There’s also the concern of vendor lock-in, due to the use of proprietary hardware and software.
 
 Finally, operating, managing, and maintaining such a complex piece of computing technology requires highly specialized skills.
 
