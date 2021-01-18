@@ -616,10 +616,49 @@ You spend the next hour with Nayana and some of her team going over details of t
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/36.jpg)
 
+## The Rise of Public Cloud
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/37.jpg)
 
+### Advantages
 
+There are a number of major advantages to the public cloud:
 
+![](https://video.udacity-data.com/topher/2020/June/5ed99599_slide-108-public-cloud-advantages/slide-108-public-cloud-advantages.png)
+
+* It is available <strong>on-demand</strong>.
+* When you do need to provision infrastructure it’s all <strong>self-service</strong> and <strong>catalog-based</strong>.
+* You can provision infrastructure at <strong>massive scale</strong>.
+* Low cost to entry. There’s no hardware cost and you <strong>pay-as-you-go</strong> for utilization.
+* High <strong>resilience</strong> and </strong>availability</strong>.
+
+### Disadvantages
+
+Although there are many advantages to the public cloud, it isn’t a cure-all solution; there are several disadvantages you should be aware of.
+
+![](https://video.udacity-data.com/topher/2020/June/5ed99834_slide-109-public-cloud-disdvantages/slide-109-public-cloud-disdvantages.png)
+
+* <strong>Lift and shift</strong>. Moving applications and services to the public cloud is a lift-and-shift effort.
+* <strong>Refactoring apps</strong>. Refactoring applications for the cloud requires both skill and a sizable budget.
+* <strong>Readiness and Management</strong>. Organizational readiness and infrastructure management may be significant issues for an organization.
+* <strong>Expensive for Always-on Apps</strong>. The pay-as-you-go model isn't always a good fit for every workload; always-on, heavyweight applications are expensive to run.
+* <strong>Regulatory requirements</strong>. Regulatory requirements can make it difficult to impossible to move forward with a public cloud initiative. Some requirements limit where data can reside, and if you lose control of your cloud or the data stored there, you can incur heavy penalties as a result.
+
+### Where do you use the Public Cloud?
+
+Leveraging the strengths of the Public Cloud means understanding requirements and deploying workloads or services that are a good match. The public cloud is an excellent fit for:
+
+![](https://video.udacity-data.com/topher/2020/June/5ed999fa_slide-110-so-where-do-you-use-the-public-cloud/slide-110-so-where-do-you-use-the-public-cloud.png)
+
+* Dev/Test
+* Web servers
+* One-off Big Data projects
+* Training infrastructure
+* Cloud-based anti-spam and anti-virus engines
+* CRM platforms
+* Email
+
+The key characteristic that all these workloads share is that they are <strong>lightweight</strong> or they <strong>only run for a portion of time</strong>. Since they don’t have to be constantly left on, you don’t have to make investments to support the workloads in your own datacenters.
 
 
 
