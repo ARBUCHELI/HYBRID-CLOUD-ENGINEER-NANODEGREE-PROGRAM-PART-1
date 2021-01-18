@@ -80,7 +80,7 @@ This is where the Hybrid Cloud Engineer comes in. The engineer is needed to help
 
 ## What does a Hybrid Cloud Engineer do?
 
-A hybrid cloud engineer can design, create, operate, and manage different types of workloads across multiple clouds and infrastructure providers.
+<strong>A hybrid cloud engineer can design, create, operate, and manage different types of workloads across multiple clouds and infrastructure providers.</strong>
 
 The engineer should be able to:
 
@@ -88,11 +88,11 @@ The engineer should be able to:
 * Successfully execute this plan
 * Validate outcomes through their technical skillset
 
-The Hybrid Cloud Engineer helps organizations determine their readiness, and make suggestions if an organization isn't ready yet. One of the most important things to check is if business requirements are clearly defined. This is done through Service Level Agreements, or SLAs, need to be completely documented and enforceable. This is what you're going to use to choose the right infrastructure for every service.
+The Hybrid Cloud Engineer helps organizations determine their readiness, and make suggestions if an organization isn't ready yet. <strong>One of the most important things to check is if business requirements are clearly defined</strong>. This is done through Service Level Agreements, or SLAs, need to be completely documented and enforceable. This is what you're going to use to choose the right infrastructure for every service.
 
 This is followed by implementation.
 
-Implementation involves planning and executing migration. This involves a few things like refactoring applications for the best possible Total Cost of Ownership, or TCO, and Return On Investment, or ROI. Once complete, the technical and organizational infrastructure needs to be continuously monitored to check if performance expectations that were created in the SLAs are met.
+<strong>Implementation involves planning and executing migration</strong>. This involves a few things like <strong>refactoring applications for the best possible Total Cost of Ownership, or TCO, and Return On Investment, or ROI</strong>. Once complete, the technical and organizational infrastructure needs to be <strong>continuously monitored to check if performance expectations that were created in the SLAs are met</strong>.
 
 
 ## Hybrid Cloud Engineer
