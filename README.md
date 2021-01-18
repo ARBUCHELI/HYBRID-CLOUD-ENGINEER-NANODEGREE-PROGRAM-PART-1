@@ -114,7 +114,7 @@ The need for complex and specialized silos for data center infrastructure was re
 
 An example of this is how data centers with their thousands of physical servers overtook mainframes.
 
-Procuring, installing, configuring, and bring up a new server in their data center would take months. In order to significantly reduce the amount of time, data centers consolidated hundreds of physical servers running virtual machine workloads. The rise of public and private clouds came from the delivery of virtualization with on-demand consumption. This only needed half of the resources required from the virtualized data center.
+Procuring, installing, configuring, and bring up a new server in their data center would take months. <strong>In order to significantly reduce the amount of time, data centers consolidated hundreds of physical servers running virtual machine workloads</strong>. The rise of public and private clouds came from the delivery of virtualization with on-demand consumption. This only needed half of the resources required from the virtualized data center.
 
 <strong>As a hybrid cloud engineer, your role will be to help an organization modernize its operations and infrastructure, regardless of where they are at IT-wise.</strong>
 
