@@ -750,6 +750,10 @@ In contrast, you can have an HCI deployment but still have <strong>low</strong> 
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/46.jpg)
 
+## Quiz - SSDs
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/47.jpg)
+
 
 
 
