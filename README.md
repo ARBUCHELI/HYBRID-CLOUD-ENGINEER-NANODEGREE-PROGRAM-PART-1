@@ -220,7 +220,7 @@ In the State of the DevOps Report 2019, it was determined that the highest perfo
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/16.jpg)
 
-Let's zoom out a bit. Think about this, there are two basic consumption models: renting and buying.
+Let's zoom out a bit. Think about this, <strong>there are two basic consumption models: renting and buying</strong>.
 
 Renting can have low entry costs, but higher long-term costs. These can be described as operational expenditures verses capital expenditures that can be blended based on needs usually. The business model everyone wants, is to blend the best of both worlds: renting and buying, OpEx and CapEx, to address variable and fixed workloads.
 
