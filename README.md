@@ -756,6 +756,86 @@ In contrast, you can have an HCI deployment but still have <strong>low</strong> 
 
 
 
+# Exercise: Hyperconverged Infrastructure (HCI)
+
+It’s a Monday and you find yourself back at AtlanticBank, this time to discuss their planned <strong>SDDC</strong> upgrade. Nayana and Boris have introduced you to Kelly, their Principal Architect and the person in charge of the Cambridge and Hopkinton datacenters. She looks a bit anxious.
+
+“We just finished a 3-year financial lookback analysis and we’re way in the red on <strong>total cost of ownership (TCO)</strong> and definitely not getting our expected <strong>return on investment (ROI)</strong> from the current infrastructure, even with the level of automation we have. We really need to <strong>reduce costs, Capex and Opex</strong> or our <strong>Private Cloud</strong>expansion is in trouble, and that means our plans for Hybrid Cloud are in trouble too.” This sounds familiar, you had the same experience last year when you did the same analysis. You may be way behind AtlanticBank when it comes to modernizing your applications, but you did manage to migrate your main datacenter <strong>from 3 Tier to HCI</strong> last year and the savings have been substantial.
+
+You share some of the results including a <strong>60% reduction in overall operating costs due to savings on infrastructure</strong> (no SAN or NAS) and going from 125 racks to 20 with corresponding savings on space, power and cooling. You also had an <strong>80% decrease in unplanned downtime</strong> due to the architecture being designed for high availability. “Everything is just so much easier. Implementation, incremental scaling, provisioning, management.” You have their attention. “If we could take what you’ve built on your 3 Tier platform and migrate it to HCI we’d have the best of both worlds and you’d finally be able to control everything from a single management plane.” Kelly is a bit skeptical, but a plan is already forming in your mind. “Let’s look at the portfolio of applications and your Test/Dev environment and see what it would look like if we stood up your Private Cloud on HCI vs. 3 Tier. What have we got to lose?”
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/48.jpg)
+
+
+
+## Hybrid Cloud: When To Use It And When Not To
+
+### When Not to Use the Hybrid Cloud
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/49.jpg)
+
+Remember, hybrid cloud <strong>is not a good fit</strong> when:
+
+* A business has non-portable applications
+* Security and regulatory compliance requirements do not allow public cloud exposure
+* Delegation of management responsibilities to a service provider is not allowed
+* The Public Cloud is too expensive
+
+For businesses born in the public cloud, a hybrid cloud does not make sense without the ability to invest in private, on-premises infrastructure, a supporting operations team, and ongoing skill growth.
+
+### When to Use the Hybrid Cloud
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/50.jpg)
+
+Examples of where the hybrid cloud <strong>is a good fit</strong> are:
+
+* Workloads with constantly changing populations
+* Large scale workload management
+* Short-lived ephemeral workloads
+* Dev/Test
+* Training infrastructure
+* Anti-spam and anti-virus engines
+* CRM platforms
+* E-mail
+* Web servers
+* One-off big data projects
+
+## Cloud Smart Examples
+
+You can find the three examples we just discussed below, for your reference. Once you've had a chance to think over the examples, have a look at the quiz at the bottom of the page.
+
+### A Data Processing Firm
+
+This data processing firm had strict governance requirements that their customer data remain on-premises, so they had a private cloud hosting their data lake of customer data. However, they wanted to burst compute capacity for large end-of-the-month, quarterly, and annual reporting. So, they provided a virtual private network between their public and private clouds.
+
+This allowed them to spin up and scale out analytics with high memory and GPU-accelerated public cloud infrastructure, save the results back on-prem, and then shut-down the analytics workloads. Because of the shared data, their analytics is a hybrid cloud application, even though the workload mainly runs in the public cloud.
+
+![](https://video.udacity-data.com/topher/2020/June/5ee17f73_slide-142-a-data-processing-firm/slide-142-a-data-processing-firm.png)
+
+### A Retail Outlet Business
+
+This retail outlet business with many remote locations had local services (file and print sharing) in each store, but it used private networks to its private cloud datacenter for virtual desktops. This is how the IT organization has slowly modernized its infrastructure at the edge and in the datacenter.
+
+A new initiative for a data lake with analytics kicked off and a team with skillsets favoring the public cloud got their project up and running quickly. The organization is running with both public and private infrastructure. None of the applications or data are shared though, so each cloud is a silo, and it is not a hybrid cloud model.
+
+![](https://video.udacity-data.com/topher/2020/June/5ee17f97_slide-143-a-retail-outlet-business/slide-143-a-retail-outlet-business.png)
+
+### An E-Commerce Company
+
+This e-commerce company has a large inventory and customer database that they keep on-prem. They backup this database to the public cloud, but this is hybrid cloud storage use. If you’re wondering why, it’s because they operate the database application on-prem, and back-up the database itself to the public cloud. So, true to the hybrid model, there’s some sharing going on here.
+
+Their developers use multiple public cloud compute for rapid and short-lived test workloads. This means they’re using multiple public clouds in a cloud-smart manner, but no data or applications are shared. This makes each public cloud a silo and it is not hybrid cloud use. Finally, they operate their web tier by load balancing across on-prem web servers and public cloud web servers, which is a hybrid cloud web tier.
+
+![](https://video.udacity-data.com/topher/2020/June/5ee17fb3_slide-144-an-e-commerce-company/slide-144-an-e-commerce-company.png)
+
+### What do these examples demonstrate?
+
+Ultimately, to be truly hybrid is to not have silos. But it’s also possible – as the e-commerce company illustrated – to be cloud-smart and not hybrid. Workloads that were the right fit for the public cloud were on the public cloud, and those that needed to be shared between on-prem and public were.
+
+What matters is the best fit. Where a workload belongs is where it should be, based entirely on what’s best for the business.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/51.jpg)
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
