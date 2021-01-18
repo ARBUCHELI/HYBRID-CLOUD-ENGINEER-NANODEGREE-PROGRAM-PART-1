@@ -409,4 +409,45 @@ There are two important forms of centralized storage: <strong>SAN, or Storage Ar
 
 ![](https://video.udacity-data.com/topher/2020/May/5eb44982_slide-69-3-tier-architecture/slide-69-3-tier-architecture.png)
 
+### 3-tier Architecture
+
+Centralized storage works with distributed computing to create the 3-tier infrastructure architecture that is popularly used in datacenters today. In this computing model, servers and storage are separate entities, connected through a storage network.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb449b9_slide-70-centralized-storage-advantage/slide-70-centralized-storage-advantage.png)
+
+### Advantages
+
+* Centralized storage solved the data availability problem that was caused by distributed computing.
+
+* The ability to add storage separately from computing resources also meant that companies could scale storage to meet the needs of their growing data.
+
+* An added benefit was that application high-availability became easier in distributed environments, because centralized storage facilitated shared disk access for clustering.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Adaptation as a repository: Andrés R. Bucheli.
