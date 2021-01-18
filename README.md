@@ -214,7 +214,7 @@ The NIST definition can provide some clarity on what the cloud is:
 
 In the State of the DevOps Report 2019, it was determined that the highest performing teams are <strong>24 times</strong> more likely to execute on all five cloud capabilities, when compared to lower performing teams. The cloud, therefore, can be viewed as a differentiator for elite performers as well as a tool in general that drives high performance.
 
-There are first two major aspects of cloud consumption that organizations need to take into consideration: fiscal consumption and workload predictability.
+<strong>There are first two major aspects of cloud consumption that organizations need to take into consideration: fiscal consumption and workload predictability</strong>.
 
 ## Cloud Considerations
 
