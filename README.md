@@ -436,6 +436,10 @@ However, there were disadvantages as well:
 
 * This resulted in large CapEX commitments when storage was needed. Since storage was purchased in large blocks, it could sometimes take years to fill the available disk space, resulting in very long time to value.
 
+## Quiz - Legacy IT: Centralized Storage
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/28.jpg)
+
 
 
 
