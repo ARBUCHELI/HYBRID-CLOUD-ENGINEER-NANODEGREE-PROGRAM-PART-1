@@ -68,7 +68,7 @@ Here are the two main reasons for the difficulties:
 
 * Second, adding technology doesn't necessarily add value unless there's a clear goal or outcome to be achieved.
 
-To avoid these challenges, you need to focus on business requirements first. Once you've figured out the business requirements, you can then match those requirements to technologies that help achieve those goals or requirements. Then, you need the right mix of skills to carry the plan out.
+<strong>To avoid these challenges, you need to focus on business requirements first</strong>. Once you've figured out the business requirements, you can then match those requirements to technologies that help achieve those goals or requirements. Then, you need the right mix of skills to carry the plan out.
 
 This is where the Hybrid Cloud Engineer comes in. The engineer is needed to help organizations successfully plan and implement their cloud transformation.
 
