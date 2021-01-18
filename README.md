@@ -836,6 +836,48 @@ What matters is the best fit. Where a workload belongs is where it should be, ba
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/51.jpg)
 
+## Gathering and Analyzing Business Requirements
+
+### Laying your Foundation: Gathering and Analyzing Business Requirements}
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/52.jpg)
+
+Throughout this lesson, we’ve talked a lot about best fit—and insuring a good fit requires talking to your stakeholders. This will give you a 360-degree view of the workloads and services you need to support.
+
+When you’re having that discussion, it’s important to structure the conversation around 8 major requirements:
+
+* Application portability
+* Compliance and security
+* Cost, including TCO and ROI
+* Scalability
+* Resilience and availability
+* Performance
+* Manageability
+* Data protection and recoverability
+
+Let’s look at each of these requirements in a little more detail.
+
+### Deeper Dive: Application Portability
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/53.jpg)
+
+
+<strong>Application portability</strong> describes how easily an application can be moved between different kinds of infrastructure.
+
+* Applications that are designed with portability in mind (e.g., containerized applications) do not require major refactoring in order to move from private to public cloud providers.
+
+* In contrast, monolithic applications require an expensive “lift and shift” process in order to move between different platforms or even to change hypervisors.
+
+* Another approach is to employ a data-centric strategy, where you share data between services running on multiple cloud platforms without porting applications between them. This avoids "lift and shift" campaigns and leverages applications designed to take advantage of native infrastructure and toolsets.
+
+### Deeper Dive: Compliance and Security
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/54.jpg)
+
+
+
+
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
