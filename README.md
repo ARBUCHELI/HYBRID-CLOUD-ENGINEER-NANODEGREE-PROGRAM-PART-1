@@ -242,7 +242,7 @@ Depending on the nature of the workload determines where it will run best.
 
 <strong>The private cloud is great for predictable workloads</strong>. It is a secure and efficient way to run core workloads, with the agility and sit-back simplicity that IT teams want, and with the control that an organization needs for on-prem workloads.
 
-A hybrid cloud blends these two worlds together.
+<strong>A hybrid cloud blends these two worlds together</strong>.
 
 Distribute workloads across public and private cloud, still allows you to control and manage them centrally. The overall management of your deployment is simplified this way. This provides the required flexibility to make the best financial choice for your workloads, and deploy them where they run best.
 
