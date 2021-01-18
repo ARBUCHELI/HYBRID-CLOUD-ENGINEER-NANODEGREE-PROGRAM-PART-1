@@ -39,6 +39,8 @@ Let's get started!
 ![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/1.jpg)
 
 
+
+
 # LESSON 2 JOURNEY TO THE MODERN HYBRID CLOUD
 
 ## Lesson Overview
@@ -94,11 +96,9 @@ This is followed by implementation.
 
 <strong>Implementation involves planning and executing migration</strong>. This involves a few things like <strong>refactoring applications for the best possible Total Cost of Ownership, or TCO, and Return On Investment, or ROI</strong>. Once complete, the technical and organizational infrastructure needs to be <strong>continuously monitored to check if performance expectations that were created in the SLAs are met</strong>.
 
-
 ## Hybrid Cloud Engineer
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/5.jpg)
-
 
 ## Digital Transformation
 
@@ -377,7 +377,6 @@ Mass-produced microprocessors were suddenly everywhere. Commodity operating syst
 
 ![](https://video.udacity-data.com/topher/2020/May/5eb43fd4_slide-64-distributed-computing-disadvantages./slide-64-distributed-computing-disadvantages..png)
 
-
 <strong>Disadvantages</strong>
 
 * Underutilization was the norm, which resulted in low return on investment, and high total cost of ownership.
@@ -597,6 +596,7 @@ Cloud readiness will be <strong>low</strong> if:
 
 
 
+
 # EXERCISE: LEGACY IT
 
 Your employer, Consolidated BankCorp, is a Boston-based bank and financial services company with 131 branches across the Northeast USA. You have just been acquired by a competitor, AtlanticBank, which will add your assets to the 120 branches already in their portfolio. Your entire executive team recently attended an industry conference where a major national bank presented on their Hybrid Cloud transformation and the myriad benefits that came from the journey. Wendy, your CIO has received a directive from the AtlanticBank CEO to be “Cloud Smart” and use the upcoming merger as an opportunity to modernize Consolidated BankCorp’s IT, reduce costs, and drastically improve the end-user experience for all customers.
@@ -616,6 +616,7 @@ Nayana steers you to a whiteboard wall. “I just ran through this with your Mai
 You spend the next hour with Nayana and some of her team going over details of the 3 Tier SDDCs and their plans to modernize the AtlanticBank application portfolio. You’re going to have a lot to tell your CIO!
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/36.jpg)
+
 
 
 
@@ -672,6 +673,7 @@ The key characteristic that all these workloads share is that they are <strong>l
 
 
 
+
 # EXERCISE: PUBLIC CLOUD
 
 Your CIO Wendy has sent you back to dig a bit deeper into AtlanticBank’s planned integration with <strong>IBM’s Public Cloud</strong>. You’re looking for details about the services they’re wanting to leverage and how it will help them get to a <strong>hybrid model</strong> that reduces cost and improves the customer experience. Your CIO is also interested in any opportunities to use the application modernization effort underway at AtlanticBank as a catalyst to accelerate the Cloud transformation at Consolidated BankCorp. The company execs feel they are behind the curve in a number of areas, especially application modernization. One of the main drivers behind the acquisition of AtlanticBank was their growing reputation as a leader in IT and their success in overhauling an ageing infrastructure while growing the bank’s business significantly.
@@ -686,6 +688,67 @@ You leave AtlanticBank with a lot of answers and some ideas about how to jump-st
 
 
 
+## Hyperconverged Infrastructure (HCI)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/41.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/42.jpg)
+
+<strong>Hyperconverged Infrastructure (HCI)</strong> converges the entire datacenter stack, including compute, storage, networking, and virtualization. Some key points to remember about HCI are:
+
+* Software running on each server node distributes all operating functions across a cluster. This allows incremental scaling, so that a cluster can be grown one node at a time; performance increases as the environment grows.
+* The software also creates clusters and pools local storage, eliminating the need for SAN or NAS infrastructure​.
+* The removal of the physical storage fully unleashes the power of the SDDC.
+* The use of solid state drives (SSDs), combined with data locality, provides excellent cluster performance without bottlenecks.
+
+Note that unlike its 3-tier incarnation – which was only 66% converged – HCI is fully converged.
+
+### SSDs and HCI
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/43.jpg)
+
+They key points to remember about SSDs and HCI are:
+
+* SSDs improve performance of the storage tier if they are bottlenecking on read-write performance at the disk level.
+* To leverage the extreme advances in performance, the controllers and network need to be able to handle the vast I/O capabilities of SSDs.
+* Data locality is a key component of HCI; not having to transit the network provides better utilization of an SSDs capabilities.
+
+### HCI and Private Cloud
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/44.jpg)
+
+Out of the box, HCI isn’t a true private cloud. To have a fully operational private cloud, you also need to have:
+
+* Unified management support
+* One-click upgrades
+* Customizable security
+* Built-in data services for file, block, and object storage
+* Sophisticated backup and disaster recovery solutions
+* Tools for automation and self-service; and cost governance
+
+### Hybrid Cloud Readiness
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/45.jpg)
+
+Having HCI infrastructure in place will bring you much closer to being hybrid cloud-ready vs. having your infrastructure stack built on legacy IT.
+
+Your cloud readiness will be <strong>high</strong> if:
+
+* A Private Cloud is deployed on the HCI
+* There is catalog-based self-service available to users
+* There is a DevOps initiative and micro-service-based application architecture is in use
+* Containers are being used for some applications,
+* The use of the Public Cloud is being considered to supplement the infrastructure where appropriate
+
+In contrast, you can have an HCI deployment but still have <strong>low</strong> cloud readiness if:
+
+* An HCI deployment is being used exclusively to run legacy, shrink-wrapped applications
+* Automation and orchestration tools are not being leveraged
+* There is no supplemental use of Public Cloud
+
+## Quiz: Hyperconverged Infrastructure (HCI)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/46.jpg)
 
 
 
