@@ -136,7 +136,7 @@ According to NIST, the cloud model has 5 essential characteristics, 3 service mo
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/10.jpg)
 
-You're able to run both traditional and newer cloud-focused applications in a variety of places. The progression of managed service providers up the technology stack were driven by technology waves. From delivering Infrastructure as a Service, to on demand Virtual Machines, to platforms, and to full software.
+<strong>You're able to run both traditional and newer cloud-focused applications in a variety of places</strong>. The progression of managed service providers up the technology stack were driven by technology waves. From delivering Infrastructure as a Service, to on demand Virtual Machines, to platforms, and to full software.
 
 Running applications on bare-metal are involved in traditional on-prem IT. An example of this is when, in the co-location mode, you can choose to run your applications in a third-party managed data center. This type of hosting model involves managing only your applications instead of the underlying hardware. The virtualization layer and above is the focus.
 
@@ -146,14 +146,15 @@ Running applications on bare-metal are involved in traditional on-prem IT. An ex
 
 * Finally, with a <strong>Software as a Service</strong>, or SaaS, model, every aspect of the infrastructure is provided to you. The only thing that you are required to manage is the data. Everything else is being managed by a provider.
 
-Understanding all of these models is an area of expertise for hybrid cloud engineers in order to know which the best ones are to leverage.
+<strong>Understanding all of these models is an area of expertise for hybrid cloud engineers in order to know which the best ones are to leverage</strong>.
 
 You need to answer 4 main questions to start the organization's digital transformation:
 
-How do you leave traditional IT behind and become a Cloud consumer?
-How do you choose between application hosts? Infrastructure as a Service, Platform as a Service, or Software as a Service?
-How does your choice impact workload design, deployment, management, and costs?
-Can you leverage multiple models effectively?
+* How do you leave traditional IT behind and become a Cloud consumer?
+* How do you choose between application hosts? Infrastructure as a Service, Platform as a Service, or Software as a Service?
+* How does your choice impact workload design, deployment, management, and costs?
+* Can you leverage multiple models effectively?
+
 Once you receive the answers, you're a lot closer.
 
 ![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/11.jpg)
