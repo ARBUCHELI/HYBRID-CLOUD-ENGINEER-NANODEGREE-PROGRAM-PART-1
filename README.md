@@ -423,8 +423,18 @@ Centralized storage works with distributed computing to create the 3-tier infras
 
 * An added benefit was that application high-availability became easier in distributed environments, because centralized storage facilitated shared disk access for clustering.
 
+![](https://video.udacity-data.com/topher/2020/May/5eb449f2_slide-71-centralized-storage-disdvantage/slide-71-centralized-storage-disdvantage.png)
 
+### Disadvantages
+However, there were disadvantages as well:
 
+* Storage array and network management became a specialized IT domain, resulting in the need for specialized skills.
+
+* As centralized storage increased in sophistication, it also brought increased complexity via concepts like SAN fabrics, WWPNs, RAID groups, volumes, spindle counts, and so on.
+
+* The flexibility to add storage separately from computing meant that scaling was also uneven – storage was scaled in large blocks, while servers were scaled in smaller increments.
+
+* This resulted in large CapEX commitments when storage was needed. Since storage was purchased in large blocks, it could sometimes take years to fill the available disk space, resulting in very long time to value.
 
 
 
