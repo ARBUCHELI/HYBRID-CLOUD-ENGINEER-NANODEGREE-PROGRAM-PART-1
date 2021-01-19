@@ -899,7 +899,7 @@ When comparing the public cloud with on-prem hybrid cloud infrastructure, it's i
 
 ### Deeper Dive: Scalability
 
-![]()
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/56.jpg)
 
 The need to scale an application or the resources supporting an application up/out can be driven by:
 
