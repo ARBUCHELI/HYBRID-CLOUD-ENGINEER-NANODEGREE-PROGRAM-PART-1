@@ -918,7 +918,7 @@ When you need to decide on a scaling strategy, it’s important to consider:
 
 ## Deeper Dive: Resilience and Availability
 
-![]()
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/57.jpg)
 
 Applications need to be designed for resiliency, meaning that they can suffer a failure or degradation in one or more components and still provide service.
 
