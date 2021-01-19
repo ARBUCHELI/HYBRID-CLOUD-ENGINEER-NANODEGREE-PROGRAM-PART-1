@@ -1437,6 +1437,33 @@ From the Storage dashboard, you can also create new Storage Containers and new V
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/104.jpg)
 
+## Prism - Infrastructure Mgmt.: Virtual Machine Managemen
+
+### VM Dashboard: Table View
+
+![](https://video.udacity-data.com/topher/2020/May/5eb49028_vm-dashboard-overview/vm-dashboard-overview.png)
+
+The VM Dashboard provides the same kind of overview summary that the cluster and storage management views offer.
+
+* The VM summary delivers VM counts as well as VM power status.
+* Highlighted CPU and memory usage statistics focus on provisioned amounts versus reserved amounts.
+* You can also see the top VM consumers for IOPS, latency, memory usage, and CPU usage, enabling you to identify which VMs are using the most resources and detect any outliers.
+
+### VM Dashboard: Table View
+
+![](https://video.udacity-data.com/topher/2020/May/5eb490bb_vm-dashboard-table-view/vm-dashboard-table-view.png)
+
+Following the user experience in the other sections, the VM-focused view in Prism also offers a table-based layout for VM management. Similar to the detailed host data in the cluster view, the VM-based view provides a greater number of VM-focused data points.
+
+This VM-focused view allows organizations to easily compare the CPU and memory settings configured versus the actual amounts of CPU and memory used. You can also access storage metrics for read versus write IOPS, combined IOPS, storage bandwidth, and latency. Prism tracks each of these data points on a per-VM basis to give a quick overview and locate potential issues faster.
+
+### Creating a VM
+
+![](https://video.udacity-data.com/topher/2020/May/5eb49185_create-vm/create-vm.png)
+
+Similar to creating Storage Containers and Volume Groups, creating a Virtual Machine is also a simple process – you need to fill out a form that requires CPU, memory, disk, network adapter, and host affinity information. After that, clicking Save will create your VM.
+
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
