@@ -1085,7 +1085,7 @@ The x86 architecture primarily handles programmatic functions and provides servi
 
 Classified by bit amount, the x86 architecture is implemented in multiple microprocessors, including 8086, 80286, 80386, Core 2, Atom and the Pentium series. Additionally, other microprocessor manufacturers, like AMD and VIA Technologies, have adopted the x86 architecture.
 
-Each node in the cluster:
+### Each node in the cluster:
 
 * Runs a standard hypervisor
 * Contains processors, memory, and local storage such as SSDs and hard disks.
@@ -1113,7 +1113,18 @@ What you see here is a visualization of a cluster, with both its physical and lo
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/67.jpg)
 
-## 
+### Data Plane
+
+The data plane is the part of the software that processes the data requests. By contrast, the control plane is the part of the software that configures and shuts down the data plane.
+
+The conceptual separation of the data plane from the control plane has been done for years. An early example is Unix, where the basic file operations are open, close for the control plane and read, write for the data plane.
+
+### Management Plane
+
+In computer networking, the management plane of a networking device is the element of a system that configures, monitors, and provides management, monitoring and configuration services to, all layers of the network stack and other parts of the system. It should be distinguished from the control plane, which is primarily concerned with routing table and forwarding information base computation.
+
+In system diagrams, the management plane is typically shown in three dimensions as overlapping the network stack, separated by a dimension that delineates the power plane, data plane, control plane and management plane.
+
 
 ## Software Components: Acropolis
 
