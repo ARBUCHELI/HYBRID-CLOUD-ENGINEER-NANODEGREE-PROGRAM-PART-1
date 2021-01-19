@@ -899,6 +899,8 @@ When comparing the public cloud with on-prem hybrid cloud infrastructure, it's i
 
 ### Deeper Dive: Scalability
 
+![]()
+
 The need to scale an application or the resources supporting an application up/out can be driven by:
 
 * An increasing number of users
@@ -914,6 +916,56 @@ When you need to decide on a scaling strategy, it’s important to consider:
 * What the triggers points for scaling up or scaling out are?
 * Seasonality and complete demand cycles
 
+## Deeper Dive: Resilience and Availability
+
+![]()
+
+Applications need to be designed for resiliency, meaning that they can suffer a failure or degradation in one or more components and still provide service.
+
+* Applications must take the infrastructure providing resources into account.
+* Many organizations implement software across multi-tier, multiple technology infrastructures, which can make designing for resilience more complicated.
+* Resilience can be provided at any or every layer of the stack.
+
+Resilience goes hand-in-hand with availability, but availability requirements need to be clearly defined.
+
+* For example, hardware or operating system availability does not necessarily translate to application availability.
+* It’s common to underestimate the cost and complexity of providing availability, as well as overstate availability requirements.
+* Understanding what’s required is critical to determining the right infrastructure for a given workload or service.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
+
+
+
+
+
+
+
+
