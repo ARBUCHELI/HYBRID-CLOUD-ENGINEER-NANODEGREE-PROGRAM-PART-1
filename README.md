@@ -1168,6 +1168,27 @@ DSF offer capabilities:
 * Replication
 * Reflect
 
+### Acropolis: AHV
+
+### PCI Passthrough
+
+PCI passthrough allows guests to have exclusive access to PCI devices for a range of tasks. PCI passthrough allows PCI devices to appear and behave as if they were physically attached to the guest operating system.
+
+### PCI Device
+
+A PCI device is any piece of computer hardware that plugs directly into a PCI slot on a computer’s motherboard. PCI, which stands for Peripheral Component Interconnect, was introduced to personal computers by the Intel Corporation in 1993.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb47fb4_slide-22-ahv/slide-22-ahv.png)
+
+Acropolis Hypervisor (or AHV) is a comprehensive virtualization solution that’s included as part of the Nutanix solution, bundled with Acropolis.
+
+AHV is the virtualization layer in the illustration example. It enables a variety of key capabilities including:
+
+* Backup
+* Disaster recovery
+* Host and VM high availability
+* Dynamic scheduling
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
