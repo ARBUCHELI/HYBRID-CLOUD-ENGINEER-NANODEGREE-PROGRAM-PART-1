@@ -1388,6 +1388,29 @@ The table view displays the configuration settings for each container, capacity 
 
 ### Storage Dashboard: Diagram View
 
+![](https://video.udacity-data.com/topher/2020/May/5eb48ede_storage-dashboard-diagram-view/storage-dashboard-diagram-view.png)
+
+### Storage Dashboard: Table View
+
+![](https://video.udacity-data.com/topher/2020/May/5eb48f08_storage-dashboard-table-view/storage-dashboard-table-view.png)
+
+The different views of the Storage dashboard are fundamentally the same, each view allows you to interact with and drill down into various components in different ways. The table view puts the storage containers, volume groups, and storage pools front and center. It provides a number of details at a glance about each of these components:
+
+* Controller IOPS, total capacity, free and used capacity, status of various space optimization features, and more.
+* Usage and performance summaries, as well as storage alerts and events.
+
+The information you need from the Storage dashboard will determine which view you'll use and interact with.
+
+### Creating Storage Containers and Volume Groups
+
+![](https://video.udacity-data.com/topher/2020/May/5eb48f64_screen-shot-2020-05-07-at-6.44.43-pm/screen-shot-2020-05-07-at-6.44.43-pm.png]
+
+From the Storage dashboard, you can also create new Storage Containers and new Volume Groups by filling in details in a simple form based on your requirements.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/91.jpg)
+
+
+
 # Adaptation as a repository: Andrés R. Bucheli.
 
 
