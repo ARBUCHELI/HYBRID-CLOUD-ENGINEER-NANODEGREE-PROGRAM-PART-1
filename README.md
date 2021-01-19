@@ -899,7 +899,20 @@ When comparing the public cloud with on-prem hybrid cloud infrastructure, it's i
 
 ### Deeper Dive: Scalability
 
+The need to scale an application or the resources supporting an application up/out can be driven by:
 
+* An increasing number of users
+* Increased demand from existing users
+* A growing data set
+* Increased computational complexity
+
+In addition, many workloads are cyclical, requiring the ability to scale up/out during periods of high demand and pull back during periods of low demand. Monolithic applications require different scale up/out strategies than modular or micro-service-based applications. If application design and other requirements permit, it is possible to have individual application components or application tiers running on Private and Public Cloud simultaneously.
+
+When you need to decide on a scaling strategy, it’s important to consider:
+
+* The application architecture. Is it legacy-monolithic, multi-tier, modular, or micro-services based?
+* What the triggers points for scaling up or scaling out are?
+* Seasonality and complete demand cycles
 
 
 
