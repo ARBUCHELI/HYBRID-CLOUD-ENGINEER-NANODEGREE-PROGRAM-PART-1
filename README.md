@@ -1245,6 +1245,10 @@ Nutanix allows you leverage scale-out, fully software-defined storage services v
 
 * Nutanix Buckets object storage services is a software-defined object storage solution that <strong>non-disruptively scales out while lowering overall costs</strong>. It supports an <strong>industry-standard S3-compatible REST API</strong> to handle petabytes of unstructured data.
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/70.jpg)
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
