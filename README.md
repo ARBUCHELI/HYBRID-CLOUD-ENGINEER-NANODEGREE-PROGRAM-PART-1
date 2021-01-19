@@ -1065,6 +1065,42 @@ This software can be run on a number of different servers, from manufacturers su
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/65.jpg)
 
+## Hardware Components: Nodes, Blocks, and Clusters
+
+![](https://video.udacity-data.com/topher/2020/May/5eb47ca4_screen-shot-2020-05-07-at-5.24.41-pm/screen-shot-2020-05-07-at-5.24.41-pm.png)
+
+A <strong>node</strong> is an x86 server with compute and storage resources. A single Nutanix cluster can have an unlimited number of nodes. <strong>Different hardware platforms are available to address varying workload needs for compute and storage</strong>.
+
+Each node in the cluster:
+
+* Runs a standard hypervisor
+* Contains processors, memory, and local storage such as SSDs and hard disks.
+* A Nutanix Controller VM that enables the pooling of local storage from all nodes in the cluster.
+
+All nodes in a Nutanix cluster converge to deliver a unified pool of tiered storage and present resources to VMs for seamless access. <strong>A global data system architecture integrates each new node into the cluster, allowing you to scale the solution to meet the needs of your infrastructure</strong>.
+
+A <strong>block</strong> is a chassis that holds one to four nodes, and contains power, cooling, and the backplane for the nodes. <strong>The number of nodes and drives depends on the hardware chosen for the solution</strong>.
+
+A <strong>cluster</strong> is a collection of multiple blocks. It refers to the physical servers, logically associated with one another, that deliver a unified pool of infrastructure resources. It can handle the failure of a single node when specific cluster conditions are met. In the case where multiple nodes in a block fail, guest VMs can continue to run because cluster configuration data has been replicated on other blocks.
+
+### A Sample Block
+
+![](https://video.udacity-data.com/topher/2020/May/5eb47cd4_slide-12-sample-block/slide-12-sample-block.png)
+
+This graphic shows a 4-node block in which each node takes up one node position identified as A, B, C, or D. In this block chassis example, the node ports are accessible from the rear of the chassis and the storage is at the front. A Nutanix block is a rack-mountable enclosure that contains one to four Nutanix nodes. It can handle the failure of a single node when specific cluster conditions are met. In the case where multiple nodes in a block fail, guest VMs can continue to run because cluster configuration data has been replicated on other blocks.
+
+### Sample Cluster
+
+![](https://video.udacity-data.com/topher/2020/May/5eb47d93_slide-13-sample-cluster/slide-13-sample-cluster.png)
+
+What you see here is a visualization of a cluster, with both its physical and logical components highlighted. This particular example contains three nodes, each of which has a controller VM, locally attached storage, and has guest VMs running. All of the locally attached storage is presented as a single pool to the guest VMs, via the Controller VM.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/66.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/67.jpg)
+
+
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
