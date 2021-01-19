@@ -1372,7 +1372,21 @@ For example, 1 GB is defined as 1000³ bytes, whereas 1 GiB is defined as 1024³
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/90.jpg)
 
+### Storage Dashboard: Overview
 
+![](https://video.udacity-data.com/topher/2020/May/5eb48e38_storage-dashboard-overview/storage-dashboard-overview.png)
+
+The image above is the Overview display of the Storage dashboard. The Storage dashboard view shows you an overview of the storage environment, important performance charts, data reduction metrics, capacity summaries, and important alerts and warnings. If an administrator needs more details about certain storage services, then they can use the table view.
+
+This screen provides three views that offer insight into the storage constructs within a cluster:
+
+* Volume groups
+* Containers
+* Storage pools
+
+The table view displays the configuration settings for each container, capacity metrics, and several performance charts.
+
+### Storage Dashboard: Diagram View
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
