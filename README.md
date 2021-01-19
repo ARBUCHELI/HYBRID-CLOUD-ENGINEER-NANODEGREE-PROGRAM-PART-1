@@ -1,9 +1,6 @@
 # HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-
 
-# M O D E R N    
-# P R I V A T E    
-# C L O U D    
-# I N F R A E S T R U C T U R E   
+#                                                               MODERN PRIVATE CLOUD INFRAESTRUCTURE   
 
 # LESSON 1 INTRODUCTION TO THE HYBRID CLOUD
 
