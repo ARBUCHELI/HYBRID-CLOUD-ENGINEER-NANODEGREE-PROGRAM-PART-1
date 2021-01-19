@@ -1403,7 +1403,7 @@ The information you need from the Storage dashboard will determine which view yo
 
 ### Creating Storage Containers and Volume Groups
 
-![](https://video.udacity-data.com/topher/2020/May/5eb48f64_screen-shot-2020-05-07-at-6.44.43-pm/screen-shot-2020-05-07-at-6.44.43-pm.png]
+![](https://video.udacity-data.com/topher/2020/May/5eb48f64_screen-shot-2020-05-07-at-6.44.43-pm/screen-shot-2020-05-07-at-6.44.43-pm.png)
 
 From the Storage dashboard, you can also create new Storage Containers and new Volume Groups by filling in details in a simple form based on your requirements.
 
