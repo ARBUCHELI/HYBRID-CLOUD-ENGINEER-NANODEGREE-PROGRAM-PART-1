@@ -975,42 +975,19 @@ Taking these attributes and turning them into SLAs will provide a performance fr
 
 If modifications are needed to any aspect of the requirements, you can perform a cost-benefit analysis, determine the impact, and move forward with whatever is best for the business.
 
+## Lesson Recap
 
+![](https://video.udacity-data.com/topher/2020/June/5eecfa4b_screen-shot-2020-06-19-at-1.47.21-pm/screen-shot-2020-06-19-at-1.47.21-pm.png)
 
+In this lesson, we covered:
 
+* What the role of a Hybrid Cloud Engineer is
 
+* The different models to support various Cloud initiatives
 
+* The Engineer’s role in Service Level Agreements related to Cloud apps
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* How to choose the optimal Cloud platform for an app, based on business requirements and SLAs
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
