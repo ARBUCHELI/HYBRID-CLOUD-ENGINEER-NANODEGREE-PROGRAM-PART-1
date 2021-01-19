@@ -1219,6 +1219,32 @@ AHV is the virtualization layer in the illustration example. It enables a variet
 * Host and VM high availability
 * Dynamic scheduling
 
+### Acropolis: Scale-out Storage Services
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/69.jpg)
+
+### SMB 2.1
+
+In computer networking, Server Message Block (SMB), one version of which was also known as Common Internet File System (CIFS /sɪfs/), is a communication protocol for providing shared access to files, printers, and serial ports between nodes on a network. It also provides an authenticated inter-process communication mechanism. Most usage of SMB involves computers running Microsoft Windows, where it was known as "Microsoft Windows Network" before the introduction of Active Directory. Corresponding Windows services are LAN Manager Server for the server component, and LAN Manager Workstation for the client component.
+
+SMB 2.1, introduced with Windows 7 and Server 2008 R2, introduced minor performance enhancements with a new opportunistic locking mechanism.
+
+### NFS
+
+Network File System (NFS) is a distributed file system protocol originally developed by Sun Microsystems (Sun) in 1984, allowing a user on a client computer to access files over a computer network much like local storage is accessed. NFS, like many other protocols, builds on the Open Network Computing Remote Procedure Call (ONC RPC) system. NFS is an open standard defined in a Request for Comments (RFC), allowing anyone to implement the protocoL.
+
+### S3 Compatible REST API 
+
+Representational state transfer (REST) is a de-facto standard for a software architecture for interactive applications that typically use multiple Web services. In order to be used in a REST-based application, a Web Service needs to meet certain constraints; such a Web Service is called RESTful. A RESTful Web service is required to provide an application access to its Web resources in a textual representation and support reading and modification of them with a stateless protocol and a predefined set of operations. By being RESTfull, Web Services provide interoperability between the computer systems on the internet that provide these services. REST offers an alternative to, for instance, SOAP as method of access to a Web Service.
+
+Nutanix allows you leverage scale-out, fully software-defined storage services via <strong>Nutanix Files, Nutanix Volumes, and Nutanix Objects</strong>.
+
+* Nutanix Files file services provides <strong>access to Microsoft Windows via SMB 2.1 and to Linux and Unix via the NFS v4 protocol</strong>. It also scales and load balances multiple nodes in the cluster, growing capacity and performance as needed.
+
+* Nutanix Volumes block services provides iSCSI access to applications that require direct access to block storage. This can be non-virtualized systems, or virtual machines with specific requirements. <strong>Volumes uses the DSF to scale I/O across the entire cluster and can load balance and accelerate specified Volume Groups</strong>.
+
+* Nutanix Buckets object storage services is a software-defined object storage solution that <strong>non-disruptively scales out while lowering overall costs</strong>. It supports an <strong>industry-standard S3-compatible REST API</strong> to handle petabytes of unstructured data.
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
