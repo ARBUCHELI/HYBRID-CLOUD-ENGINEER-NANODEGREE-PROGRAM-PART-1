@@ -946,13 +946,31 @@ Deploying multi-tiered applications requires <strong>careful planning, especiall
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/59.jpg)
 
-Infrastructure and application manageability is greatly influenced by tool integrations and the availability of automation for routine and repetitive tasks.
+Infrastructure and application <strong>manageability</strong> is greatly influenced by tool integrations and the availability of automation for routine and repetitive tasks.
 
-Lack of manageability can drastically increase OPEX and degrade performance of a Private Cloud. It is especially detrimental in Hybrid Cloud deployments when tasks such as updates, troubleshooting, and scaling are delayed or fail outright.
+<strong>Lack of manageability can drastically increase OPEX and degrade performance of a Private Cloud</strong>. It is especially detrimental in Hybrid Cloud deployments when tasks such as updates, troubleshooting, and scaling are delayed or fail outright.
 
-It’s also important to consider the relative complexity of a workload from the perspective of manageability. Does it need to be on-prem because every aspect needs to be managed, or can a provider be trusted to manage a part of it?
+<strong>It’s also important to consider the relative complexity of a workload from the perspective of manageability. Does it need to be on-prem because every aspect needs to be managed, or can a provider be trusted to manage a part of it?</strong>
 
-When gathering requirements and planning your strategy, remember that a well-designed management plan show allow for SLAs to be met and monitored, in order to verify performance.
+When gathering requirements and planning your strategy, remember that <strong>a well-designed management plan show allow for SLAs to be met and monitored, in order to verify performance</strong>.
+
+## Deeper Dive: Data Protection and Recoverability
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/60.jpg)
+
+<strong>Every application or service will have specific requirements for data protection and recoverability</strong>. At a minimum, you should determine and document the requirements for each application and service in terms of:
+
+* <strong>The Recovery Time Objective (RTO)</strong>, which refers to how long an application can be down without causing damage to the business
+* <strong>The Recovery Point Objective (RPO)</strong>, which refers to how much data can be lost before damage to the business occurs.
+
+100% uptime (RTO) with no lost data (RPO) requires an investment in continuous data replication and mirrored infrastructure, but not every application or service will require this level of protection. When 100% uptime requirements or zero data loss requirements do exist, <strong>cloud-based options for backup and recovery can provide low-cost alternatives</strong>.
+
+
+
+
+
+
+
 
 
 
