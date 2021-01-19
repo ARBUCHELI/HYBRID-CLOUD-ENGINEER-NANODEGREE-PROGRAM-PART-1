@@ -1140,6 +1140,34 @@ Here are the main components:
 
 Let's take a look at each of these below!
 
+## Acropolis: Distributed Storage Fabric
+
+### SCSI CONTROLLER
+
+A SCSI controller, also called a host bus adapter (HBA), is a card or chip that allows a Small Computer System Interface (SCSI) storage device to communicate with the operating system across a SCSI bus.
+
+### CVM
+
+“Nutanix Controller VM (CVM) is what runs the Nutanix software and serves all of the I/O operations for the hypervisor and all VMs running on that host.” Nutanix-bible.
+
+The Controller VM recourses are shown under the VM page In the Nutanix Prism, but you will not be able to change the resources configuration, unless you connected to the Acropolis hypervisor (Host) and modified the configurations using virsh.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb47f70_slide-19-distributed-storage-fabric/slide-19-distributed-storage-fabric.png)
+
+Here is a representation of the <strong>Distributed Storage Fabric (DSF)</strong>. The DSF simplifies storage and data management for virtual environments, by pooling flash and hard disk drive storage across a Nutanix cluster and exporting it as a data store to the virtualization layer as <strong>Small Computer Systems Interface (iSCSI)</strong>, <strong>Network File System (NFS)</strong>, and </strong>Server Message Block (SMB)</strong> which are all different ways of data sharing.
+
+DSF offer capabilities:
+
+* Snapshots
+* Compression
+* Cloning
+* Data locality
+* Deduplication
+* Erasure coding
+* Tiering
+* Replication
+* Reflect
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
