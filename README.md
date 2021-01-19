@@ -1071,6 +1071,20 @@ This software can be run on a number of different servers, from manufacturers su
 
 A <strong>node</strong> is an x86 server with compute and storage resources. A single Nutanix cluster can have an unlimited number of nodes. <strong>Different hardware platforms are available to address varying workload needs for compute and storage</strong>.
 
+### x86 Architecture:
+
+The x86 architecture is an instruction set architecture (ISA) series for computer processors. Developed by Intel Corporation, x86 architecture defines how a processor handles and executes different instructions passed from the operating system (OS) and software programs.
+
+The “x” in x86 denotes ISA version.
+
+Designed in 1978, x86 architecture was one of the first ISAs for microprocessor-based computing. Key features include:
+Provides a logical framework for executing instructions through a processor
+Allows software programs and instructions to run on any processor in the Intel 8086 family
+Provides procedures for utilizing and managing the hardware components of a central processing unit (CPU)
+The x86 architecture primarily handles programmatic functions and provides services, such as memory addressing, software and hardware interrupt handling, data type, registers and input/output (I/O) management.
+
+Classified by bit amount, the x86 architecture is implemented in multiple microprocessors, including 8086, 80286, 80386, Core 2, Atom and the Pentium series. Additionally, other microprocessor manufacturers, like AMD and VIA Technologies, have adopted the x86 architecture.
+
 Each node in the cluster:
 
 * Runs a standard hypervisor
@@ -1098,6 +1112,8 @@ What you see here is a visualization of a cluster, with both its physical and lo
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/66.jpg)
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/67.jpg)
+
+## 
 
 ## Software Components: Acropolis
 
