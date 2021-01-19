@@ -965,6 +965,16 @@ When gathering requirements and planning your strategy, remember that <strong>a 
 
 100% uptime (RTO) with no lost data (RPO) requires an investment in continuous data replication and mirrored infrastructure, but not every application or service will require this level of protection. When 100% uptime requirements or zero data loss requirements do exist, <strong>cloud-based options for backup and recovery can provide low-cost alternatives</strong>.
 
+## Turning Business Requirements into SLAs
+
+Once you have the answers to all of your questions, you’ll have the framework and requirements of your solution. You will also have successfully mapped out the attributes of your required solution to specific business needs.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb476bf_slide-175-turning-business-requirements-into-slas/slide-175-turning-business-requirements-into-slas.png)
+
+Taking these attributes and turning them into SLAs will provide a performance framework that can be monitored, managed, and enforced. <stron>These attributes and SLAs will also help with vendor evaluation</strong>. You’ll have a checklist you can use to determine whether a solution provider can meet your needs and at what cost.
+
+If modifications are needed to any aspect of the requirements, you can perform a cost-benefit analysis, determine the impact, and move forward with whatever is best for the business.
+
 
 
 
