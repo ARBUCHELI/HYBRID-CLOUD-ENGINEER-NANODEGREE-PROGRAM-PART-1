@@ -1247,6 +1247,10 @@ Nutanix allows you leverage scale-out, fully software-defined storage services v
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/70.jpg)
 
+### Acropolis: Virtual Networking
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/71.jpg)
+
 
 
 
