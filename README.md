@@ -1061,6 +1061,18 @@ There are two key components to the software:
 * <strong>Acropolis:</strong> The data plane
 * <strong>Prism:</strong> The management plane
 
+### Data Plane
+
+The data plane is the part of the software that processes the data requests. By contrast, the control plane is the part of the software that configures and shuts down the data plane.
+
+The conceptual separation of the data plane from the control plane has been done for years. An early example is Unix, where the basic file operations are open, close for the control plane and read, write for the data plane.
+
+### Management Plane
+
+In computer networking, the management plane of a networking device is the element of a system that configures, monitors, and provides management, monitoring and configuration services to, all layers of the network stack and other parts of the system. It should be distinguished from the control plane, which is primarily concerned with routing table and forwarding information base computation.
+
+In system diagrams, the management plane is typically shown in three dimensions as overlapping the network stack, separated by a dimension that delineates the power plane, data plane, control plane and management plane.
+
 This software can be run on a number of different servers, from manufacturers such as <strong>Dell, Lenovo, HPE, Cisco, IBM, Inspur, and so on</strong>. In general, the hardware platforms themselves are structured as <strong>nodes, blocks, and clusters</strong>.
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/65.jpg)
@@ -1112,19 +1124,6 @@ What you see here is a visualization of a cluster, with both its physical and lo
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/66.jpg)
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/67.jpg)
-
-### Data Plane
-
-The data plane is the part of the software that processes the data requests. By contrast, the control plane is the part of the software that configures and shuts down the data plane.
-
-The conceptual separation of the data plane from the control plane has been done for years. An early example is Unix, where the basic file operations are open, close for the control plane and read, write for the data plane.
-
-### Management Plane
-
-In computer networking, the management plane of a networking device is the element of a system that configures, monitors, and provides management, monitoring and configuration services to, all layers of the network stack and other parts of the system. It should be distinguished from the control plane, which is primarily concerned with routing table and forwarding information base computation.
-
-In system diagrams, the management plane is typically shown in three dimensions as overlapping the network stack, separated by a dimension that delineates the power plane, data plane, control plane and management plane.
-
 
 ## Software Components: Acropolis
 
