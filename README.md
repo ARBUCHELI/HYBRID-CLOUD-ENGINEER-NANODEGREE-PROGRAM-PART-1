@@ -897,6 +897,10 @@ When comparing the public cloud with on-prem hybrid cloud infrastructure, it's i
 * Because public cloud infrastructure is rented (not owned), it has no upfront capital cost—and can thus seem better than investing in on-prem hybrid cloud infrastructure.
 * However, the public cloud requires significantly more operating expenditure; thus, despite the higher up-front costs, the hybrid cloud can have significantly better long-term TCO and ROI.
 
+### Deeper Dive: Scalability
+
+
+
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
