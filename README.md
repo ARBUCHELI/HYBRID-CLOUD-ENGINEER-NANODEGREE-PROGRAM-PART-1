@@ -1,6 +1,28 @@
+# NUTANIX
+
 # HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-
 
-# MODERN PRIVATE CLOUD INFRAESTRUCTURE   
+# MODERN PRIVATE CLOUD INFRAESTRUCTURE  
+
+# NUTANIX
+
+Nutanix, Inc. is a cloud computing company that sells hyper-converged infrastructure (HCI) software, cloud services (such as Desktops as a service, Disaster Recovery as a service, and cloud monitoring), and software-defined storage.
+
+Nutanix provides an enterprise cloud platform which combines storage, computing, and virtualization for clients. The company's software product families include Acropolis and Prism. In 2015, Nutanix was reported to have built a hypervisor in order to make managing computer infrastructure easier.
+
+# HYPER CONVERGED INFRAESTRUCTURE
+
+Hyper-converged infrastructure (HCI) is a software-defined IT infrastructure that virtualizes all of the elements of conventional "hardware-defined" systems. HCI includes, at a minimum, virtualized computing (a hypervisor), software-defined storage and virtualized networking (software-defined networking). HCI typically runs on commercial off-the-shelf (COTS) servers.
+
+The primary difference between converged infrastructure (CI) and hyper-converged infrastructure is that in HCI, both the storage area network and the underlying storage abstractions are implemented virtually in software (at or via the hypervisor) rather than physically, in hardware. Because all of the software-defined elements are implemented within the context of the hypervisor, management of all resources can be federated (shared) across all instances of a hyper-converged infrastructure.
+
+Nutanix is considered a leader in hyper-converged infrastructure. Nutanix's backers include Lightspeed Venture Partners, Khosla Ventures, and Blumberg Capital.
+
+As of 2020, the company is working to shift to a subscription-based model for billings.
+
+Hyperconvergence evolves away from discrete, hardware-defined systems that are connected and packaged together toward a purely software-defined environment where all functional elements run on commercial, off-the-shelf (COTS) servers, with the convergence of elements enabled by a hypervisor. HCI infrastructures are usually made up of server systems equipped with Direct-Attached Storage (DAS). HCI includes the ability to plug and play into a data-center pool of like systems. All physical data-center resources reside on a single administrative platform for both hardware and software layers. Consolidation of all functional elements at the hypervisor level, together with federated management, eliminates traditional data-center inefficiencies and reduces the total cost of ownership (TCO) for data centers.
+
+The potential impact of the hyper-converged infrastructure is that companies will no longer need to rely on different compute and storage systems, though it is still too early to prove that it can replace storage arrays in all market segments. It is likely to further simplify management and increase resource-utilization rates where it does apply.
 
 # LESSON 1 INTRODUCTION TO THE HYBRID CLOUD
 
