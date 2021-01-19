@@ -1279,6 +1279,24 @@ Nutanix Flow:
 
 ![](https://video.udacity-data.com/topher/2020/May/5eb48262_prism-home-dashboard/prism-home-dashboard.png)
 
+This is Prism, the single dashboard from which you can manage your entire Nutanix solution.
+
+<strong>Prism</strong> is a distributed management plane that uses advanced data analytics and heuristics to simplify and streamline common workflows, eliminating the need for separate management solutions for servers, storage networks, storage, and virtualization. It provides a <strong>unified management interface</strong> that can generate actionable insights for optimizing virtualization, provides infrastructure management and everyday operations.
+
+In Prism, Nutanix administrators can easily manage and operate their end-to-end virtual environments.
+
+Just as Acropolis creates a data plane that spans the entire cluster for performance and resiliency, Prism creates the same resiliency for management and operational intelligence.
+
+The information in Prism focuses on common operational tasks grouped into four areas:
+
+* Infrastructure management
+* Operational insight
+* Capacity planning
+* Performance monitoring
+
+We’ll discuss each of these in more detail when we cover managing a Nutanix cluster.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/78.jpg)
 
 
 
