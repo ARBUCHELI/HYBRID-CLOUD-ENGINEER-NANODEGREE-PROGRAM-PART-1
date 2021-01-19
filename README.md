@@ -1048,6 +1048,24 @@ Nutanix provides the public cloud benefits that organizations want <strong>with 
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/63.jpg)
 
+## What is Nutanix HCI?
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/64.jpg)
+
+![](https://video.udacity-data.com/topher/2020/June/5ed6e59c_nutanix-software-components-graphics/nutanix-software-components-graphics.png)
+
+Nutanix HCI is fully <strong>software-defined</strong>, which is required from a true HCI solution. This means that the intelligence of the solution comes from the software, which runs on a variety of hardware platforms.
+
+There are two key components to the software:
+
+* <strong>Acropolis:</strong> The data plane
+* <strong>Prism:</strong> The management plane
+
+This software can be run on a number of different servers, from manufacturers such as <strong>Dell, Lenovo, HPE, Cisco, IBM, Inspur, and so on</strong>. In general, the hardware platforms themselves are structured as <strong>nodes, blocks, and clusters</strong>.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/65.jpg)
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
