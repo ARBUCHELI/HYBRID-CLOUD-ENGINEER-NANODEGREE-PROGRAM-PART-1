@@ -1,5 +1,7 @@
 # HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-
 
+# M O D E R N    P R I V A T E    C L O U D    I N F R A E S T R U C T U R E   
+
 # LESSON 1 INTRODUCTION TO THE HYBRID CLOUD
 
 ## Reflexions by the Instructor
@@ -39,6 +41,7 @@ Let's get started!
 ![image](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/1.jpg)
 
 
+________________________________________________________________________________________________________________________________________________________________________________
 
 
 # LESSON 2 JOURNEY TO THE MODERN HYBRID CLOUD
@@ -988,6 +991,63 @@ In this lesson, we covered:
 * The Engineer’s role in Service Level Agreements related to Cloud apps
 
 * How to choose the optimal Cloud platform for an app, based on business requirements and SLAs
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+## LESSON 3 INTRODUCTION TO NUTANIX HCI (Hyper Converged Infraestructure)
+
+
+## Lesson Overview
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/61.jpg)
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfaa1_screen-shot-2020-06-19-at-1.49.11-pm/screen-shot-2020-06-19-at-1.49.11-pm.png)
+
+In this lesson, we're going to introduce you to the Nutanix HCI by going over the following:
+
+* The what and why of Nutanix HCI
+* The components of a cluster
+* The software components of a Nutanix cluster
+* How to work with the Prism interface
+
+## Why Nutanix HCI?
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/62.jpg)
+
+### Quick Review of the Legacy Infrastructure
+
+There are a few reasons legacy infrastructure is not well suited to meet the increasing requirements of enterprise applications or the fast pace of modern business:
+
+* The silos created by traditional infrastructure have become a barrier to change and progress, adding complexity to every step of the IT process from ordering to deployment to management.
+
+* <strong>New business initiatives require cooperation from multiple teams</strong>. <strong>They also need organizations to predict IT infrastructure 3 to 5 years in advance</strong>. For context, this is pretty hard to get right.
+
+* Vendor lock-in and rising licensing costs are significantly increasing budgets.
+
+HCI addresses these pain points by combining standard datacenter hardware using locally attached storage resources with intelligent software to create flexible building blocks. These flexible building blocks can replace legacy infrastructure with separate servers, storage networks, and storage arrays.
+
+### Benefits of the Nutanix HCI
+
+![](https://video.udacity-data.com/topher/2020/May/5eb47a84_screen-shot-2020-05-07-at-5.15.25-pm/screen-shot-2020-05-07-at-5.15.25-pm.png)
+
+Nutanix provides the public cloud benefits that organizations want <strong>with the control that they need on-prem</strong>. There are six major benefits to Nutanix HCI specifically:
+
+* <strong>Full-cloud:</strong> It’s a full-cloud stack that integrates all compute, storage, virtualization, and networking resources to run any application.
+
+* <strong>One-click simplicity:</strong> This entire stack is managed via a single pane of glass that streamlines IT lifecycle management and makes hybrid and multi-cloud management easy .
+
+* <strong>Deployed in minutes:</strong> The applications themselves can be deployed in minutes, instead of weeks or months. This is true for new infrastructure as well.
+
+* <strong>Automation application management:</strong> Application management can also be automated, along with other common IT tasks. Application owners and developers can also be given on-demand IT services.
+
+* <strong>Lower cloud costs:</strong> You can also reduce your datacenter TCO by up to 60%. This will help optimize your public cloud spend with lower cloud costs.
+
+* <strong>True hybrid cloud:</strong> This refers to the ability for you to combine both public and private cloud operations with unified management.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/63.jpg)
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
