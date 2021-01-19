@@ -24,6 +24,10 @@ cloud, what the pros and cons are of the various Cloud implementation, and how t
 In order to take this course, you should be comfortable with command line on Linux or Windows. It would also be helpful for you to have a background in working with VMs as well as
 AWS or GCP cloud.
 
+### Virtual Machine
+
+In computing, a virtual machine (VM) is the virtualization/emulation of a computer system. Virtual machines are based on computer architectures and provide functionality of a physical computer. Their implementations may involve specialized hardware, software, or a combination.
+
 Please note: There are no AWS credits needed for this Nanodegree.
 
 ## Course Outline
