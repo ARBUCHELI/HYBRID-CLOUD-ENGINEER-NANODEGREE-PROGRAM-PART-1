@@ -1099,6 +1099,9 @@ What you see here is a visualization of a cluster, with both its physical and lo
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/67.jpg)
 
+## Software Components: Acropolis
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/68.jpg)
 
 
 
