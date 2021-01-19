@@ -1251,8 +1251,17 @@ Nutanix allows you leverage scale-out, fully software-defined storage services v
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/71.jpg)
 
+Nutanix Flow:
 
+* Delivers advanced networking and security services, providing visibility into the virtual network, application-centric protection from network threats and automation of common networking operations.
 
+* Allows organizations to deploy <strong>software-defined virtual networking</strong> without having to install and manage additional products that have separate management and independent software maintenance requirements.
+
+* Provides detailed visualization of communications between VMs, making it simple and straight-forward to set the right policies for the environment.
+
+* Micro-segmentation provides granular control and governance of all traffic into and out of a VM, or groups of VMs. It ensures that only permitted traffic between application tiers or other logical boundaries is allowed and protects against advanced threats propagating within the virtual environment.
+
+* Provides API-based notifications enabling third-party network devices to observe VM lifecycle events, such as the instantiation of a new VM into the Nutanix environment.
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
