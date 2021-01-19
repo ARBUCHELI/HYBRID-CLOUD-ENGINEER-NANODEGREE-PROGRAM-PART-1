@@ -1103,7 +1103,16 @@ What you see here is a visualization of a cluster, with both its physical and lo
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/68.jpg)
 
+<strong>Acropolis</strong> is a distributed data plane for either VMs or container-based applications that <strong>runs across a cluster of nodes delivering enterprise storage and virtualization services</strong>. <strong>Acropolis is also the foundation of an HCI solution that transforms HCI into a Hybrid Cloud OS</strong>.
 
+Here are the main components:
+
+* The Distributed Storage Fabric (DSF)
+* The Acropolis Hypervisor (AHV)
+* Scale-out storage services
+* Advanced virtual networking
+
+Let's take a look at each of these below!
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
