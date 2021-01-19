@@ -1313,7 +1313,44 @@ We’ll discuss each of these in more detail when we cover managing a Nutanix cl
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/84.jpg)
 
 
+## Prism - Infrastructure Management: Cluster Management
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/85.jpg)
+
+### Four Common Operational Areas
+
+* Infrastructure Management
+* Operational Insight
+* Capacity Planning
+* Performance Monitoring
+
+### The Prism Home Dashboard
+
+![](https://video.udacity-data.com/topher/2020/May/5eb483d0_prism-home-dashboard/prism-home-dashboard.png)
+
+<strong>Infrastructure management</strong> refers to cluster management, upgrades, storage management, virtual machine management, networking, data protection, entity management, user management, localization, and a handful of other key features.
+
+<strong>Cluster management</strong> refers the overall view of your entire cluster that you see on the Prism home screen.
+
+The Home dashboard is a summary overview of your Nutanix cluster:
+
+* A count of blocks and hosts with model numbers
+* A summary of storage
+* VMs
+* Hardware
+* Cluster-wide controller IOPS
+* Latency
+* CPU usage
+* Memory usage
+* Alerts and events
+
+### Infrastructure Management
+
+![](https://video.udacity-data.com/topher/2020/May/5eb48d86_prism-home-drop-down/prism-home-drop-down.png)
+
+There are a lot of different dashboard available to you here depending on what type of information you'll need. We'll go through some of these dashboards during the course, but here's an opportunity to see what the options are. The Home drop down menu has a number of dashboards you can explore, each tailored around providing details on a specific area of your cluster.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/86.jpg)
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
