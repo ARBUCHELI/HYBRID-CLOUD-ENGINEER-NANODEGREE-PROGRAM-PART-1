@@ -1654,6 +1654,125 @@ You can also edit the contents of the email itself.
 
 ________________________________________________________________________________________________________________________________________________________________________________
 
+# LESSON 4 HYBRID CLOUD SECURITY 
+
+## Lesson Overview
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfaf0_screen-shot-2020-06-19-at-1.50.16-pm/screen-shot-2020-06-19-at-1.50.16-pm.png)
+
+## Lesson Overview
+
+* Introduction to Security
+* Security Standards
+* Security Development Life Cycle
+* Securing the Hybrid Cloud
+
+## Introduction to Hybrid Cloud Security
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/126.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/127.jpg)
+
+Security today is more complicated than it’s ever been. There are more workloads than the industry has ever had to deal with before. <strong>As a result of virtualization, these workloads are often sitting on a single hardware platform</strong>.
+
+With traditional infrastructure, stacks are composed of products from multiple vendors, each with a narrow and limited view of security. Validating and maintaining a security baseline through continuous software upgrades, is time-consuming and often involves error-prone manual processes that take away from innovation and productivity.
+
+Traditional security solutions such as firewalls are often blind to the internal communication between virtual machines and applications. Once cybercriminals infiltrate the network, they can take up residence and move laterally without being detected. The inherent complexity of this infrastructure has led to increased risks.
+
+## Security Standards
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/128.jpg)
+
+Since there’s always that risk of someone getting in, a lot of organizations find themselves in a risky place. More often than not, they deal with large volumes of sensitive data around with a high standard of security must be maintained. In order to ensure there are standards organizations can hold themselves to, a number of widely accepted and enforced definitions have been developed.
+
+There are five major government standards for security that IT needs to take into consideration. They are TAA Compliance, NSA Suite B, 508 Compliance, FIPS Compliance, and Common Criteria.
+
+### TAA Compliance
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/129.jpg)
+
+The <strong>Trade Agreements Act</strong> refers to a law requiring the U.S. government purchase only “U.S.-made or designated country end products.” Companies and contractors are considered TAA-compliant if they follow TAA guidelines.
+
+End products are “articles, materials and supplies to be acquired for public use," according to the text of the law. Designated countries include Free Trade Agreement countries, countries that have signed the World Trade Organization Agreement on Government Procurement, Caribbean basin countries and some "least-developed" countries.
+
+China, Taiwan, India, Thailand and Malaysia are not considered designated countries in the TAA. However, U.S. contractors can use supplies from these countries and other non-designated countries, as long as they substantially transform them into different final products that meet the criteria. Contractors and companies that do not comply with TAA rules may face lawsuits or have trouble obtaining government contracts.
+
+### NSA Suite B
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/130.jpg)
+
+<strong>NSA Suite B</strong> is a set of commercially available encryption algorithms, published by the US’s National Security Agency, for use in commercial applications as well as some types of classified information.
+
+Suite B specifies a mode of operation in which only a specific set of secure cryptographic algorithms should be used. Suite B specifies the encryption algorithm, the key exchange algorithm, the digital signature algorithm, and the hashing algorithms.
+
+### 508 Compliance
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/131.jpg)
+
+In 1998, the United States Congress amended the Rehabilitation Act to require Federal agencies to make their electronic and information technology accessible to people with disabilities.
+
+<strong>Section 508</strong> was enacted to eliminate barriers in information technology, to make available new opportunities for people with disabilities, and to encourage development of technologies that will help achieve these goals. The law applies to all Federal agencies when they develop, procure, maintain, or use electronic and information technology.
+
+<strong>508 Compliance</strong>, involves ensuring accessibility in technology. While it’s popularly and more commonly known in the context of website accessibility, 508 Compliance is a key part of systems and platform development as well. Although it isn’t technically a security standard, it’s here because – just like security – 508 compliance needs to be built into a product from the ground up.
+
+It needs to be considered in UI design, navigation, menus and interactions, labelling, and so much more.
+
+### FIPS Compliance
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/132.jpg)
+
+FIPS 140-2 stands for Federal Information Processing Standard 140-2 and, like the other standards listed here, is US-government specific. The standard itself is used to approve cryptography modules and is required when working in any capacity with the United States government. FIPS 140-2 is derived from the Federal Information Security Management Act of 2002 (FISMA) and the Federal Information Security Modernization Act of 2014.
+
+The Federal Information Security Management Act of 2002 is a United States federal law that recognized the importance of information security to the economic and national security interests of the United States. The act requires each federal agency to develop, document, and implement an agency-wide program to provide information security for the information and information systems that support the agency. This also includes information and system that were provided or managed by another agency, contractor, or other sources.
+
+FISMA was superseded by the Federal Information Security Modernization Act of 2014, which removed some elements from FISMA and amended other aspects for changes in cybersecurity and oversight.
+
+### Common Criteria
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/133.jpg)
+
+![](https://video.udacity-data.com/topher/2020/May/5ebaf319_slide-24-common-criteria-evaluation-process-complete/slide-24-common-criteria-evaluation-process-complete.png)
+
+The Common Criteria for Information Technology Security Evaluation, also called Common Criteria, is an international standard for computer security. It allows the users of a system to specify their functional and functional assurance requirements for a specific product. Technology vendors can then, based on these requirements, evaluate their products against these requirements to confirm compliance.
+
+Common Criteria provides assurance that the process of specification, implementation and evaluation of a computer security product has been conducted in a rigorous, and standard manner at a level that corresponds with its target use environment. Once this process is completed successfully, a vendor achieves Common Criteria certification.
+
+There are two major components to Common Criteria. The first, is a Protection Profile, which is a document that specifies the requirements for a class of security devices, such as firewalls. This document is what vendors evaluate their products against to determine Common Criteria Compliance.
+
+The second component is the Evaluation Assurance Level, which – as the name suggests – refers to the evaluation itself. More specifically, it is a numerical rating that described the rigor and depth of an evaluation.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/134.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/135.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
