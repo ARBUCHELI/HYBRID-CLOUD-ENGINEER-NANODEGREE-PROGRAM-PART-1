@@ -1467,7 +1467,29 @@ Similar to creating Storage Containers and Volume Groups, creating a Virtual Mac
 
 ## Prism - Infrastructure Management: Data Protection
 
+### Remote Site
 
+After you have created a local site, you can then associate a remote site for deployment. A remote site can either be on a server that is on the local network (using a mapped drive) or on another server on the Internet (using FTP).
+
+### protection domain 
+
+A set of access privileges to protected resources. Where many processes coexist, each process having differing access permission to a number of protected resources via some form of key, it may be convenient to group together a set of such keys in order to provide a single process with access to the resources that it requires. Access control can then be manipulated independent of the processes concerned. The protection domain is either the set of keys, or equivalently, the set of resources to which the keys give access.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb49288_data-protection-dashboard-overview/data-protection-dashboard-overview.png)
+
+While there are many other dashboards in Prism, the last one we’ll talk about in this section is the Data Protection dashboard. The data protection overview summarizes the number of remote sites and protection domains, giving you a quick look into the cluster’s data protection. Charts report replication data transfer bandwidth, as well as a list of the top remote sites by bandwidth consumption. This report lets an organization easily understand the bandwidth that replication is consuming, whether something is operating abnormally, and which sites use the most resources. Administrators also gain awareness of ongoing replication, pending replication, and successful replication tasks, so they can recognize if any tasks are being held up or simply verify that replication is completing successfully.
+
+### Data Protection Dashboard: Table View
+
+![](https://video.udacity-data.com/topher/2020/May/5eb492d8_data-protection-dashboard-table-view/data-protection-dashboard-table-view.png)
+
+The data protection table view summarizes the configuration, performance, and status of the protection domains that provide backup and disaster protection in your cluster. From this view you can see how many resources each protection domain consumes, what is contained within a protection domain, when taking a snapshot was last successful, and if there are any pending jobs. When you select a specific protection domain or remote site, a greater amount of data becomes available through additional charts and tables. These entity-specific data points provide extensive details on the contents, schedules, alerts, and metrics for each item.
+
+### Creating Protection Domains and Remote Sites
+
+![](https://video.udacity-data.com/topher/2020/May/5eb49326_screen-shot-2020-05-07-at-7.00.23-pm/screen-shot-2020-05-07-at-7.00.23-pm.png)
+
+Again, creating protection domains and remote sites involves filling a form with details, after which both entities will be created for you. A protection domain is a set of policies that govern the local backup and remote replication functions for one or more VMs. A schedule attached to each protection domain controls the rate at which snapshots are taken and how long they are retained. This architecture allows you to create protection domains that can protect either a single VM or groups of VMs. The flexibility to use multiple protection domains within a cluster means that you can create different policies to protect diverse applications and groups of VMs, and control replication to different sites and clusters.
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
