@@ -1952,10 +1952,91 @@ In this lesson we:
 * Discussed the Security Development Life Cycle
 * Discussed how to secure the Hybrid Cloud
 
+________________________________________________________________________________________________________________________________________________________________________________
 
+# LESSON 5 NETWORKING
 
+## Lesson Overview
 
+### Lesson Overview
 
+* Introduction to Physical and Virtual Networking
+* Components of AHV Networking
+* Working with VLANs
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfb4e_screen-shot-2020-06-19-at-1.51.41-pm/screen-shot-2020-06-19-at-1.51.41-pm.png)
+
+## Introduction to Networking
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/153.jpg)
+
+### What is Networking?
+
+<strong>Networking</strong> is the practice in which nodes transport and exchange data over a shared medium.
+
+It is commonly associated with the design, construction, and use of a network. Networking also includes the management, maintenance, and operation of the network’s physical infrastructure. It also involves all the associated software and policies.
+
+In this lesson we’re going to be focusing on two specific topics – physical networking and virtual networking.
+
+## Introduction to Networking: Physical Networking
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/154.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/155.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/156.jpg)
+
+<strong>Physical networking</strong> is about the network topology – the devices, their location, and the physical cables that connect those devices to each other. The network is a key component in ensuring high performance and availability, and successful deployments combine the right physical switches with the right physical designs.
+
+A Nutanix environment should use datacenter switches designed for transmitting large amounts of server and storage traffic at low latency.
+
+Datacenter switches have the following characteristics:
+
+* <strong>Line rate</strong>: Ensures that all ports can simultaneously achieve advertised throughput.
+* <strong>Low latency</strong>: Minimizes port-to-port latency, measured in microseconds or nanoseconds.
+* <strong>Large per-port buffers</strong>: Handle speed mismatch from uplinks without dropping frames.
+* <strong>Nonblocking, with low or no oversubscription</strong>: Reduces chance of drops during peak traffic periods.
+* <strong>10 Gbps or faster links for Nutanix CVM traffic</strong>: Only use 1 Gbps links either for additional user VM traffic or when 10 Gbps connections are not available, such as in a ROBO deployment. Limit Nutanix clusters using 1 Gbps links to eight nodes.
+
+Once you’ve found the right switch, that’s one big decision dealt with. The other is which networking design to use. And whether you’re designing a new network or transitioning an older network into cloud-scale architecture, it is important to know the differences and characteristics of two prominent network topologies: Core-Aggregation-Access networking, which is also called 3-Tier networking, and Leaf-Spine architecture.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/157.jpg)
+
+## Physical Networking Topology: Core-Aggregation-Access
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/158.jpg)
+
+This architecture contains three layers: Core, Aggregation, and Access.
+
+The core layer provides fast transport between distribution layer switches. The core layer provides routing services to other parts of the data center, as well as to services outside of the data center such as the Internet, geographically separated data centers and other remote locations. The network core delivers routing services, making complex routing decisions for optimized networking traffic, advertises routes, stores network configurations, and provides a gateway for all networks to communicate internally and externally.
+
+The aggregation layer has redundant connections to access layer switches and connects to the core layer.
+
+The access layer is where host devices are connected to the network. It plays a vital role in meeting server requirements such as NIC teaming, clustering, and broadcast containment.
+
+In the Core-Aggregation-Access networking model, devices are connected to each other within a layer, as well as across layers for redundancy. This model scales somewhat well, but it is subject to bottlenecks if uplinks between layers are oversubscribed. This can come from latency incurred as traffic flows through each layer and from blocking redundant links. Also, the cost per port is fairly high. The hardware and logic contained within core switches made them cost-prohibitive to scale.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/159.jpg)
+
+## Using 3-Tier in a Nutanix Depoloyment
+
+![](https://video.udacity-data.com/topher/2020/May/5ebda253_using-core-aggregation-access-in-a-nutanix-deployment/using-core-aggregation-access-in-a-nutanix-deployment.png)
+
+The <strong>core-aggregation-access</strong> (or three-tier) design is a modular layout that allows you to upgrade and scale layers independently.
+
+However, there’s one important best practice that you need to consider and that’s the three-switch-hop rule.
+
+Nutanix nodes send storage replication traffic to each other in a distributed fashion over the top-of-rack network. One Nutanix node can therefore send replication traffic to any other Nutanix node in the cluster. The network should provide low and predictable latency for this traffic. So, it’s important to ensure that there are no more than three switches between any two Nutanix nodes in the same cluster.
+
+Essentially, when using Core-Aggregation-Access, you need to ensure that all nodes in a Nutanix cluster share the same aggregation layer to meet the three-switch-hop rule.
+
+![](https://video.udacity-data.com/topher/2020/May/5ebda26c_scaling-core-aggregation-access-in-a-nutanix-deployment/scaling-core-aggregation-access-in-a-nutanix-deployment.png)
+
+Scaling the three-tier network design may require adding another aggregation and access layer to the core. In this case, there would be more than three switch hops between the two access layers. To continue to align with the three-switch-hop rule, ensure that you add Nutanix nodes in separate aggregation and access layers to separate clusters. In the example you’re seeing here, Cluster 1 connects to one aggregation layer and Cluster 2 connects to another.
+
+However, since there are many ways to connect switches in the core-aggregation-access design, your deployment may look a little different from this one.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/160.jpg)
 
 
 
