@@ -1491,6 +1491,12 @@ The data protection table view summarizes the configuration, performance, and st
 
 Again, creating protection domains and remote sites involves filling a form with details, after which both entities will be created for you. A protection domain is a set of policies that govern the local backup and remote replication functions for one or more VMs. A schedule attached to each protection domain controls the rate at which snapshots are taken and how long they are retained. This architecture allows you to create protection domains that can protect either a single VM or groups of VMs. The flexibility to use multiple protection domains within a cluster means that you can create different policies to protect diverse applications and groups of VMs, and control replication to different sites and clusters.
 
+## Prism - Managing a Nutanix Cluster: Operational Insights
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/106.jpg)
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
