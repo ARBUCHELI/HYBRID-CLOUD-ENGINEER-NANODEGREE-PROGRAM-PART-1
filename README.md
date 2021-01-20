@@ -1495,7 +1495,29 @@ Again, creating protection domains and remote sites involves filling a form with
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/106.jpg)
 
+The second of the four key areas in which Prism helps organizations manage their Nutanix clusters is operational insights. Operational insights focus on providing administrators with alerts, metrics, and the ability to analyze data. As with infrastructure management, this also involves a number of different dashboard and Prism capabilities, including:
 
+* Alerts and user-created alerts
+* Alert-driven root cause analysis
+* Analytics
+* Analysis
+* Network visualization
+
+### Operational Insights: Alerts Dashboard
+
+#### Alerts Dashboard: Alerts View
+
+![](https://video.udacity-data.com/topher/2020/May/5eb49440_alerts-dashboard-alerts-view/alerts-dashboard-alerts-view.png)
+
+Alerts in Prism provide administrators with information about informational, warning, and critical alerts. The Alerts dashboard has two views – Alerts and Events. The Alerts view presents all notifications and events in an easy-to-consume table format. The table presents each alert with a color-coded severity level, a description of the alert, a timestamp, which entities the alert involves, and cause and resolution guidance.
+
+#### Alerts Dashboard: Events View
+
+![](https://video.udacity-data.com/topher/2020/May/5eb494bf_alerts-dashboard-events-view/alerts-dashboard-events-view.png)
+
+The Event view displays a list of event messages. Event messages describe cluster actions such as adding a storage pool or taking a snapshot. This view is read-only and you do not need to take any action like acknowledging or resolving generated events.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/107.jpg)
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
