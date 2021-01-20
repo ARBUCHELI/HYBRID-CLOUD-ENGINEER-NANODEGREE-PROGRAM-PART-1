@@ -1437,7 +1437,7 @@ From the Storage dashboard, you can also create new Storage Containers and new V
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/104.jpg)
 
-## Prism - Infrastructure Mgmt.: Virtual Machine Managemen
+## Prism - Infrastructure Mgmt.: Virtual Machine Management
 
 ### VM Dashboard: Table View
 
@@ -1463,7 +1463,7 @@ This VM-focused view allows organizations to easily compare the CPU and memory s
 
 Similar to creating Storage Containers and Volume Groups, creating a Virtual Machine is also a simple process – you need to fill out a form that requires CPU, memory, disk, network adapter, and host affinity information. After that, clicking Save will create your VM.
 
-
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/105.jpg)
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
