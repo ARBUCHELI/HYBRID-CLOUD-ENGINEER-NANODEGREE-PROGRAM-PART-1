@@ -1652,6 +1652,8 @@ You can also edit the contents of the email itself.
 * Acropolis: AHV, DSF, Virtual Networking, Storage Services
 * Prism: Infrastructure Management, Operational Insights, Capacity Planning, and Performance Monitoring
 
+________________________________________________________________________________________________________________________________________________________________________________
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
