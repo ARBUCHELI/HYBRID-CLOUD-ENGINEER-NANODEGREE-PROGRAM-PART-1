@@ -1465,6 +1465,10 @@ Similar to creating Storage Containers and Volume Groups, creating a Virtual Mac
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/105.jpg)
 
+## Prism - Infrastructure Management: Data Protection
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
