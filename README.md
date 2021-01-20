@@ -1745,6 +1745,214 @@ The second component is the Evaluation Assurance Level, which – as the name su
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/135.jpg)
 
+## How Secure Are Your Clouds?
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/136.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/137.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/138.jpg)
+
+Leveraging the public cloud doesn’t mean you give up all control over security. There are still measures that you can implement, but they only go so far. In practice, you’ll find that you can control and secure about 80% of a public cloud’s capabilities. While that is a considerable amount of control, it does still mean that roughly 20% is left to the cloud provider and their security measures. Most public cloud providers do an excellent job of securing that 20%, but that doesn’t mean breaches are an impossibility.
+
+On the other hand, with the private cloud, you have full control over your security. That means you can potentially be more secure than the public cloud but, simply having an on-prem setup doesn’t bolster security by itself. That is one of the reasons that these security standards are so important. They represent a benchmark against which you can measure your own security profile, determine what areas of your environment are well set up and which ones are in need of some tightening. Your on-prem cloud is only as secure as the products you use to build your technology stack. This is why security needs to be built into those products from the ground up.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/139.jpg)
+
+## Securing Clouds from the Ground Up
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/140.jpg)
+
+Why are the standards we just talked about are so important?
+
+Each of these standards represents a set of considerations for the way a product is conceptualized, designed, programmed, and tested - and ultimately determines who it can be sold to. These considerations aren’t things that can be bolted on at the last minute.
+
+For a system – any system – to be as protected as it can be, security needs to be built in from the ground up. This is why compliance is something you consider even before you start development. When you’re gathering requirements, determining functionality, and figuring out the sort of product that you’re going to build, you need to consider how security will affect decisions you make during development.
+
+Because of this, it’s important to understand the security development life cycle.
+
+## Security Development Life Cycle
+
+![](https://video.udacity-data.com/topher/2020/May/5ebaf496_slide-34-secdl/slide-34-secdl.png)
+
+This is a high-level overview of the Security Development Life Cycle. It is a process with different phases that contain security activities that sits inside of the classic people-process-technology triangle. The SecDL forms the process portion.
+
+It includes both the central security team that governs the process and updates it, as well as the product or development teams that perform security activities. The technology portion consists of tools that assist in finding vulnerabilities in source code or discovering vulnerabilities in a running instance of the product or application.
+
+The SecDL is methodology-neutral. Security activities fit within any product development methodology, whether waterfall, or DevOps. Methodology differences show up in the cadence of security activities.
+
+The SecDL was developed during the time of waterfall, so it is usually portrayed as a linear process that begins with requirements and ends with the release. When the SDL is extended to agile, some security activities get integrated into the normal sprint schedule, while others are pursued out-of-band. With DevOps, activities are embedded into the build pipeline using automation, while additional activities happen outside the pipeline.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/141.jpg)
+
+## SecDL: Analyze
+
+![](https://video.udacity-data.com/topher/2020/May/5ebaf50c_secdl-1-analyze/secdl-1-analyze.png)
+
+The first phase is essentially requirements gathering. In this phase, the goal is to defined the security best practices that will be integrated into a product. These practices may come from industry standards or be based on responses to problems that have occurred in the past. Requirements exist to define the functional security requirements implemented in the product, and include all the activities of the SDL. They are used as an enforcement point to ensure that all pieces are properly considered.
+
+Requirements may take the classic form, stating that the product or application must, can, or should, do something. An example might be that the product must enforce a minimum password length of eight characters. In the agile world, requirements are expressed as user stories. These stories contain the same information as do the requirements, but security functionality is written from the user's perspective.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/142.jpg)
+
+## SecDL: Design
+
+![](https://video.udacity-data.com/topher/2020/May/5ebaf59d_secdl-2-design/secdl-2-design.png)
+
+The design phase of the SDL consists of activities that ideally occur before code is written. Secure design is about quantifying an architecture, for a single feature or the entire product, and then searching for problems.
+
+The key to identifying problems is threat modeling. Threat modeling is the process of thinking through how a feature or system will be attacked, and then mitigating those future attacks in the design before writing the code. If you’ve seen the 2002 film Minority Report, that’s kind of the function that threat modeling serves – it’s about preventing crimes before they happen.
+
+A solid threat model understands a feature's, or product's, attack surface. It then defines the most likely attacks that will occur across those interfaces. A threat model is only as good as the mitigations it contains to fix the problems. It is crucial to identifying security issues early in the process.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/143.jpg)
+
+## SecDL: Implement
+
+![](https://video.udacity-data.com/topher/2020/May/5ebaf5c6_secdl-3-implement/secdl-3-implement.png)
+
+The next phase is implementation, which involves actually writing secure code. The SecDL contains a few things programmers must do to ensure that their code has the best chance of being secure. The process involves a mixture of standards and automated tools.
+
+On the standards front, a solid SecDL defines a secure coding guide, that defines what is expected and provides guidance for when developers hit a specific issue and need insight. Implementation tools include Static Application Security Testing, or SAST, and Dynamic Application Security Testing, or DAST, software.
+
+SAST is like a spell-checker for code, identifying potential vulnerabilities in the source code. SAST runs against a nightly build or may be integrated into your IDE. It may find and open new bugs in the bug management system nightly or prompt the developer to pause while coding to fix a problem in real time.
+
+DAST checks the application's runtime instantiation. It spiders through an application to find all possible interfaces and then attempts to exploit common vulnerabilities in the application. These tools are primarily used on web interfaces.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/144.jpg)
+
+## SecDL: Test
+
+![](https://video.udacity-data.com/topher/2020/May/5ebaf640_secdl-4-test/secdl-4-test.png)
+
+Formal test activities include security functional test plans, vulnerability scanning, and penetration testing. Vulnerability scanning uses industry-standard tools to determine if any system-level vulnerabilities exist with the application or product.
+
+Penetration testing involves testers attempting to work around the security protections in a given application and exploit them. Penetration testing also stretches the product and exposes it to testing scenarios that automated tools cannot replicate. Because penetration testing is resource-intensive, it is usually not performed for every release.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/145.jpg)
+
+## SecDL: Update
+
+![](https://video.udacity-data.com/topher/2020/May/5ebaf68d_secdl-5-update/secdl-5-update.png)
+
+The findings from tests are updated as necessary and the product itself is then prepared for release.
+
+Release occurs when all the security activities are confirmed against the final build and the software is sent to customers or made available for download. After the software is released, an interface is typically provided for external customers and security researchers to report security problems in products.
+
+Part of this response interface should ideally include a product security-incident response team that focuses on triaging and communicating product vulnerabilities, both individual bugs and those that will require industry-wide collaboration such as Heartbleed, Bashbug, etc.
+
+Finally, there are other security activities are also important to the success of a SecDL, including security champions, bug bounties, and education and training.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/146.jpg)
+
+## SecDL and Nutanix
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/147.jpg)
+
+Our security development life cycle integrates security into every step of product development, rather than applying it as an afterthought. It is a foundational part of product design. The pervasive culture and processes built around security harden the Hybrid Cloud OS and eliminate zero-day vulnerabilities.
+
+For example, research and development teams work together to fully understand all the code in the product, whether it is produced in-house or inherited from dependencies. We schedule product updates to handle known common vulnerabilities and exposures, or CVEs, for minor release cycles, and backport all dependencies to their latest release versions in major release cycles. This approach significantly reduces zero-day risks without slowing down product evolution.
+
+Efficient one-click operations and self-healing security models enable automation to maintain security in an always-on hyperconverged solution. Finally, Nutanix also delivers validated joint solutions with security-focused vendors.
+
+## Security in the Hybrid Cloud
+
+![](https://video.udacity-data.com/topher/2020/May/5ebaf7ac_screen-shot-2020-05-12-at-3.23.10-pm/screen-shot-2020-05-12-at-3.23.10-pm.png)
+
+As a result of the Nutanix approach to SecDL, and with the way we built security into our products from the ground up, you’ll find that the Hybrid Cloud has a number of security features available out of the box.
+
+While there’s more to Nutanix security than the five points you’re seeing here, these are the major topics we’re going to talk about in this lesson. Broadly, we’re going to cover two-factor authentication, cluster lockdown, key management and administration, STIG implementation, data-at-rest encryption, and role-based access control.
+
+## Two-Factor Authentication
+
+![](https://video.udacity-data.com/topher/2020/May/5ebb118d_screen-shot-2020-05-12-at-5.13.35-pm/screen-shot-2020-05-12-at-5.13.35-pm.png)
+
+Several different types of authentication exist, including one way, two way, and two-factor.
+
+<strong>One way authentication</strong> involves simply authenticating to the server. <strong>Two-way</strong> involves the server also authenticating the client.
+
+<strong>Two-factor authentication</strong> is a subset of multi-factor authentication, which involves presenting two or more pieces of evidence to an authentication mechanism. These pieces of evidence are typically combinations of three things: something the user knows, something the user has, and something the user is.
+
+A good example of this is typically bank transactions. Very often, when performing an online transaction, you’ll also be asked to confirm the transaction by entering a time-limited password sent to your mobile phone via text message, or to your email account. In this case, entering your card or account details represent knowledge as the first factor, and the password comes from something you have or own – in this example, your phone or email account.
+
+Two-factor authentication simply involves two pieces of information. In the case of Nutanix’s implementation, it involves a username and password combination, and a client certificate. For two-factor authentication, Nutanix administrators can use either local accounts, or Active Directory.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/148.jpg)
+
+## Cluster Lockdown
+
+### SSH
+
+SSH or Secure Shell is a cryptographic network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH.
+
+SSH provides a secure channel over an unsecured network by using a client–server architecture, connecting an SSH client application with an SSH server. The protocol specification distinguishes between two major versions, referred to as SSH-1 and SSH-2. The standard TCP port for SSH is 22. SSH is generally used to access Unix-like operating systems, but it can also be used on Microsoft Windows. Windows 10 uses OpenSSH as its default SSH client and SSH server.
+
+Cluster lockdown is the ability to disable password-based CVM access and/or only allow key based access.
+
+![](https://video.udacity-data.com/topher/2020/May/5ebb11e3_screen-shot-2020-05-12-at-5.15.01-pm/screen-shot-2020-05-12-at-5.15.01-pm.png)
+
+However, you can add your public SSH-key via Prism and still login via SSH by using your ssh key. This adds a layer of non-repudiation to the connection, since the key used to access the emergency account on the shell is logged. This adds a layer of cryptographic exchange to the connection instead of just a source IP.
+
+All CVMs have a set of ssh-keys that are generated at installation, so all CVMs in a cluster can still communicate with each other using keys, and you can ssh between them using keys once you gain access.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/149.jpg)
+
+## Key Management and Administration
+
+![](https://video.udacity-data.com/topher/2020/May/5ebb1255_screen-shot-2020-05-12-at-5.16.55-pm/screen-shot-2020-05-12-at-5.16.55-pm.png)
+
+Nutanix nodes are authenticated by a key management server, or KMS. SEDs generate new encryption keys, which are uploaded to the KMS. In the event of power failure or a reboot, keys are retrieved from the KMS and used to unlock the SEDs. These security keys can also be instantly reprogrammed. And finally, Crypto Erase can be used to instantly erase all data on an SED while generating a new key.
+
+### SED
+
+Self Encryption Devices
+
+## Security Technical Implementation Guides
+
+![](https://video.udacity-data.com/topher/2020/May/5ebb12f2_screen-shot-2020-05-12-at-5.19.19-pm/screen-shot-2020-05-12-at-5.19.19-pm.png)
+
+<strong>Security Technical Implementation Guides</strong>, or STIGs, are the configuration standards for DoD Information Assurance, or IA, and IA-enabled devices/systems. STIGs specify how a computing device must be configured to maximize security.
+
+A STIG describes how to minimize network-based attacks and prevent system access when the attacker is interfacing with the system, either physically at the machine or over a network. STIGs also describe maintenance processes such as software updates and vulnerability patching. Advanced STIGs cover the design of a corporate network, covering the configurations of routers, firewalls, domain name servers, and switches.
+
+Once deployed, STIGs lock down IT environments and reduce security vulnerabilities in infrastructure. Traditionally, using STIGs to secure an environment is a manual process that is highly time-consuming and error prone. Because of this, only the most security-conscious IT shops follow the required process. Nutanix has created custom STIGs that are based on the guidelines outlined by The Defense Information Systems Agency, or DISA, to keep the Hybrid Cloud Platform within compliance and reduce attack surfaces.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/150.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/151.jpg)
+
+## Data-at-Rest Encryption
+
+![](https://video.udacity-data.com/topher/2020/May/5ebb13a0_screen-shot-2020-05-12-at-5.22.25-pm/screen-shot-2020-05-12-at-5.22.25-pm.png)
+
+<strong>Data-at-Rest Encryption</strong> secures data while at rest using self-encrypting drives and key-based access management. For customers who require enhanced data security, Nutanix provides a software-only encryption option for data-at-rest security which does not require self-encrypting drives.
+
+With Nutanix’s Data-at-Rest Encryption implementation data is encrypted on all drives at all times, data is inaccessible in the event of drive or node theft, data on a drive can be securely destroyed, protection can be enabled or disabled at any time, and no performance penalty is incurred despite encrypting all data.
+
+## Role-Based Access Control
+
+![](https://video.udacity-data.com/topher/2020/May/5ebb13e9_screen-shot-2020-05-12-at-5.23.38-pm/screen-shot-2020-05-12-at-5.23.38-pm.png)
+
+The last security capacity that we’re going to discuss in this lesson is role-based access control. Prism supports role-based access control that you can configure to provide customized access permissions to users based on their assigned roles. The roles dashboard allows you to view information about all defined roles and the users and groups assigned to those roles.
+
+Prism includes a set of predefined roles. You can also define additional custom roles. Configuring authentication confers default user permissions that vary depending on the type of authentication like full permissions from a directory service, or no permissions from an identity provider. You can configure role maps to customize these user permissions. Finally, you can refine access permissions even further by assigning roles to individual users or groups that apply to a specified set of entities.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/152.jpg)
+
+## Lesson Recap
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfb01_screen-shot-2020-06-19-at-1.50.16-pm/screen-shot-2020-06-19-at-1.50.16-pm.png)
+
+### Lesson Recap
+
+In this lesson we:
+
+* Introduced you to security
+* Went over security standards
+* Discussed the Security Development Life Cycle
+* Discussed how to secure the Hybrid Cloud
+
+
 
 
 
