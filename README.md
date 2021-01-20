@@ -1622,7 +1622,36 @@ A metric chart monitors the performance of a single metric on one or more entiti
 
 An entity chart monitors the performance of one or more metrics for a single entity. For example, you can create a single metric chart that monitors a particular host, for metrics such as Disk I/O Bandwidth for Reads, Disk I/O Bandwidth for Writes, and Disk IOPS.
 
-![]()
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/125.jpg)
+
+## Prism Performance Monitoring: Alert Emails
+
+### Alert Emails: Settings
+
+![](https://video.udacity-data.com/topher/2020/May/5eb5eb6d_alert-settings/alert-settings.png)
+
+By default, Alert email notifications are enabled. This feature sends alert messages automatically to Nutanix customer support through customer-opened ports 80 or 8443. To receive email notification alerts, you need to ensure that nos-alerts and nos-asup recipients are added to the accepted domain of your SMTP server.
+
+### Alert Emails: Settings
+
+![](https://video.udacity-data.com/topher/2020/May/5eb5ebd3_alert-rules/alert-rules.png)
+
+You can also customize your Alert emails. To aid in your cluster monitoring efforts, you can schedule the frequency of these Alert emails, the recipients, and the conditions under which an email will be sent.
+
+### Alert Emails: Templates
+
+![](https://video.udacity-data.com/topher/2020/May/5eb5ec39_alert-template/alert-template.png)
+
+You can also edit the contents of the email itself.
+
+## Lesson Recap
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfab3_screen-shot-2020-06-19-at-1.49.11-pm/screen-shot-2020-06-19-at-1.49.11-pm.png)
+
+* The hardware and software components of HCI
+* Acropolis: AHV, DSF, Virtual Networking, Storage Services
+* Prism: Infrastructure Management, Operational Insights, Capacity Planning, and Performance Monitoring
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
