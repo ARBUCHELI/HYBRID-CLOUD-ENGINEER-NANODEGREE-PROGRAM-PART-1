@@ -1559,6 +1559,24 @@ Finally, hovering over the any point in the chart will show you projected capaci
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/109.jpg)
 
+## Prism Capacity Planning: Scenarios
+
+![](https://video.udacity-data.com/topher/2020/May/5eb5e91d_scenarios/scenarios.png)
+
+The other major capability of Prism’s Capacity Planning is scenario creation. Scenarios allow you to create projections and estimates of resource utilization over a period of time, if you were to add new workloads, or both.
+
+### Creating a Scenario
+
+![](https://video.udacity-data.com/topher/2020/May/5eb5e955_scenario-9-months/scenario-9-months.png)
+
+Creating a new scenario presents you with a number of different options. Here, we’re trying to create a scenario to determine resource utilization in 9 months, if no new workloads are added. As you can see, based on current utilization data, Prism projects that we’ll run out of storage well before that time.
+
+![](https://video.udacity-data.com/topher/2020/May/5eb5e9a2_scenario-9-months-recommended/scenario-9-months-recommended.png)
+
+In this case, clicking the Recommend button gives us suggestions for which nodes we could add, how many we should add, and what their configuration should be for us to meet our runway needs. This particular feature can be a powerful tool in understand what your current and future capacity needs are, and can empower you to make informed, incremental purchasing decisions.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/110.jpg)
+
 
 
 
