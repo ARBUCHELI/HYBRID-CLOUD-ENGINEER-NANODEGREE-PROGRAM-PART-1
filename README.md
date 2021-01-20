@@ -1026,7 +1026,7 @@ In this lesson, we covered:
 ________________________________________________________________________________________________________________________________________________________________________________
 
 
-## LESSON 3 INTRODUCTION TO NUTANIX HCI (Hyper Converged Infraestructure)
+# LESSON 3 INTRODUCTION TO NUTANIX HCI (Hyper Converged Infraestructure)
 
 
 ## Lesson Overview
