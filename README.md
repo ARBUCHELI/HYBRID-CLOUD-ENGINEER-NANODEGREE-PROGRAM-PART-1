@@ -2356,7 +2356,7 @@ Which dashboard do you use to upload images for use in VM creation?
 
 ## Exercise: Uploading Images to the Image Service
 
-Plaese follow the tutorial showed above.
+Please follow the tutorial showed above this lines.
 
 
 
