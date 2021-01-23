@@ -2404,6 +2404,349 @@ Which of a VM's configuration details can you modify when updating a VM?
 
 * All of them
 
+## Exercise: Updating CPU and Memory on a VM
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/231.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/232.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/233.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/234.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/235.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/236.jpg)
+
+# VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
+## Cloning a VM
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/237.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/238.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/239.jpg)
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda20d_update-vm-screen-2/update-vm-screen-2.png)
+
+To clone a VM select it and then, from the row of option below the VM table, select Clone.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda238_clone-a-vm-screen-1/clone-a-vm-screen-1.png)
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda245_clone-a-vm-screen-2/clone-a-vm-screen-2.png)
+
+In the Clone VM dialog, you can change the configuration as required and specify the number of clones you want. If you want to create more than one clone – if you look at this example, we’re creating five – then you’ll also be prompted to specify a starting index number.
+
+Once you’ve made all of your changes, click Save and your VM clones will be created.
+
+### QUIZ QUESTION
+* True or false: When cloning a VM, you can change the VM's configuration and create multiple clones at the same time.
+
+True
+
+## Deleting a VM
+
+Deleting a VM is as straightforward as it sounds. Simply select the VM you want to delete and, from the row of options below the VM table, select Delete.
+
+You’ll be prompted to confirm deletion. If the VM is powered on, as is the case here, the dialog will explicitly state that. You’ll also be asked if you want to delete all snapshots of this VM. Make your selections and, once you’re sure, click Delete to remove the VM from Prism.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/240.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/241.jpg)
+
+## Migrating a VM
+
+Like a lot of the capabilities we’ve talked about already, migrating a VM to a different host in the cluster also a one-click operation. If you need to migrate a VM, you can either choose the host yourself, or allow Prism to do it for you. Since the former is extremely straightforward, let’s look at a quick example of the latter.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda394_update-vm-screen-2/update-vm-screen-2.png)
+
+On the Migrate VM screen, click the dropdown and select the host that you want to migrate to.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda3c9_migrate-a-vm-screen-1/migrate-a-vm-screen-1.png)
+
+Here, we have 3 options – Demo 1, Demo 2, and the host that the VM is already on, Demo 3. Let’s move the VM to Demo 2. To do this, we just need to select DEMO-AHV-2 from the list and click Migrate.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda3e3_migrate-a-vm-screen-2/migrate-a-vm-screen-2.png)
+
+Prism will take a few seconds to complete the process and, once it finishes, we can see the results. In the column to the right of the VM name, we can see that our test VM is now on DEMO-AHV-2.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda403_migrate-a-vm-screen-3/migrate-a-vm-screen-3.png)
+
+## What is VM High Availability?
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/242.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/243.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/244.jpg)
+
+<strong>High availability</strong> refers to the ability of a system to run continuously without failure. This doesn’t mean that the system or components of it cannot fail; It just means that the system is designed to account for and compensate for failures when they happen. And, since VMs represent the interface with which end users interact with a virtualized system, being able to provide high uptime and strong tolerance for failure is especially important.
+
+By default, Nutanix uses a system called best effort availability for VMs. Other options are available and can be manually turned on, but this one is on by default.
+
+If a host fails, the VMs that were running on that host are restarted on any available space on other hosts in the cluster. One the failed host is up and running, VMs are migrated back to their original host. This type of VM high availability is implemented without reserving any resources. But because admission control is not enforced, there may not be enough resources to restart all VMs.
+
+The other option is using host-based reservations.
+
+In this method, the cluster is divided into segments to ensure enough space is reserved for any host failure. Each segment corresponds to the largest VM that is guaranteed to be restarted in case the failure occurs. The other factor is the number of host failures that can be tolerated. Using these inputs, the scheduler implements admission control to always have enough resources reserved so that the VMs can be restarted upon failure of any host in the cluster.
+
+### QUIZ QUESTION
+Which of the following statements is TRUE about best effort availability?
+
+* With Best Effort, when a VM goes down, it will only be restarted if there are enough resources available to do so
+
+## Enabling VM HA
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda849_enabling-vm-ha-screen-1/enabling-vm-ha-screen-1.png)
+
+To enable VM HA, click the gear icon at the top right of the screen to open the Settings page.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda870_enabling-vm-ha-screen-2/enabling-vm-ha-screen-2.png)
+
+As you can see here, HA Reservation is disabled by default. The dialog informs you that resources are not reserved, and in case of a failure VMs will be restarted based on the amount of resources that are available to the cluster. To enable VM HA, select the Enable HA Reservation checkbox.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda898_enabling-vm-ha-screen-3/enabling-vm-ha-screen-3.png)
+
+The dialog updates to inform you that a certain amount of resources will be reserved to provide protection in case of a host failure. To save this change and enable VM HA, click Save.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda8b2_enabling-vm-ha-screen-4/enabling-vm-ha-screen-4.png)
+
+### QUIZ QUESTION
+True or false: By default, a Nutanix cluster does not reserve resources to restart VMs in case of a failure.
+
+* True, VM HA reservation must be manually enabled
+
+## Lesson Recap
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfbb0_screen-shot-2020-06-19-at-1.53.05-pm/screen-shot-2020-06-19-at-1.53.05-pm.png)
+
+* Introduced you to VM management
+* Worked with Disc Images
+* Showed you how to create and manage VMs
+* Discussed VM High Availability
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+# LESSON 7 DATA PROTECTION 
+
+## Lesson Overview
+
+### Lesson Overview
+* The state of data protection
+* The complexities of data protection in a hybrid cloud world
+* Data protection trends
+* Data protection in the hybrid cloud
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfbe4_screen-shot-2020-06-19-at-1.54.26-pm/screen-shot-2020-06-19-at-1.54.26-pm.png)
+
+Businesses of all sizes are modernizing IT with the goal of:
+
+* Reducing costs
+* Increasing productivity
+* Addressing digital transformation needs.
+
+However, not all businesses are paying the same amount of attention to changing requirements for data protection, nor have they made the same investments for data protection as they have for other areas of IT. At the same time, uptime and availability of critical applications is becoming increasingly important. The result is a steadily widening gap between the amount of data protection being delivered, and the level of protection needed.
+
+## The Cost of a Disaster
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/247.jpg)
+
+Disaster risks are growing on many fronts. Over the last several years, there has been a steady increase in both natural and man-made disasters. In 2018 alone, U.S. climate disasters cost the nation around $91 billion dollars.
+
+Unplanned outages due to system failure, cybercrime, and simple human error are also on the rise. In March 2019, Facebook had a massive day-long meltdown caused by a routine maintenance operation that triggered a bug. No company is immune.
+
+According to Gartner, the average cost that large businesses incur due to downtime is 300 thousand dollars per hour. Organizations need to review their business continuity practices. But, at the same time, a number of factors make comprehensive data protection more challenging than ever.
+
+## Data Protection Challenges
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/248.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/249.jpg)
+
+The amount and type of stored data continues to grow. The diversity of places where data is being stored – such as desktops, SAN and NAS storage, and multiple clouds – also continues to grow.
+
+At the same time, the widespread adoption of the hybrid cloud is changing the way data protection is being implemented. In many cases, the cloud is seen as the preferred target for backup and Disaster Recovery, in short: DR. Backup as a Service and DR as a Service are rising as popular alternatives to traditional approaches.
+
+On top of that, businesses are seeking higher levels of protection. Recovery Time Objectives, or RTO, and Recovery Point Objectives, or RPO, are all shrinking. This makes for a challenge: as the amount of data increases, the time for backup tasks continues to decrease. For many applications, the backup window has effectively shrunk to zero.
+
+### QUIZ QUESTION
+What are the three main challenges that companies are facing with data protection today?
+
+* Growing data; widespread adoption of the hybrid cloud; businesses needed better protection
+
+## Data Protection Trends
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/250.jpg)
+
+Many of the trends in data protection are a direct response to the challenges that we just discussed. Broadly, we’re interested in three specific trends:
+
+* <strong>Application-centric protection:</strong> Applications often have their own data protection and disaster recovery methods. While this can be attractive in terms of level of protection for a given application, it can also result in additional silos of software and hardware that add to overall complexity.
+
+* <strong>Automation:</strong> Because of the complexity and importance of data protection and disaster recovery workflows, significant efforts have been made to automate tasks and simplify orchestration of custom workflows to: reduce administrative overhead, accelerate recovery, and eliminate the chance of operator error.
+
+* <strong>Copy data management:</strong> This refers to the rapidly proliferating number of full data copies that must be stored and managed for, for instance, backup, replication, and development. Solutions are emerging to control and manage this growth.
+
+* QUIZ QUESTION
+Which of the following trends is the result of the growing complexity of data protection and DR workflows?
+
+* Automation
+
+## RTO and RPO
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/251.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/252.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/253.jpg)
+
+Before we move on to data protection in the hybrid cloud, let’s take a minute to go over two terms that were just introduced – Recovery Time Objective, or RTO, and Recovery Point Objective, or RPO.
+
+Both parameters are extremely important to data protection because, in many ways, RPO and RTO are the foundation of data protection and disaster recovery decisions that many businesses make.
+
+<strong>Recovery Time Objective</strong> refers to the time allowed to restore normal operations when an IT failure or disruption occurs, in order to avoid unacceptable consequences associated with a break in business continuity. An RTO of one hour means an application or a data-set will be back online within one hour after a failure occurs.
+
+<strong>Recovery Point Object</strong> refers to the quantity of data that a business can lose, before the amount of data lost during that period, exceeds a maximum allowable threshold which would result in unacceptable consequences associated with a break in business continuity.
+
+### QUIZ QUESTION
+What is RTO?
+
+* The time required to restore normal operations when an IT failure or disruption occurs
+
+## Data Protection in the Hybrid Cloud
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/254.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/255.jpg)
+
+Businesses of all sizes are discovering that hybrid cloud with Nutanix – which is built with web-scale engineering and consumer-grade design – simplifies IT, increases availability, and accelerates the entire IT environment, including data protection and Disaster Recovery.
+
+Nutanix combines a highly resilient, scale-out infrastructure with efficient snapshot, cloning, and replication technologies, as well as intelligent software to provide a higher level of protection with less complexity and lower cost.
+
+As a result, the Nutanix hybrid cloud brings six major capabilities to data protection.
+
+### Six Major Capabilities
+
+* <strong>Application-centric automation:</strong>With Nutanix, you can quickly and easily group application VMs, and protect them together, as a set.
+* <strong>Multi- and cross-hypervisor support:</strong> VMware vSphere, Microsoft Hyper-V, and Nutanix AHV.
+Not only can you use data protection functionality with all three hypervisors, you can also perform cross-hypervisor replication to optimize costs.
+* <strong>Simple Management:</strong>Data protection with multiple solutions, devices, and interfaces – can be a problem. Prism can be used to manage all Nutanix data protection and DR functionality.
+* <strong>Policy-based data protection:</strong> Data protection and DR are based on policies you define up front, allowing you to deliver the right protections for every application and workload with ease.
+* <strong>API-driven automation:</strong> Nutanix provides a full set of REST APIs to facilitate automation. Every action that can be performed from the Prism UI, through PowerShell, or using application programs.
+* <strong>Copy efficient protection:</strong> Nutanix data protection and data reduction help you minimize the number of full data copies and the bandwidth needed for replication. This saves on space and cost, providing complete data protection, while allowing you to quickly provision clones for analytics, development, and testing.
+
+### QUIZ QUESTION
+Which of the following are Nutanix data protection capabilities? (Choose all that apply.)
+
+* Application-centric automation
+
+* API-driven automation
+
+* Cross-hypervisor support
+
+
+## Infrastructure Resilience
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/256.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/257.jpg)
+
+Infrastructure resiliency is the first line of defense for your data and applications. One of the things that differentiates Nutanix from conventional infrastructure with separately sourced servers, storage, and storage networks is that the platform is fault resistant, with no single point-of-failure or bottlenecks.
+
+The system uses a shared-nothing architecture with data, metadata, and services distributed across all nodes within a cluster. It is designed to detect, isolate, and recover from failures in order to survive system malfunctions and maintain data availability should there be any hardware unavailability, software glitches, or hypervisor issues.
+
+With respect to infrastructure resilience, it is important to understand 4 key capabilities that Nutanix provides:
+
+* Tunable redundancy
+* Erasure coding
+* Integrity checks
+* Availability domains
+
+### QUIZ QUESTION
+Which of the following characteristics differentiates Nutanix data protection from conventional infrastructure? (Choose all that apply.)
+
+* Nutanix is fault resistant, with no single point-of-failure or bottlenecks
+
+* Nutanix uses a shared-nothing architecture with data, metadata, and services distributed across all nodes within a cluster
+
+* Nutanix is designed to detect, isolate, and recover from failures, and maintain data availability
+
+## Infrastructure Resilience: Tunable Redundancy
+
+<strong>Tunable redundancy</strong>, replaces traditional, hardware-centric RAID. Each Nutanix data container, which is the equivalent of a VM datastore, has a data Replication Factor, or “RF”, of 2 or 3. This means that either two or three copies of data are maintained at all times.
+
+![](https://video.udacity-data.com/topher/2020/May/5ec71447_screen-shot-2020-05-21-at-7.52.18-pm/screen-shot-2020-05-21-at-7.52.18-pm.png)
+
+In this image, you can see how RF2 allows a cluster to survive the failure of one node or drive, while RF3 allows a cluster to survive two simultaneous failures of the same components.
+
+If a node or drive fails, the copy of that data is automatically read from another node in the cluster. If the node does not come back online, all data on the affected node is automatically reconstructed to ensure full redundancy and data protection.
+
+Because the workload is spread across the cluster, the performance impact is small. The larger the cluster is, the faster the data is reconstructed, and the smaller the impact of a failure. The system returns to full redundancy quickly and without intervention.
+
+Next, we’ll discuss erasure coding, which provides the same level of data resilience while removing storage capacity overhead.
+
+### UIZ QUESTION
+How many node or drive failures can a cluster sustain in RF2?
+
+* 1
+
+## Infrastructure Resilience: Erasure Coding
+
+![](https://video.udacity-data.com/topher/2020/May/5ec714b2_screen-shot-2020-05-21-at-7.54.04-pm/screen-shot-2020-05-21-at-7.54.04-pm.png)
+
+Let’s take a closer look at Erasure Coding, or “EC-X”.
+
+<strong>Erasure Coding</strong> encodes a strip of data blocks that reside on different nodes in the cluster, and calculates parity using software, instead of physical disk controllers.
+
+
+With the parity blocks in place, the second and/or third copies of the original data are then removed. In the event of a disk or node failure, parity blocks are used to re-calculate missing data blocks. Each data block in a strip is on a different node and belongs to a different vDisk. The number of data and parity blocks in a strip is dynamic, it's configuration based on the number of nodes in the cluster and the chosen data replication factor.
+
+Erasure coding increases usable capacity over 50%. EC-X also reduces data storage capacity, and therefore capacity cost without taking away any of the resiliency benefits, and with no impact on write performance.
+
+### QUIZ QUESTION
+What does Erasure Coding do?
+
+* Encodes a strip of data blocks that reside on different nodes in the cluster, and calculates parity.
+
+## Infrastructure Resilience: Integrity Checks
+
+Nutanix integrity checks are a combination of features that proactively identify and fix issues related to data consistency, data integrity, and hard disk corruption.
+
+There are three items that are worth calling out specifically. These are:
+
+* The system scans data in the background and verifies it against stored checksums in the distributed metadata store. If an error is detected, bad data is overwritten using a good copy.
+
+* A checksum is computed for all data being read, and compared with stored checksums. This essentially provides automatic data integrity checks for every read operation.
+
+* If a drive fails, the system automatically replicates all data that is no longer redundant, to ensure fault tolerance. During the failure and recovery process, both data and access to it are preserved.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/258.jpg)
+
+## Infrastructure Resilience: Availability Domains
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/259.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/260.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/261.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/262.jpg)
+
+Availability domains, our final discussion point under infrastructure resilience, offers even greater protection from hardware failures than we’ve talked about already. It allows a cluster to survive the failure of a node, a block, or even a datacenter rack. The three types we’re going to discuss are:
+
+* <strong>Node Awareness</strong>: Exactly how a cluster survives node failures without losing access to its data.
+* <strong>Block Awareness</strong>: Block awareness takes node awareness a step further, by distributing data replicas across multiple blocks. A block, incidentally, is a multi-node enclosure that can contain up to four nodes. In the case of block awareness, if a block fails, there is always at least one replica of all data on the node of another block.
+* <strong>ack Awareness</strong>: Rack awareness builds on block awareness in the same way, and provides data availability in case of a rack-level failure, for instance a power outage.
+
+### QUIZ QUESTION
+What are availability domains?
+
+* They allow a cluster to survive the failure of a node, block, or rack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
