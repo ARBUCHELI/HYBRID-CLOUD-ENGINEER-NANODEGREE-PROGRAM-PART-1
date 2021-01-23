@@ -2177,6 +2177,64 @@ Why does Nutanix recommend dynamic link aggregation with LCAP, instead of static
 
 * Better failure detection and recovery
 
+## VLAN
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/178.jpg)
+
+A virtual LAN, or <strong>VLAN</strong>, is a subgroup of a network, which combines multiple networking devices into a single domain and partitions them off from the rest.
+
+VLANs offer a number of benefits over their more physical-based counterparts: Better network speed and performance More efficient traffic routing between domains More control over network devices and traffic Security benefits by isolating data within a VLAN No need to add cabling or make significant infrastructure changes
+
+AHV supports two different ways to provide VM connectivity: managed and unmanaged networks.
+
+### QUIZ QUESTION
+What is a VLAN?
+
+* A network subgroup, which combines multiple networking devices into a single domain and partitions them off from the rest
+
+# VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
+## Unmanaged Network
+
+![](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/179.jpg)
+
+With <strong>unmanaged networks</strong>, VMs get a direct connection to their VLAN of choice. Each virtual network in AHV maps to a single VLAN and bridge. All VLANs allowed on the physical switch port to the AHV host are available to the CVM and guest VMs. Acropolis binds each virtual network it creates to a single VLAN. During VM creation, you can create a virtual NIC and associate it with a network and VLAN. Or, you can provision multiple virtual NICs each with a single VLAN or network.
+
+### QUIZ QUESTION
+What is an unmanaged network?
+
+* VMs get a direct connection to their VLAN of choice
+
+# VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
+## Exercise: Creating an Unmanaged Network
+
+What makes virtual networking with Nutanix really interesting, is that you can create and manage virtual networks without any additional AHV host configuration, using Prism Element, the Acropolis Command Line Interface, or REST API. So, to close this lesson out, we’re going to be creating one managed and one unmanaged network in Prism just so you can experience how simple the process really is.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/180.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/181.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/182.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/183.jpg)
+
+# VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
+## Managed Networks
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/184.jpg)
+
+A <strong>managed network</strong> is a VLAN plus IP Address Management. IPAM is the cluster capability to function like a DHCP server, to assign an IP address to a VM that sits on the managed network. Administrators can configure each virtual network with a specific IP subnet, associated domain settings, and group of IP address pools available for assignment.
+
+The Acropolis Master acts as an internal DHCP server for all managed networks. The OVS is responsible for encapsulating DHCP requests from the VMs in VXLAN and forwarding them to the Acropolis Master. VMs receive their IP addresses from the Acropolis Master’s responses. The IP address assigned to a VM is persistent until you delete the VNIC or destroy the VM.
+
+The Acropolis Master runs the CVM administrative process to track device IP addresses. This creates associations between the interface’s MAC addresses, IP addresses and defined pool of IP addresses for the AOS DHCP server.
+
+### QUIZ QUESTION
+What is a managed network?
+
+A VLAN plus IP Address Management
+
+
+
 
 
 
