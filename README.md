@@ -2247,7 +2247,15 @@ A VLAN plus IP Address Management
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/189.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/190.jpg)
 
+## Lesson Recap
 
+![](https://video.udacity-data.com/topher/2020/June/5eecfb5d_screen-shot-2020-06-19-at-1.51.41-pm/screen-shot-2020-06-19-at-1.51.41-pm.png)
+
+In this lesson we covered:
+
+* Physical and Virtual Networking
+* Components of AHV Networking
+* How to work with VLANs
 
 
 
