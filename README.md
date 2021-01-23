@@ -4,7 +4,13 @@ This repository includes the theoretical courses of the Udacity's Hybrid Cloud E
 
 # HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-
 
+
+
+
 # FIRST COURSE MODERN PRIVATE CLOUD INFRAESTRUCTURE  
+
+
+
 
 # NUTANIX
 
@@ -2819,6 +2825,21 @@ Everything new that you learn will add to this foundation until you build your o
 
 ![](https://video.udacity-data.com/topher/2020/June/5eecfc1a_screen-shot-2020-06-19-at-1.55.28-pm/screen-shot-2020-06-19-at-1.55.28-pm.png)
 
+
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+# SECOND COURSE INTRO TO PRIVATE AND HYBRID CLOUD AUTOMATION
+
+
+
+
+# LESSON 1 INTRO TO PRIVATE AND HYBRID CLOUD AUTOMATION 
 
 
 
