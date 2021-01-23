@@ -2317,6 +2317,43 @@ Which of the following tasks can you perform on the VM dashboard?
 
 * Update VM
 
+# VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
+
+## Working with Images
+
+The first step in creating virtual machines is learning how to work with images.
+
+You can use Prism to import and configure operating system ISO and disk image files using the Image Service. This image service allows you to assemble a repository of image files in different formats including raw, vhd, vhdx, vmdk, vdi, iso, and qcow2. You can later use these images when creating virtual machines.
+
+Adding an image to the image service is a fairly straightforward upload process. The upload process is performed on the Storage dashboard (not the VM dashboard). You simply select the image, name it, select the image type, and that’s it - your image is now in Prism and ready for use.
+
+After you upload an image to Prism, there are several things you can do with it. You can use it to create a VM, you can leave it in the image service for use in future deployments and, if you no longer need that image at a later date, you can simply delete it from Prism.
+
+Before we move on to an exercise in which you can practice uploading images, let’s watch a short video walkthrough of the process.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/197.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/198.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/199.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/200.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/201.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/202.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/203.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/204.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/206.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/207.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/208.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/209.jpg
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/210.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/211.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/212.jpg)
+
+### QUIZ QUESTION
+Which dashboard do you use to upload images for use in VM creation?
+
+* The Storage dashboard
+
+
+
 
 
 
