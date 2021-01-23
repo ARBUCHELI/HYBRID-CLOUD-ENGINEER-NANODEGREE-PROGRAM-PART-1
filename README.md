@@ -2318,7 +2318,6 @@ Which of the following tasks can you perform on the VM dashboard?
 * Update VM
 
 # VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
-
 ## Working with Images
 
 The first step in creating virtual machines is learning how to work with images.
@@ -2353,10 +2352,24 @@ Which dashboard do you use to upload images for use in VM creation?
 * The Storage dashboard
 
 # VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
-
 ## Exercise: Uploading Images to the Image Service
 
 Please follow the tutorial showed above this lines.
+
+
+# VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
+## Creating a VM
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/214.jpg)
+
+# QUIZ QUESTION
+You can create a VM in Prism using _
+
+* A form that allows you to specify compute, memory, storage, and network details
+
+
+
+
 
 
 
