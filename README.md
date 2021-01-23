@@ -2367,6 +2367,50 @@ You can create a VM in Prism using _
 
 * A form that allows you to specify compute, memory, storage, and network details
 
+## Exercise: Creating a VM
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/215.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/216.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/217.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/218.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/219.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/220.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/221.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/222.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/223.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/224.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/225.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/226.jpg)
+
+## Updating/Modifying a VM
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/227.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/228.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/229.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/230.jpg)
+
+Managing VMs involves a handful of tasks. Now, specifically, we’re going to be focusing on a few of them. Let’s start with modification. You can update or modify a VM at any point after you create it. And, you have access to the same dialog that’s used when creating a VM, so you can modify everything from CPU, memory, and storage to networking and host affinity details.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda173_update-vm-screen-1/update-vm-screen-1.png)
+
+On the update VM dialog, change the VM’s configuration to suit your needs. In this case, we’ve updated the number of cores per vCPU to 2, and the memory from 8 GB to 16. When all your changes have been made, click Save.
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda1b0_update-vm-screen-3/update-vm-screen-3.png)
+
+![](https://video.udacity-data.com/topher/2020/May/5ecda1c0_update-vm-screen-4/update-vm-screen-4.png)
+
+### QUIZ QUESTION
+Which of a VM's configuration details can you modify when updating a VM?
+
+* All of them
+
+
+
+
+
+
+
+
 
 
 
