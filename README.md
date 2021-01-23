@@ -2352,7 +2352,11 @@ Which dashboard do you use to upload images for use in VM creation?
 
 * The Storage dashboard
 
+# VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
 
+## Exercise: Uploading Images to the Image Service
+
+Plaese follow the tutorial showed above.
 
 
 
