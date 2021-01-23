@@ -1,5 +1,7 @@
 # NUTANIX
 
+This repository includes the theoretical courses of the Udacity's Hybrid Cloud Engineer Nanodegree Program and the solution of the quizzes and projects.  This material was created with the purpose of self reference.
+
 # HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-
 
 # MODERN PRIVATE CLOUD INFRAESTRUCTURE  
