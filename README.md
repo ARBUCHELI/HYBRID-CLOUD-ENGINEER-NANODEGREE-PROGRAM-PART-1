@@ -2258,6 +2258,74 @@ In this lesson we covered:
 * How to work with VLANs
 
 
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+# LESSON 6 MANAGING VIRTUAL MACHINES IN THE HYBRID CLOUD
+
+## Lesson Overview
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/191.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/192.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/193.jpg)
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfba1_screen-shot-2020-06-19-at-1.53.05-pm/screen-shot-2020-06-19-at-1.53.05-pm.png)
+
+### Lesson Overview
+* Introduction to VM management
+* Working with Disc Images
+* Creating and Managing VMs
+* Understanding VM High Availability
+
+Let’s start at the very beginning, with a simple question - what is a virtual machine? <strong>A virtual machine, or VM</strong>, is an emulation of a computer system. It’s based on computer architectures, is typically called an image, and provides the functionality of a physical computer.
+
+As we’ve seen in previous lessons, it’s also a core part of a virtualized system since it’s created by abstracting the resources of a physical machine. VMs are used to provide the end users of a virtualized system with a familiar, comfortable substitute for a real machine.
+
+And VM management refers to activities such as starting and stopping a VM, updating a VM’s configuration, and migrating, cloning, or deleting a VM. With Nutanix specifically, all of these activities are performed in Prism, and on the VM dashboard that we discussed briefly in lesson 2. So, before we move on to these operations, let’s quickly look at the VM dashboard again, but in a little more detail.
+
+### QUIZ QUESTION
+Which of these statements accurately describes a virtual machine? (Choose all that apply.)
+
+* A virtual machine is an emulation of a computer system and provides the functionality of a physical computer
+
+## The VM Dashboard
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/194.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/195.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/196.jpg)
+
+![](https://video.udacity-data.com/topher/2020/May/5ebf0df1_vm-dashboard-table-view/vm-dashboard-table-view.png)
+![](https://video.udacity-data.com/topher/2020/May/5ebf0dfe_vm-table-no-selection/vm-table-no-selection.png)
+![](https://video.udacity-data.com/topher/2020/May/5ebf0dc7_vm-table-test-vm-01-selected/vm-table-test-vm-01-selected.png)
+
+All of the VM management tasks that were listed earlier are performed here, on the table view of the VM dashboard. As you can see here, the Table view has three major sections – a table in the center of the screen that contains a list of all VMs on the cluster; a VM Summary box at the bottom left with information like total number of VMs, provisioned and reserved CPU and memory, etc.; and two tabs for VM performance summary and VM tasks respectively.
+
+What we’re interested in right now is the VM table, which you’re seeing here. If you look below the table, you’ll see that there’s nothing of note – just the “Summary” heading and that’s it. However, if we were to select a VM from the table things look a little different.
+
+As you can see, with Test VM 001 selected, we now have access to a variety of different management options. You can manage Nutanix Guest Tools, Launch the VM’s console, power the VM on or off, take a snapshot, and migrate, clone, update, or delete the VM.
+
+So, now that you know how to access these options, let’s look at VM creation and management in more detail.
+
+### QUIZ QUESTION
+Which of the following tasks can you perform on the VM dashboard?
+
+* Create VM
+
+* Clone VM
+
+* Power On/Off
+
+* Update VM
+
+
+
+
+
+
+
+
+
+
 
 
 
