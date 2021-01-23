@@ -2062,6 +2062,30 @@ Nutanix recommends a leaf-spine network architecture to ensure true linear scali
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/163.jpg)
 
+## Introduction to Networking: Virtual Networking
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/164.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/165.jpg)
+
+To understand virtual networking, we need to first take a quick step back and understand network virtualization. And although they sound similar – and that’s because they’re related – they do mean slightly different things.
+
+Network virtualization involves combining hardware and software network resources, along with network functionality, into a single, software-based administrative entity. The elements that can be combined include switches, network adapters, firewalls, load balancers, virtual LANs, and so on. The outcomes of this – the single, software-based entity – is a virtual network.
+
+And <strong>virtual networking</strong>, to put it very simply, facilitates communication between virtual machines. It’s based on physical networking principles, but its functions are software-driven. For example, a virtual switch contains the same packet forwarding logic that a physical switch does, but as software.
+
+There are four major components that we need to talk about: virtual switches, bridges, ports, and bonds.
+
+This <strong>virtual switch</strong> controls and directs communication between the existing physical network and virtual parts of the network, like virtual machines. <strong>A virtual network</strong> adapter allows VMs to connect to a network, and allows the VMs on a LAN to connect to a larger network as well.
+
+## Virtual Networking: Virtual Switches
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/166.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/167.jpg)
+
+
+
 
 
 
