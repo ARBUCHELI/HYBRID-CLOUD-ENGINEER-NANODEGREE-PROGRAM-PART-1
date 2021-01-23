@@ -2233,6 +2233,7 @@ What is a managed network?
 
 A VLAN plus IP Address Management
 
+# VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
 ## Exercise: Create a Managed Network
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/180.jpg)
