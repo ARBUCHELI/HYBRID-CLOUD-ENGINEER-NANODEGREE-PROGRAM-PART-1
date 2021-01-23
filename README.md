@@ -2736,6 +2736,88 @@ What are availability domains?
 
 Using these capabilities, you can easily implement disk-to-disk, disk-to-cloud, or disk-to-disk-to-cloud backup models. For any of these modes you can tailor the number of retained backups to your exact needs.
 
+# VERY IMPORTANT FOR SOLVING THE FIRST PROJECT
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/263.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/264.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/265.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/266.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/267.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/268.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/269.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/270.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/271.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/272.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/273.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/274.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/275.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/276.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/277.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/278.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/279.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/280.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/281.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/282.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/283.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/284.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/285.jpg)
+
+## Converged Local Backup with Nutanix Snapshot
+
+Backup remains one of the biggest challenges in enterprise IT environments. With Nutanix, you can create unlimited local backups with VM-level and application-level consistency, allowing you to recover data instantly to meet a wide range of backup and data protection requirements.
+
+Nutanix snapshots provide production-level data protection without sacrificing performance. A redirect-on-write algorithm dramatically improves system efficiency. Once a snapshot has been created, it can be accessed without affecting production activity.
+
+You can backup a snapshot to tape for long-term retention, replicate it to another Nutanix cluster, or replicate it to the cloud.
+
+## Integrated Remote Backup
+
+Nutanix can efficiently replicate snapshots of individual VMs from a primary system to one or more secondary systems at different sites.
+
+Replication is flexible and bi-directional, enabling: one-to-one, one-to-many, many-to-one, and many-to-many topologies. By supporting fan-out, fan-in, and multi-way replication, Nutanix allows you to create a flexible multi-master virtualization environment.
+
+VM snapshots can be asynchronously replicated or backed up to another datacenter through a user-defined schedule. Only changes between snapshots of VMs, the byte-level delta, are sent over the network to the remote cluster, and data is compressed to minimize Wide-Area-Network, or “WAN”, bandwidth consumption.
+
+Deduplicated data sent to remote sites can effectively cut the bandwidth requirement by more than 50% when compared with host-based, full-copy backup solutions.
+
+Replication, like other system functions, is fully distributed across the nodes in a cluster, ensuring maximum replication performance.
+
+Prism provides a simplified view of all local and remote snapshots, allowing administrators to restore a VM from a snapshot with a single click. In case of disaster, you can failover using the backed up data-copy at a secondary datacenter, providing a single replication stream for backup.
+
+## Cloud Backups
+
+Nutanix allows you to use public cloud services, such as Amazon Web Services, as a backup destination for all types of workloads, making the public cloud a logical extension of your own datacenter. You can backup to, and recover from, the public cloud with just a few clicks, similar to backing up to a remote physical Nutanix cluster.
+
+You can snapshot an individual VM, or a collection of VMs, to multiple geographically dispersed regions, utilizing Nutanix Xi Leap cloud services. Recovery is the same as from a remote Nutanix site. Data transfer is WAN optimized, reducing the storage footprint and network bandwidth by more than 50%.
+
+## Lesson Recap
+
+* The state of data protection
+* The complexities of data protection in a hybrid cloud world
+* Data protection trends
+* Data protection in the hybrid cloud
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfbf8_screen-shot-2020-06-19-at-1.54.26-pm/screen-shot-2020-06-19-at-1.54.26-pm.png)
+
+## Course Recap
+
+Congratulations! You’ve successfully completed Course One of the hybrid cloud engineer nanodegree program.
+
+At this point, it’s safe to say you should have an understanding of how technology evolved over the years to bring us to the hybrid cloud of today.
+
+You should be familiar with the basics of hybrid cloud networking, security, virtual machine management, and data protection.
+
+And, of course, you should be a little more comfortable with hyperconverged infrastructure and the hybrid cloud itself.
+
+But this is just the first step.
+
+At the beginning of this course I said that you’re starting a journey. Someone in your position will always be learning, always be growing, and always be improving, because that is simply the nature of IT.
+
+But the six lessons that we’ve gone through here are the bedrock of your future.
+
+Everything new that you learn will add to this foundation until you build your own career in the same way IT professionals around the world built the hybrid cloud itself – one innovation, one piece, and one step at a time.
+
+![](https://video.udacity-data.com/topher/2020/June/5eecfc1a_screen-shot-2020-06-19-at-1.55.28-pm/screen-shot-2020-06-19-at-1.55.28-pm.png)
 
 
 
