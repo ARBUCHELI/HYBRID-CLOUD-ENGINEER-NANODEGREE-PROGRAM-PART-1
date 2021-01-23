@@ -2671,7 +2671,7 @@ Because the workload is spread across the cluster, the performance impact is sma
 
 Next, we’ll discuss erasure coding, which provides the same level of data resilience while removing storage capacity overhead.
 
-### UIZ QUESTION
+### QUIZ QUESTION
 How many node or drive failures can a cluster sustain in RF2?
 
 * 1
@@ -2726,7 +2726,15 @@ What are availability domains?
 
 * They allow a cluster to survive the failure of a node, block, or rack
 
+## Backups Overview
 
+<strong>Regular backups</strong> are the second line of defense in data protection, and the only protection against user, administrator, and application errors that result in data being deleted or corrupted. The Nutanix hybrid cloud provides <strong>three</strong> levels of backup:
+
+* Converged local backup with snapshots
+* Integrated remote backup
+* Cloud backups
+
+Using these capabilities, you can easily implement disk-to-disk, disk-to-cloud, or disk-to-disk-to-cloud backup models. For any of these modes you can tailor the number of retained backups to your exact needs.
 
 
 
