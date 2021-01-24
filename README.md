@@ -3357,8 +3357,62 @@ Which authentication option in Prism Central when enabled lets users authenticat
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/306.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/307.jpg)
 
+## Role-Based Access Control
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/308.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/309.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/310.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/311.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/312.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/313.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/314.jpg)
 
+In large enterprises, it is essential to control the level of access across users. For instance, hardware resources are costly, shared, and in limited supply. Allowing all users to consume, manage, and monitor IT resources can lead to fast and inefficient consumption of resources. Thus, we want to restrict a selected group of users to manage them - someone like an infrastructure admin. However, entities like VMs, applications, clusters, etc. are best defined by the corresponding administrators. So you would want to allow corresponding administrators to access such entities but prevent them from altering hardware resources.
+
+Consider another example, where you are dealing with vendors or contractors. Allowing these users to view or edit sensitive and confidential information can lead to a security breach. In such scenarios, you would want to restrict them from editing certain details of a project and also selectively limit access to certain resources.
+
+All this can be implemented with Role-Based Access Control and Prism Central makes it a simpler process.
+
+Role-based access control ensures that only specified individuals get access to the data they should have access to and all access, requests, and grants are fully auditable.
+
+Prism Central supports role-based access control (RBAC) that you can configure to provide customized access permissions for users based on their assigned roles.
+
+## Built-in Roles
+To simplify the process of creating roles and providing access permissions, Prism Central includes a set of pre-built roles that are defined by default. Let us explore each of these roles and their corresponding access permission.
+
+* Super admin: Full administrator privileges.
+* Prism admin: Full administrator privileges but cannot create or modify user accounts.
+* Prism viewer: View-only privileges.
+* Self-Service admin: Permissions to manage cloud-oriented resources and services.
+* Project admin: Manages cloud objects such as roles, VMs, apps, and marketplace belonging to a project.
+* Developer: Has access to develop, troubleshoot, and test applications in a project.
+* Consumer: Has access to deploy applications and blueprints in a project.
+* Operator: Has access to the run actions on deployed applications in a project.
+* The project admin, developer, consumer, and operator roles are available when assigning roles in a project.
+
+### Custom Roles
+If the built-in roles are not sufficient for your needs, you can create one or more custom roles. But these features are restricted to AHV only.
+
+### Creating a Custom Role
+To create a custom role:
+
+* Go to the roles dashboard.
+* Click the Create Role button.
+* Enter a name for the new role and describe the role.
+* Select an entity, the permissions listed for that entity are listed.
+* Select the permissions you want to apply. If you want to specify custom permissions, click the Change link and check all the permissions you want to enable.
+* Click Save.
+
+![](https://video.udacity-data.com/topher/2020/September/5f527d17_role-based-access-control-image1/role-based-access-control-image1.png)
+
+### Modifying a Custom Role
+To modify a custom role:
+
+* Go to the roles dashboard.
+* Select the desired role from the list.
+* Select Update Role from the Actions pull-down list.
+* Update the field values as desired.
+* Click Save.
 
 
 
