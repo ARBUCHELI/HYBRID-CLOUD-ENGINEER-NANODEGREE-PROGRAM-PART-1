@@ -2841,7 +2841,31 @@ ________________________________________________________________________________
 
 # LESSON 1 INTRO TO PRIVATE AND HYBRID CLOUD AUTOMATION 
 
+## Reflections by the Intructor
 
+Hello my new friends, I'm Mark Lavi, the Principal DevOps Advocate at Nutanix. With over twenty years’ experience working as an engineering and operations manager in Silicon Valley, I’ve seen the birth of the commercial Internet and the world wide web, the rise of virtualization and birth of the public cloud. I’ve worked as a practitioner and as an industry advocate for advancing information technology and software development. My career has been at some of the world’s largest media and innovative technology companies including News Corporation, CNN, Netscape, Silicon Graphics, and multiple Silicon Valley startups. Since the beginning of my career, I’ve spanned engineering and operations. Ten years ago, the name for my work was invented: DevOps. Five years ago, I began at an automation startup that was acquired by Nutanix and I’ve worked for the last three years with customers as Nutanix’s first DevOps Solutions Architect. My experience covers developing, scaling, securing, and managing systems, people, and products together.
+
+I have deep experience on both sides of the private and public cloud and that is why I can help you advance to the hybrid cloud. I learned high availability, distributed architectures and operations on Linux bare metal servers and then jumped into building and operating the entire software development tool chain, e-commerce, and product demo sites on the public cloud. As Nutanix’s Principal DevOps Advocate, I adapt advanced engineering methods, technology, and culture to accelerate the business needs of Nutanix customers, partners, employees and now you! I get up every day excited to do my job because we empower people to go further, work smarter, and enjoy their work and personal life balance more through automation and DevOps culture.
+
+## Prerequisites
+
+ order to understand the concepts and master the skills in these courses, you will need at the outset:
+
+* Comfort with using the command line on Linux or Windows
+* Experience working with Virtual Machines (VMs) using on-premise hypervisors or the public cloud
+* Basic web server familiarity
+* Basic database and SQL familiarity
+
+## Intro to Private and Hybrid Cloud Automation
+
+Infrastructure and operations teams have struggled with visibility since the dawn of client/server, and today’s disaggregated services make that even worse. The increasing complexity and scale of enterprise cloud almost necessitate automation tools.
+
+Unfortunately, manual processes are still the norm in many IT organizations despite the cost savings and increased speed from automating repetitive operations. Gartner forecasts that by 2024, organizations will lower operational costs by 30% by combining hyper-automation technologies with redesigned operational processes, a transition that might accelerate in response to the current global situation.
+
+### Automation alone is not sufficient
+Still, automation alone cannot be the panacea for reining in cost and managing infrastructure at scale. Workloads change quickly, and the process of keeping up with application configuration and deployment changes is complex and prone to errors. The results are often service interruptions, wasted resources, and performance bottlenecks—which can defeat the purpose of automation.
+
+## An overhaul triggered by digital transformation
 
 
 
