@@ -3728,6 +3728,33 @@ The steps are shown in the next video:
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/354.jpg)](https://www.youtube.com/watch?v=Pxmbm1FZ9FY&feature=emb_logo)
 
 
+# VERY IMPORTANT FOR SOLVING THE THIRD PROJECT
+## Exercise: Image Management
+
+### Solution
+
+* From the Frame desktop, open Windows Explorer (File Manager) on the Windows task bar and navigate to C:\Scripts. Double-click the CentOS8_URL.txt file. Copy the URL by highlighting the entire URL in the file, right-click and choose Copy from the menu. Close the file.
+
+* From the Prism Central browser tab, select the <strong>Entities</strong> menu (the three-lined hamburger icon, upper left) and go to <strong>Virtual Infrastructure</strong> > <strong>Images</strong>.
+
+* On the <strong>Images</strong> page, click <strong>Add Image</strong>.
+
+* Click the URL radio button and paste the URL copied in step 1 to the <strong>Enter Image URL</strong> field:
+
+https://cloud.centos.org/centos/8/x86_64/images/CentOS-8-GenericCloud-8.2.2004-20200611.2.x86_64.qcow2
+
+* Click <strong>Upload file</strong>.
+
+* Change the Image Name to <strong>CentOS.qcow2</strong>.
+
+* Click <strong>Next</strong>.
+
+* Leave the defaults and click <strong>Save</strong>.
+
+* Go to the <strong>Tasks</strong> view and follow the import progress. This will take approximately 5 minutes to complete.
+
+* Return to <strong>Entities > Infrastructure > Images</strong> page to verify the CentOS 8 image is present.
+
 
 
 
