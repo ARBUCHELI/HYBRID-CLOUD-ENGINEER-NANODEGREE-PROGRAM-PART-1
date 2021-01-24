@@ -3599,6 +3599,8 @@ To modify an existing project:
 
 Note: Before you can delete a project, you must first remove any VMs and networks, in that order, from the project.
 
+[![]](https://www.youtube.com/watch?time_continue=257&v=0iWBvGyTfKs&feature=emb_logo)
+
 
 
 
