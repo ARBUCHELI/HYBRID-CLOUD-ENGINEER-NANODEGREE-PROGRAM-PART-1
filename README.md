@@ -3599,7 +3599,32 @@ To modify an existing project:
 
 Note: Before you can delete a project, you must first remove any VMs and networks, in that order, from the project.
 
-[![]](https://www.youtube.com/watch?time_continue=257&v=0iWBvGyTfKs&feature=emb_logo)
+## Quiz: Prism Central Projects
+
+### QUESTION 1 OF 3
+How does Prism Self Service benefit the business?
+* Reduces IT intervention
+
+### QUESTION 2 OF 3
+What happens if a quota is not specified when creating a project?
+* No usage limit is applied for a project.
+
+### QUESTION 3 OF 3
+A project administrator creates a project on an AHV cluster and specifies a quota for storage. After a few days of usage, the project runs out of storage space. But when the project admin looks at the usage statistics, the project storage consumption is still below the specified quota.
+
+What could be the possible reason for insufficient storage?
+
+* The reason could be that the AHV cluster ran out of storage. A quota does not guarantee the project a certain amount of infrastructure resources.
+
+
+
+
+
+
+
+
+
+
 
 
 
