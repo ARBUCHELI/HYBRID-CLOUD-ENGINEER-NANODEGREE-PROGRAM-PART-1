@@ -2858,6 +2858,14 @@ I have deep experience on both sides of the private and public cloud and that is
 
 ## Intro to Private and Hybrid Cloud Automation
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/287.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/286.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/288.jpg)
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/289.jpg)
+
 Infrastructure and operations teams have struggled with visibility since the dawn of client/server, and today’s disaggregated services make that even worse. The increasing complexity and scale of enterprise cloud almost necessitate automation tools.
 
 Unfortunately, manual processes are still the norm in many IT organizations despite the cost savings and increased speed from automating repetitive operations. Gartner forecasts that by 2024, organizations will lower operational costs by 30% by combining hyper-automation technologies with redesigned operational processes, a transition that might accelerate in response to the current global situation.
@@ -2867,6 +2875,232 @@ Still, automation alone cannot be the panacea for reining in cost and managing i
 
 ## An overhaul triggered by digital transformation
 
+![](https://video.udacity-data.com/topher/2020/October/5f760569_screen-shot-2020-10-01-at-9.34.59-am/screen-shot-2020-10-01-at-9.34.59-am.png)
+
+Digital transformation has triggered a major overhaul in the way organizations think about tried-and-true business models and operationalize day-to-day processes. Yesterday’s products are being replaced with new information- and service-driven offerings, particularly in markets saddled with a high degree of commoditization.
+
+In the retail industry, for example, companies are embracing ways to repackage products, innovate in purchasing practices, and add intelligence to buyer recommendations. Thanks to technology such as advanced analytics, machine learning, IoT/advanced sensors and universal connectivity, retailers are now able to target consumers beyond store fronts and even automate ordering based on stock levels and consumer behavior.
+
+With the rise of DX and supporting technologies like IoT, data processing, and visualization, the role of software development has become increasingly important. To quickly deliver new applications and services, IT teams are transitioning to DevOps models that close the gap between development and operations.
+
+### QUIZ QUESTION
+True or false: The only way to rein in costs and manage infrastructure at scale is automation.
+
+* False, automation alone is not the solution. Companies also need to re-examine business models and processes through the lens of digital transformation.
+
+## DevOps and Digital Transformation
+
+DevOps emerged originally from what’s been termed a convergence of theories and practical advances in manufacturing (such as the Toyota Production System and the Lean Manufacturing management philosophy) and in software development, such as the Agile movement.
+
+![](https://video.udacity-data.com/topher/2020/October/5f7604b3_screen-shot-2020-10-01-at-9.31.49-am/screen-shot-2020-10-01-at-9.31.49-am.png)
+
+Technically, we’ve witnessed a massive paradigm shift in the last 15 years with the emergence of virtualization, truly distributed systems, and the cloud, which have reset expectations at every level both for external and internal customers.
+
+Users and consumers expect everything on demand—for this generation of developers and engineers, that means they expect near-instant access to the resources they need to develop new apps—long waits, downtime, and change controls are anathema. They are accustomed to tools that allow easy version control and collaboration. Business apps should behave like mobile apps, and you should pay only for what you use.
+
+To remain competitive, companies must be able to run their business anywhere, anytime, at any scale—and fast. What’s fast? If it takes you more than a minute to implement a code change—yes, a minute—then you’ve got a bottleneck.
+
+The world’s most advanced companies ship hotfixes hundreds, even thousands of times a day, and it’s invisible to users. The competitive advantages of agility—faster time to market; better, more innovative products and services—are why developers and engineers deserve credit for the lion’s share of value for the world’s most profitable companies.
+
+How do you unleash the full value of your developers and engineers? DevOps. When fully realized, DevOps enables non-disruptive innovation at scale, anywhere in the world.
+
+DevOps (“Development and Operations”) is the process of removing friction between the developer and customer.
+
+DevOps is a process. It is not static, it is constantly evolving, and practitioners are constantly improving the state of the art. It is about removing friction - any non-heuristic or automatable operation, process, or human manual intervention should be minimized. It is about connecting the developer to the customer and vice-versa, so there is a feedback mechanism to ensure value is delivered and maintained.
+
+When fully realized, DevOps enables non-disruptive innovation at scale, anywhere in the world.
+
+### Enabling Innovation at Scale
+
+Many Nutanix customers start their IT modernization journeys by adopting hyperconverged infrastructure (HCI). But once you’ve reduced the complexity of managing your infrastructure stack, the next step is to increase levels of integration and automation.
+
+IT teams are constantly tasked with delivering infrastructure and applications to their end business units. What if there were a self-service portal that IT could create for provisioning? Likewise, if the end-user could themselves start, stop, and scale an application based on their requirements and team roles, it would empower the end users and at the same time free up cycles from the IT team.
+
+While many of the fundamental building blocks have long been available, IT teams miss a unified, full-stack, orchestration layer that works across hybrid multi-cloud environments. Nutanix Calm orchestrates the provisioning, scaling and management of applications across environments, making the entire IT infrastructure more agile and application-centric.
+
+### Creating IT as a Service
+
+Self-service of applications dramatically streamlines daily operations and significantly reduces the wait for specialized resources to realize the vision for IT-as-a-Service (ITaaS).
+
+Calm uses blueprints to control all aspects of the application’s lifecycle, such as creating, provisioning, scaling, and cleanup. By adhering to open API standards, blueprints allow developers and administrators to deploy applications across hybrid multi-cloud environments.
+
+In fact, to accelerate automation, in addition to GUI based creation of blueprint, Calm also supports Python-based domain-specific language (DSL) for readable, version-controlled blueprints that can handle even the most complex application scenarios. Once created, a blueprint can be easily published to end users through the Nutanix Marketplace, instantly transforming a complex provisioning ticket into a simple one-click request.
+
+This creates the perfect DevOps environment, where improvements for software development and testing with continuous integration (CI), delivery, and deployment (CD) pipelines, reducing complexity while improving quality and speeding delivery of full-stack application environments expressed as infrastructure and operations as code.
+
+![](https://video.udacity-data.com/topher/2020/October/5f760503_screen-shot-2020-10-01-at-9.33.11-am/screen-shot-2020-10-01-at-9.33.11-am.png)
+
+# QUIZ QUESTION
+Which of the following statements are true of Nutanix Calm? Select all that apply.
+
+* Calm uses blueprints to control all aspects of the application’s lifecycle
+
+* Calm supports Python-based domain-specific language
+
+* Calm orchestrates the provisioning, scaling and management of applications across environments
+
+## When Will You Apply This Knowledge?
+
+In 2020, most companies have a plan for how they’re going to make their transition to the cloud. But, at the same time, those companies are either struggling to execute their plans, or are not achieving their desired goals.
+
+And they are facing challenges for two reasons. The first is a lack of organizational readiness. Moving to the cloud affects people and processes just as much as it does technology. A business that doesn’t fully understand and plan for the impact of these changes is going to struggle with cloud adoption.
+
+The second is the main driver of the cloud strategy. Technology is only as valuable as the outcomes that it helps achieve. To succeed at cloud transformation, it’s essential to focus on business requirements first, and then match those requirements to technologies that will enable or facilitate them. Then, once the technologies that serve the business have been identified, the right mix of skills is needed to implement and execute that plan.
+
+![](https://video.udacity-data.com/topher/2020/October/5f76065e_screen-shot-2020-10-01-at-9.39.02-am/screen-shot-2020-10-01-at-9.39.02-am.png)
+
+As a hybrid cloud engineer, your role will be to help an enterprise plan and execute a successful cloud transformation.
+
+A hybrid cloud engineer needs to be able to work with an organization to determine their readiness, and suggest corrective measures if an organization is not fully prepared. Among other things, this involves ensuring that all business requirements are clearly defined. SLAs need to be completely and clearly documented, as well as enforceable. Then, using these SLAs, the right infrastructure for each service needs to be chosen.
+
+Once the business requirements have been defined, documented, and agreed upon, the next major task before the hybrid cloud engineer is implementation. The hybrid cloud engineer needs to plan and execute the migration, which includes refactoring applications for the best possible TCO and ROI.
+
+After migration is complete, the hybrid cloud engineer needs to continuously monitor organizational and technical infrastructure. This is to ensure that performance is as projected and expected, and also to ensure that the SLAs defined during the planning stage are being met.
+
+## Working with Business Stakeholders
+
+Making the transition to the cloud touches nearly every major aspect of a business. So, it’s important to understand the current status of your people, processes, technology use, and application design and requirements, because these elements inform a cloud strategy decision.
+
+To do this, you will need to have conversations with teams and business owners that:
+
+Own, run, and manage applications
+Handle compliance and security
+Are responsible for the cost of making the transition to the cloud
+Ultimately, your conversations will revolve around 8 major requirements:
+
+Application portability
+Compliance and security
+Cost, including TCO and ROI
+Scalability
+Resilience and availability
+Performance
+Manageability
+Data protection and recoverability
+Having to address these items will eventually involve establishing dialogue with every decision maker in the business. But their role will only be to provide you with their requirements and the details of their business needs. From their input, you will derive the framework and requirements of your solution. You should also have mapped out the attributes of your required solution to specific business needs.
+
+From that point forward, your role will be to take these attributes and turn them into SLAs. Those SLAs will provide a performance framework which can be monitored, managed, and enforced. They will also help with vendor evaluation. You’ll have a checklist against which to determine whether a solution provider can meet your needs and at what cost.
+
+And finally, if modifications are needed to any aspect of the requirements, you can perform a cost-benefit analysis, determine the impact, and move forward with whatever is best for the business.
+
+Gathering business requirements, determining solution attributes, and designing SLAs will help a business determine their cloud strategy and the solution that meets their needs
+
+![](https://video.udacity-data.com/topher/2020/October/5f7606a8_screen-shot-2020-10-01-at-9.40.13-am/screen-shot-2020-10-01-at-9.40.13-am.png)
+
+## Overview of the Upcoming Two Courses
+
+### What will you learn in these courses?
+Seasoned IT and cloud technology professionals must run their organization in the most efficient manner. The current revolution in the industry is the hybrid cloud, a blended experience of on-premise and multiple public clouds which offers choice for capacity, features, and fiscal management.
+
+But having a hybrid cloud is just the beginning. The next step is to automate self-service workloads, governed with resource access, quotas, and life cycle operations delivered with an on-premises, private cloud, which offers capital expenditure cost, ultimate control, and high security. This is what we will be covering in these two courses.
+
+The two courses that you’re about to begin as part of this nanodegree program are actually a single story told in two parts. You should know now that one of your goals as a Hybrid Cloud Engineer will be to leverage infrastructure, platform, and software as a service, both on-prem and off, so that you can establish a truly hybrid cloud. At its most basic level, that requires you to understand how to set up your workloads for the private cloud and, when needed, move those same workloads or extend them to the public cloud. So, in the next two courses, that’s exactly what we’re going to do.
+
+Now, the centerpiece is going to be Nutanix Calm, which provides advanced application-level orchestration that transforms how IT teams manage applications and support the business. Very simply put, Calm automates how applications are created, consumed and governed.
+
+So, in this course, we’re going to focus on Calm and application automation, but for a private cloud. Alongside a deep dive into Calm, we’re going to set up an application blueprint - a repeatable, reusable, automated application framework - that you can deploy on your private cloud with just a few clicks.
+
+Then, in the following course, we’re going to broaden our perspective considerably and shift focus to the public cloud instead. We’ll talk about essential DevOps concepts that you’ll need to know to establish development and deployment workflows, and others that will shape the way you approach the problem of moving workloads to the cloud and setting up a hybrid cloud for your organization. Then, we’ll talk about the public cloud itself, focusing specifically on AWS, and use that knowledge to extend the private cloud you created in this course into the public cloud.
+
+And by the time you’re done with both courses, you’ll have a clear and practical understanding of what it means to build and design application blueprints for hybrid cloud deployments.
+
+### Course Outline: On-Premises Private Cloud Automation
+### Lesson 1: Managing Multiple Cluster and Workload Resources
+* Prism Element vs. Prism Central
+* Understanding Prism Central
+* Prism Central and Governance
+* Prism Central: Identity Management
+* Prism Central: Role Based Access Control
+* Prism Central: Categories
+* Prism Self Service
+* Prism Central: Image Management
+### Lesson 2: Calm Automation for Application Lifecycle Management
+* Calm basics
+* VM IaaS for Self-Service IT
+* Components of Calm Governance
+* Calm Providers
+* Calm Projects
+* Calm RBAC
+* The Nutanix Marketplace
+### Lesson 3: Creating and Publishing a Single VM Blueprint
+* The Importance of Calm Blueprints and Marketplace Publishing
+* Publishing Your Own Application Blueprints
+* Calm Marketplace Recap
+* Calm Blueprints: Overview
+* Working with Calm Blueprints
+* Managing Blueprints
+* Working with the Marketplace Manager
+### Lesson 4: Creating and Publishing a Multi-VM Calm Blueprint
+* Lesson Overview
+* Calm Blueprint Lifecycle: Cloning a Blueprint
+* Calm Blueprint Lifecycle: Downloading a Blueprint
+* Calm Blueprint Lifecycle: Uploading a Blueprint
+* Calm Services and Substrates
+* alm Macros
+* Calm Application Profiles
+* Calm Actions
+* Calm Library Overview
+* The LAMP Stack
+* Linux Administration
+* Web Server Administration
+* Load Balancers
+* Creating a Multi-VM Calm Blueprint
+### Lesson 5: Calm Automation for a Three-Tier Web Application with Lifecycle Management
+* MySQL Database Server Administration
+* Orchestration Dependencies Across Services
+* Advanced Calm Actions
+* Calm Orchestration and Macros
+* Load Balancers
+### Course Outline: Public and Hybrid Cloud Management
+### Lesson 1: Strategies for Hybrid Cloud Design
+* Infrastructure Provider Strategies
+* Pets vs Livestock for Scalability
+* DevOps for Agility and Operational Maturity
+* Advanced Automation
+* Immutable infrastructure and Build Artifacts
+* Continuous Integration, Delivery, and Deployment
+* Continuous Operations
+* Advanced Calm Features
+* Analogs to Linux, Cloud-init, Shell
+* Protecting AHV VM Workloads with Microsegmentation and Flow Policies
+* Nutanix Calm DSL
+* Runbooks
+* Prism Central APIs
+### Lesson 2: Working with a Public Cloud Infrastructure Provider
+* Public Cloud Overview
+* Understanding Amazon Web Services
+* Free tier: t2.micro and t3.micro
+* EC2 Regions and Availability Zones
+* AMI
+* Security Groups
+* SSH Keypairs
+* IAM
+* VPC
+* Elastic IPs and DNS
+### Lesson 3: Implementing Hybrid Cloud Scalability and Deployment Choice
+* Adding an AWS Provider to Calm
+* Scalability and Global Load Balancing Considerations
+* Global Load Balancing Between Infrastructure Providers
+* Architecting for Access
+* Calm Application Profiles: Advanced
+* Application Profiles Recap
+* Multiple Application Profiles
+* Application Profile Best Practices
+### Lesson 4: Hybrid Cloud Governance
+* Managing Costs in a Hybrid Cloud Environment
+* Elements of a Cost Optimization Solution
+* Cost Governance with Xi Beam
+* Configuring a Cost Governance Policy in Xi Beam
+* Configuring Cost Policies
+* Creating a Scope
+* Nutanix and AWS Cost Configuration
+* Eliminating Unused Resources
+* Rightsizing Underutilized Resources
+* Reserved Instance Purchases and Exchanges
+* Nutanix TCO Configuration
+* Cluster and VM Costing
+* Driving Financial Accountability Through Chargeback
+* Budget Alerts
+* Custom Reports
 
 
 
