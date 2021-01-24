@@ -3755,6 +3755,62 @@ https://cloud.centos.org/centos/8/x86_64/images/CentOS-8-GenericCloud-8.2.2004-2
 
 * Return to <strong>Entities > Infrastructure > Images</strong> page to verify the CentOS 8 image is present.
 
+## Glossary
+
+### Glossary of Key Terms in this Lesson
+### Authentication
+* Authentication is about verifying a user's identity against a trusted source of truth like Active Directory or any other IDP (Identity Provider).
+
+### Authorization
+* After a user has been authenticated, authorization determines what permissions/access they have, and what they are allowed or not allowed to do.
+
+### Categories
+Categories are used to define groups of entities in which policies and enforcement are applied.
+
+### Image management
+A Prism Central feature that enables you to upload images to clusters and maintain an inventory of the images on them.
+
+### Image service
+Ensures that uploaded images are saved to a cluster, and copied to additional clusters whenever you need them, on-demand.
+
+### IT governance
+IT governance is an element of corporate governance, intended at enhancing the overall administration of IT and reaping improved value from investment in information and technology.
+
+### Prism Central
+The Nutanix scale-out control plane to manage multiple joined Nutanix clusters and provide advanced management capabilities from a single pane of glass web console.
+
+### Project
+A project defines a set of Active Directory with a common set of requirements or a common function, such as a team of people collaborating on an engineering project.
+
+### Quota
+A quota specifies a usage limit on an infrastructure resource (compute, memory, or storage) for the project.
+
+### Role-Based Access Control (RBAC)
+Role-Based Access Control ensures that only specified individuals get access to the data they should have access to and all access, requests, and grants are fully auditable.
+
+## Lesson Conclusion
+
+To summarize, Prism Central manages multiple clusters across different locations and Prism Element manages an individual cluster. Prism is rich with various features that help to achieve IT governance.
+
+In order to manage multiple clusters and workloads Prism supports:
+
+* User authentication to authorize user’s identity.
+* Role-Based Access Control to ensure right users have access to the right resources.
+* Categories to define groups of entities for which policies and enforcement can be applied.
+* Prism Self Service to create projects without IT intervention.
+* Image management to manage images from a centralized location.
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+# LESSON 2 CALM AUTOMATION FOR APPLICATION LIFECYCLE MANAGEMENT
+
+
+## Lesson Overview
+
+
 
 
 
