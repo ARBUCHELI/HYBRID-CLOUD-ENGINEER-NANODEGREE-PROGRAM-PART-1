@@ -3630,7 +3630,7 @@ What could be the possible reason for insufficient storage?
 ### Introduction to Image Management
 Prism Central provides a centralized location to manage the images you require on registered AHV clusters.
 
-
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/353.jpg)](https://www.youtube.com/watch?v=0iWBvGyTfKs&feature=emb_logo "Uploading An Image from a Remote Server")
 
 
 
