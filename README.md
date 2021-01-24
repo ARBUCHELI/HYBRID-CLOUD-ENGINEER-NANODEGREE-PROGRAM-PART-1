@@ -3445,6 +3445,159 @@ Consider a scenario in which you are the Super Admin, where one of your main res
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/320.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/321.jpg)
 
+## Introduction to Categories
+Categories are used to define groups of entities in which policies and enforcement are applied. They typically apply, but are not limited to: environment, application type, application tier, etc.
+
+These categories can then be used by policies to determine what rules/actions to apply.
+
+For example, you might have a Department category that includes values such as engineering, finance, and HR. In this case, you could create one backup policy that applies to engineering and HR and a separate backup policy that applies to finance. Categories allow you to implement various policies across entity groups, and Prism Central allows you to quickly view any established relationships.
+
+The following hypothetical example illustrates the relationship of four policies (BackUpBasic, EngineeringEnvironment, Hourly alerts, and Daily backup) tied to three departments (Engineering, Finance, and HumanResources) that apply to 30+ VMs in each department.
+
+![](https://video.udacity-data.com/topher/2020/September/5f527d70_categories-image1/categories-image1.png)
+
+### Creating a Category
+To create a category:
+
+* Go to the categories dashboard.
+* Click the Create Category button.
+* Enter a name, and describe the category purpose.
+* Enter a category value in the Value field.
+
+You can add a second and subsequent value for a category. To do that, click the plus sign (+). Enter the next value. Repeat this step for all the values you want to include in the category and click Save.
+
+For example, if the category name is Departments, values might include Engineering, HR, Sales, Marketing, and so on.
+
+![](https://video.udacity-data.com/topher/2020/September/5f527daf_categories-image2/categories-image2.png)
+
+## Modifying a Category
+Built-in categories cannot be modified or deleted. To update an existing custom category:
+
+* Go to the Categories dashboard.
+* Select the desired category from the list.
+* Select Update from the Actions pull-down menu.
+* Update the field values as desired.
+* Click Save.
+
+### Deleting a Category
+* Go to the Categories dashboard.
+* Select the desired category from the list.
+* Select Delete from the Actions pull-down menu.
+* Click OK when prompted.
+
+Note: You cannot delete a category if it is used in an existing policy. All associations with existing policies must be removed before a category can be deleted.
+
+### Assigning a Category
+To assign a category value to one or more entities, such as cluster, VM, image, or subnet:
+
+* Go to the entity type dashboard.
+* Select all the entities of that type you want to tag with the same category value.
+* Select Manage Categories from the Actions pull-down menu.
+* In the Manage [Cluster|VM|Image|Subnet] Categories page: a. Enter a category name. b. Select the target value from the list. c. Click the plus sign (+) to assign that category value to the selected entities. Repeat this step to assign a value for a second category.
+* Click Save.
+
+Note: Categories support multi-cardinality, which means you can assign multiple category values to the same entity.
+
+## Categories
+
+### QUESTION 1 OF 3
+What is the purpose of Categories?
+* Categories are used to define groups of entities in which policies and enforcement are applied to.
+
+### QUESTION 2 OF 3
+An entity can be assigned with multiple category values. State true or false.
+
+* True
+
+### QUESTION 3 OF 3
+You are heading a project in which you are deploying 100 Linux VMs and around 150 Windows VMs. You want a set of users, Group A, to only have view access to the Linux VMs and the Windows VMs. You also want another set of users, Group B, to have edit access to the Windows VMs. Thus, you create 2 roles, one for edit access to VMs and the other for view access to VMs.
+
+Many more Windows and Linux VMs are expected to be eventually added. As the number of VMs is expected to grow, you do not want to manually configure the roles every time a VM is added. How will you create the newly added VMs to automatically obtain the permissions?
+
+* Create 2 categories, one for Windows VMs and one for Linux VMs. Assign Group A with view access to Windows and Linux Category. Assign Group B with edit access to the Windows VMs.
+
+## Prism Central Projects
+
+A well-designed hybrid cloud can allow IT users—such as developers and line-of-business managers—to gain access to IT infrastructure and services through a self-service portal. This not only gives administrators with immediate access to services, but also reduces the burden on IT since it no longer has to serve as the middleman.
+
+Prism Self Service represents a special view within Prism Central. While Prism Central enables infrastructure management across clusters, Prism Self Service allows end users to consume that infrastructure in a self-service manner.
+
+Administrators can then set up self-service access for their Nutanix environment in a few clicks out of Prism Self Service.
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/322.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/323.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/324.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/325.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/326.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/327.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/328.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/329.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/330.jpg)
+
+### Working with Projects in Prism
+The Prism Self Service feature allows you to create projects where consumers of IT infrastructure within an enterprise—individual users or teams such as development, test, and DevOps—can provision and manage VMs in a self-service manner, without having to engage IT in day-to-day operations.
+
+### What is a Project?
+A project defines a set of Active Directory users and groups with a common set of requirements or a common function, such as a team of people collaborating on an engineering project.
+
+### Creating a Project
+
+Before creating a project ensure to configure authentication.
+
+To create a project, navigate to the Projects dashboard and click the Create Project button. On the page that is displayed, you must provide information in five major sections: General Settings; Cluster; User, Groups, and Roles; Network; and Quotas. Of these, Quotas is optional.
+
+A quota specifies a usage limit on an infrastructure resource (compute, memory, or storage) for the project. Project members cannot use more than the specified limit.
+
+A quota does not guarantee the project a certain amount of infrastructure resources. Instead, it ensures that a single project or a small number of projects do not overrun the infrastructure.
+
+If the Nutanix cluster runs out of a resource, project members might not be able to use the resource even if the project has not reached its specified limit. However, if a project requires more resources, you can increase its quota.
+
+If you do not specify a quota, no usage limit is applied. However, usage statistics are collected even if you do not specify a quota.
+
+On the Create Project page:
+
+* In the General Settings section, enter a name and description for the new project.
+* In the Cluster section, select the target cluster on which the project has to be created.
+* Add Users, Groups, and Roles.
+* Check Allow Collaboration, to allow any group member to see the VMs, applications, and other objects created by other members of the group.
+* Select the usable network and the default network for the project.
+* Optionally, you can check the Quotas box to specify usage limits for compute, storage, and memory.
+* Click Save.
+
+![](https://video.udacity-data.com/topher/2020/September/5f527e39_prism-self-service-image1/prism-self-service-image1.png)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/331.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/332.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/333.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/334b.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/335.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/336.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/337.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/338.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/339.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/340.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/341.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/342.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/343.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/344.jpg)
+
+### Modifying a Project
+To modify an existing project:
+
+* Go to the projects dashboard.
+* Select the target project.
+* Select Update Project from the Actions pull-down menu.
+* Update the field values as desired.
+* Click Save.
+* Deleting a Project
+
+### To delete a project:
+
+* Go to the projects dashboard.
+* Select the target project.
+* Select Delete from the Actions pull-down menu.
+* Click OK.
+
+Note: Before you can delete a project, you must first remove any VMs and networks, in that order, from the project.
 
 
 
