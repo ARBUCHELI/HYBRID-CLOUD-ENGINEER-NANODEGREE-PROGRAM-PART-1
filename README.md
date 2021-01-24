@@ -3630,14 +3630,75 @@ What could be the possible reason for insufficient storage?
 ### Introduction to Image Management
 Prism Central provides a centralized location to manage the images you require on registered AHV clusters.
 
+The steps are shown in the next video:
+
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/353.jpg)](https://www.youtube.com/watch?v=0iWBvGyTfKs&feature=emb_logo "Uploading An Image from a Remote Server")
 
+## Uploading An Image from a Remote Server
 
+The process of uploading an image from a Remote Server is very similar to the process of uploading from a workstation. The difference is instead of uploading an image file, you will specify the URL of the image in the Add Image page. You can also specify URLs to multiple images as part of a single operation.
 
+When you specify image URLs, Prism Central uploads the images to all registered clusters. Uploading from a remote server also allows you to overcome file size limitations imposed by modern browsers. The file size limitation is usually 2 GB.
 
+### Modifying an Image
+To modify an image:
 
+* Go to Images.
+* Select the image you want to modify.
+* Select Update Image from the Action pull-down menu.
+* Make the desired changes.
+* Click Save.
 
+To delete an image, select the target image and then select Delete from the Action pull-down menu.
 
+### Importing Images to Prism Central
+You can import images from registered clusters and manage the images centrally from Prism Central. An image imported to Prism Central continues to reside on the cluster that owns it. Prism Central only creates and stores image metadata locally, and it uses that metadata when you perform an action on the image.
+
+After you import an image, the image remains visible on the cluster from which you imported it, but you cannot update the image from the cluster. You can update the image only from Prism Central.
+
+To import images:
+
+* Go to Images.
+* Click the import Images button.
+* Select Import type. a. To import all images from all registered clusters, click All Images. b.To import all images from a selection of registered clusters, click Images On a Cluster, and then select the clusters. c. To import specific images from a given cluster, click the Select Images link provided for the cluster. Select the images that you want to import and click Done. d. Repeat this step for all the clusters from which you want to import images.
+* To begin the import, click Save.
+
+Prism Central imports the metadata of the selected images and marks the images as read-only entities on the clusters.
+
+![](https://video.udacity-data.com/topher/2020/September/5f527e7a_image-management-image1/image-management-image1.png)
+
+Before introducing image management, the image service ensured that uploaded images were saved to a cluster, and copied to additional clusters whenever you needed them, on-demand. As the number of clusters grew, on-demand replication of images became too slow. If you had narrow network links to remote locations, this could add to copy time, making this process frustrating.
+
+Prism Central image management now enables you to upload images to the clusters and maintains an inventory of the images on them.
+
+### Benefits of Image Management
+The first key benefit is hands-free image replication to your clusters. Nutanix has built a simple, policy-based method to replicate images to the clusters where you decide they are needed. Simply upload new or updated images, and Nutanix Prism Central copies them everywhere you want them automatically.
+
+The second key benefit is a simple, straightforward option to upload images through Prism Central and directly choose the clusters to copy them to. You can also simply place your images where you need them and then decide on replication later.
+
+### Adding an Image
+
+You can add an image by uploading it from a workstation or a remote server.
+
+### Uploading an Image from a Workstation
+Using this method, you can select multiple images and upload them as part of a single operation.
+
+With this method of upload, Prism Central identifies a single registered cluster for each specified image and uploads the image to it. The choice of a cluster is random.
+
+The image becomes active in Prism Element on the selected cluster and inactive on other clusters registered to Prism Central.
+
+To upload an image from a workstation:
+
+* Go to Images.
+* Click the Add Image button.
+* Navigate and upload the image file. a. Give the image a unique name. b. Select the image type. c. Describe the image. Repeat step 3 to add as many images as you want.
+* Click Next.
+* In the Placement Method, you can either assign categories to the images or manually select the target clusters.
+* Click Save.
+
+When you assign categories to images, image placement decisions are delegated to configured policies. When you choose to manually select the target clusters, you have the option to place on all clusters registered to the PC or only on a subset of registered clusters.
+
+Here is a demo that provides you with a detailed explanation on the procedure.
 
 
 
