@@ -3717,6 +3717,16 @@ An administrator wants to upload a 4 GB image file from a workstation. The admin
 
 * Most modern browsers impose file size limitations that affect this upload method. If you must upload images larger than 2 GB, then you must upload the images from a remote server.
 
+## Using Udacity Workspaces with Nutanix
+
+### Using Workspaces in the Remainder of this Course
+
+In this demo video, we walk you through how to use the workspaces in the classroom here to complete the exercise on the next page about image management, and all the upcoming exercises and projects that will be done in Nutanix Frame sessions.
+
+The steps are shown in the next video:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/354.jpg)](https://www.youtube.com/watch?v=Pxmbm1FZ9FY&feature=emb_logo)
+
 
 
 
