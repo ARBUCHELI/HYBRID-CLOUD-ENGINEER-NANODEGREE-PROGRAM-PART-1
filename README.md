@@ -3700,6 +3700,34 @@ When you assign categories to images, image placement decisions are delegated to
 
 Here is a demo that provides you with a detailed explanation on the procedure.
 
+## Quiz: Image Management
+
+### QUESTION 1 OF 3
+What happens when an image is imported to Prism Central?
+
+* Prism Central imports the metadata of the selected images and marks the images as read-only entities on the clusters.
+
+### QUESTION 2 OF 3
+Which image upload method helps you overcome image file size limitations of modern browsers?
+
+* Uploading an image from a remote server
+
+### QUESTION 3 OF 3
+An administrator wants to upload a 4 GB image file from a workstation. The administrator navigates to the Add Image page and then clicks the Add Image button. He then navigates to the location of the image, selects the image of his choice and clicks Open. The image upload fails. What could be the possible reason and how can it be fixed?
+
+* Most modern browsers impose file size limitations that affect this upload method. If you must upload images larger than 2 GB, then you must upload the images from a remote server.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
