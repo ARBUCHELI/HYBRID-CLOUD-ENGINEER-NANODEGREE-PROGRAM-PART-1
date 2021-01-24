@@ -3102,7 +3102,33 @@ And by the time you’re done with both courses, you’ll have a clear and pract
 * Budget Alerts
 * Custom Reports
 
+## Tools, Environment & Dependencies
 
+You do not need to install any software for the exercises or projects in these courses, and it is not possible for you to execute the software on your local system.
+
+The Udacity workspaces you are provided in the classroom are all that you need. These workspaces provide access to:
+
+* Nutanix Frame virtual desktop: Windows 10
+* Nutanix Private Cloud cluster:
+* Acropolis with AHV hypervisor: AOS 5.15
+* Prism Central with Nutanix Calm 3.x enabled
+
+## Project Overviews
+
+### Project Overviews
+Each of the following courses has a project at the end of it, where you will have a chance to further develop and demonstrate your skills and understandings.
+
+### Project - Private Cloud SaaS: Three-Tier Web Application
+In the project at the end of the On Premises Private Cloud Automation course, you will:
+
+* Create a three-tier web application blueprint that satisfies the IaaS business requirements for self-service private cloud deployment and security scenarios.
+* Enhance the blueprint to provide PaaS by configuring the web application and creating web-tier scaling. Test the web application works by confirming scale-out load balancing across the web tier and database write updates.
+* Enhance the blueprint to provide an action to update the database password and update the web application to use the new password, achieving a SaaS-like experience for developers with delegated, post deployment operations. Test the web application works with the new password.
+
+### Project - Hybrid Cloud SaaS: Three-Tier Web Application
+In the project at the end of the Public and Hybrid Cloud Management course, you will extend your three-tier web application blueprint to the public cloud in order to maximize high availability and provide scalable performance. In addition, you will be tasked with creating small and medium deployment scenarios.
+
+### Good Luck!
 
 
 
