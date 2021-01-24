@@ -3414,6 +3414,41 @@ To modify a custom role:
 * Update the field values as desired.
 * Click Save.
 
+## Quiz: Role-Based Access Control
+
+## QUESTION 1 OF 3
+Which of the following statements are true about Role-based Access Control (RBAC)? Select two.
+
+* RBAC ensures that only specified individuals get access to the data they should have access to.
+* Prism Central supports RBAC that you can configure to provide customized role based access permissions for users.
+
+### QUESTION 2 OF 3
+What is the access privilege for a Prism Administrator?
+* Full administrator privileges but cannot create or modify user accounts.
+
+### Matching Quiz - Scenario
+Consider a scenario in which you are the Super Admin, where one of your main responsibilities is managing all user access. You also have 4 users you wish to support:
+
+* Alice is your Prism expert. You wish to give enough access such that Alice can administer the cluster but you don’t want Alice to have access to manage user accounts.
+* Rayshawn is an infrastructure admin within your organization, so you wish to give him the ability to deploy and manage cloud-oriented resources.
+* Olivia and Owen are developers in your organization working on a project, so they need to be able to test, develop, and troubleshoot the applications in a project.
+* Additionally, you also have a group of users, let’s call them Group A, who should only be able to deploy applications in the project.}
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/315.jpg)
+
+## Categories
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/316.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/317.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/318.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/319.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/320.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/321.jpg)
+
+
+
+
+
 
 
 
