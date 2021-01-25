@@ -4149,13 +4149,135 @@ What are the steps you need to follow to create and configure a Provider in Calm
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/374.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/375.jpg)
 
+A Project is a set of users and groups with a common set of requirements or a common structure and function, such as a team of engineers collaborating on an engineering project. A Project also specifies the roles to associate with its members, networks that they can use, infrastructure to deploy onto, and (optionally) usage limits on infrastructure resources.
 
+By using different projects assigned to different clusters and users, administrators can ensure that workloads are deployed the right way each time. For example, a developer can be a Project Admin for a dev/test project, so they have full control to deploy to their development clusters or to a cloud, while having Read Only access to production projects, allowing them access to logs but no ability to alter production workloads.
 
+### Infrastructure
+Infrastructure defines the type of Providers for a Project, and a Project can involve multiple types of infrastructure. As we discussed earlier, the Providers that Nutanix supports are Nutanix AHV, Nutanix Xi, VMware, AWS, Azure, GCP, and Kubernetes.
 
+### Environment
+The Project’s Environment allows you to add multiple credentials and the default infrastructure configuration for each selected Provider, these are typically your organization’s VM standards. You must configure the Environment before launching a pre-seeded blueprint from the Marketplace: the blueprint will use the environment settings to provision workloads.
 
+An additional benefit to creating a project Environment, you can clone that configuration for the VM while configuring a Blueprint, saving design time while increasing adoption for a standard configuration.
 
+### Credentials
+Credentials help in abstracting identity settings while connecting to an external system. You can configure multiple types of credentials (either SSH key or password) and define them as part of the Environment configuration. You can use these configured project environment credentials when launching a pre-seeded application Blueprint.
 
+### Creating a Project
+To create a project, you need to click Projects on the Calm sidebar, and click + Create Project. On the page that is displayed, you need to provide information in four major sections: General Settings; Users, Groups, and Roles; Infrastructure; and Quotas. Of these, Quotas is optional.
 
+A quota specifies a usage limit on an infrastructure resource (compute, memory, or storage) for the project. Project members cannot use more than the specified limit.
+
+A quota does not guarantee the project a certain amount of infrastructure resources. Instead, it ensures that a single project or a few projects do not overrun the infrastructure.
+
+If a Nutanix cluster runs out of a resource, project members cannot use the resource even if the project has not reached its specified limit. However, if a project requires more resources, you can increase its quota.
+
+If you do not specify a quota, you cannot apply usage limits because the project has unlimited consumption. However, project usage statistics are collected on AHV workloads even if you do not specify a quota.
+
+On the Create Project page:
+
+* In the General Settings section, name the project and provide a description.
+* In the Users, Groups, and Roles section, add users or user groups and specify the level of permissions they will have in Calm. User roles supported in Calm are:
+* Project Admin
+* Developer
+* Consumer
+* Operator
+* In the Infrastructure section, select a Provider for use with your Project. Providers are configured separately, from the Settings page, as we discussed in the previous section.
+* Optionally, in the Quotas section, specify usage limits for vCPUs, storage, and memory.
+
+After you complete the required sections for the Project, click Save & Configure Environment. The next step in creating a project is setting up the Environment.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528551_projects-4/projects-4.png)
+
+### Configuring the Environment
+The Environment specifies the default VM infrastructure configuration used when launching a pre-seeded Marketplace blueprint for each provider.
+
+Environment configuration depends on the provider(s) used in the project. For simplicity’s sake, we will describe the Environment configuration process for AHV.
+
+After clicking the Environment tab, you will need to:
+
+* Add credentials
+* Select the Nutanix provider under VM Configuration
+* Select an operating system (either Windows or Linux).
+* Specify VM details, including name, images to be used, vCPUs and cores per vCPU, memory, disk size, vGPUs, network adapters, and so on.
+* Confirm whether or not to check log on status after the VM is created, and specify the connection type and port.
+
+Once you have provided all the required information, click Save to complete the process.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52857f_project-environment-1/project-environment-1.png)
+
+### Modifying a Project
+Modifying a Project gives you access to all of the same fields as creating one. To modify a Project, you need to:
+
+* Navigate to the Projects page.
+* Open the Project you want to modify.
+* Update the sections as needed.
+* Save your changes.
+
+### Deleting a Project
+Deleting a Project removes it entirely from Calm, with no way to recover it. For you to delete a Project, it must not be associated with an application or a blueprint. Calm will verify this when you attempt to delete a project and, if an association is found, it will prevent you from proceeding.
+
+To delete a Project:
+
+* Navigate to the Projects page.
+* elect the checkbox next to the Project you want to delete.
+* Select Delete from the Actions drop down menu.
+* Click Delete when prompted for confirmation.
+
+![](https://video.udacity-data.com/topher/2020/September/5f5285aa_project-delete/project-delete.png)
+
+## Quiz: Calm - Projects
+
+### QUESTION 1 OF 2
+Why do you need to configure the Environment when creating a Project?
+* The Environment specifies the VM configurations that are used when launching a pre-seeded blueprint from the Marketplace.
+
+### QUESTION 2 OF 2
+What are the steps involved in configuring a Project in Calm?
+
+* Click Projects on the sidebar.
+Click Create New Project.
+Specify general settings; users, groups, and roles; and quotas (optionally).
+Configure the environment.
+Save the completed Project.
+
+## Calm: Role-Based Access Control (RBAC)
+
+As we briefly discussed in the previous section, Calm supports four different user roles:
+
+* Project Admin
+* Developer
+* Consumer
+* perator
+
+Each role provides a different level of access to various Calm capabilities related to the Marketplace, Blueprints, Applications, Settings, the Task Library, Projects, and Users.
+
+For example, in the Marketplace, a user with the Developer role can clone and edit app blueprints, make a publishing request for an application. A Project Admin, can do both those things, and send the app publishing request to an administrator. On the other hand, Consumers can only launch blueprints while Operators can only choose operations on existing, deployed workloads in their project. In other words, lower roles are subsets of higher roles.
+
+It’s important to note here that the four roles listed here are also roles in Prism Central, and this speaks to how tightly integrated Prism Central and Calm are. By design, Calm inherits the RBAC configuration that you define in Prism. If you assign someone the role of Project Admin in Prism Central, for example, they will have access to Project Admin permissions in Calm as well.
+
+For details about the permissions associated with each role, see the Roles and Responsibilities table of the Calm Admin Guide.
+
+![](https://video.udacity-data.com/topher/2020/October/5f87d8cf_screen-shot-2020-10-14-at-9.54.22-pm/screen-shot-2020-10-14-at-9.54.22-pm.png)
+
+## Quiz: Calm - RBAC
+
+### QUESTION 1 OF 2
+True or False: Roles in Calm must be configured to determine whether a user can access Calm from Prism Central or not.
+
+* False, Roles provide different levels of access to various Calm capabilities related to projects, settings, users, and so on.
+
+### QUESTION 2 OF 2
+Study the table of Calm Roles and Access/Permissions available [here](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v271:nuc-roles-responsibility-matrix-c.html) and then answer the following question.
+
+You have been assigned some blueprint creation work in Nutanix Calm. Based on the way your tasks have been explained to you, you understand that you need to be able to:
+
+Create, update, and launch blueprints
+Delete blueprints if necessary
+Clone blueprints from the marketplace
+Delete applications if needed
+What is the minimum level of permissions and the associated role that you will need to perform these tasks? When choosing the role, apply the principle of least privilege. That is, choose the role that grants you the bare minimum permissions that you need to perform your work.
 
 
 
