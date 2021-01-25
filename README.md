@@ -4482,7 +4482,23 @@ Watch the video to follow the tutorial:
 
 ## Exercise Solution: Publish Blueprint to Marketplace
 
+Watch the video to follow the tutorial:
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/377.jpg)](https://www.youtube.com/watch?v=ovJNuzETmH4&feature=emb_logo)
+
+## Exercise: Launch a Blueprint
+
+* 1. Select the <strong>Entities</strong> menu > <strong>Services</strong> and click <strong>Calm</strong>.
+
+* 2. Click the <strong>Marketplace</strong> icon in the left column.
+
+* 3. Click the <strong>ExpressLaunch</strong> blueprint and click <strong>Launch</strong>.
+
+* 4. Select <strong>Test-Project</strong>.
+
+* 5. In the <strong<Name of the Application</strong> field, type Test-App and click <strong>Create</strong>.
+
+* 6. When the view changes and you see <strong>PROVISIONING</strong>, click <strong>Audit</strong>. Expand the provisioning view. Continue to expand each new component as it appears to follow the provisioning progress to completion.
 
 
 
