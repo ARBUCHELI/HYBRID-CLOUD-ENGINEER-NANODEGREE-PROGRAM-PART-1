@@ -4016,6 +4016,16 @@ On the following new command prompt, type:
 
 * Close the Cygwin64 Terminal window.
 
+## Exercise Solution - Generate an SSH Key Pair
+
+Watch video for solution 
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/365.jpg)](https://www.youtube.com/watch?time_continue=21&v=CKDBjZn7zQU&feature=emb_logo)
+
+
+
+
+
 
 
 
