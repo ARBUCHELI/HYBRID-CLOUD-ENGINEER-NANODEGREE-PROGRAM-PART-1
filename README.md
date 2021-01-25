@@ -3881,6 +3881,150 @@ Please watch the video:
 
 [![IMAGE ALT TEXT](https://video.udacity-data.com/topher/2020/September/5f528493_accessing-calm-1/accessing-calm-1.png)](https://www.youtube.com/watch?v=2bp3cA_6qVY&feature=emb_logo)
 
+Calm opens within the Prism Central window of your browser and you will see a new sidebar to the left of the page that gives you access to Calm’s capabilities. By default, when Calm opens, the Applications page will be displayed.
+
+The sidebar options, in order from top to bottom, are Marketplace, Blueprints, Applications, Library, Settings, Marketplace Manager, and Projects. As we progress through this course, we will discuss these options in more detail.
+
+![](https://video.udacity-data.com/topher/2020/September/5f5284bb_accessing-calm-2/accessing-calm-2.png)
+
+## Quiz: What is Nutanix Calm?
+
+### QUESTION 1 OF 3
+Which of the following statements are true about Nutanix Calm? (Choose all that apply.)
+
+* Calm treats applications as complete entities
+* Calm automates how applications are created, consumed, and governed
+
+### QUESTION 2 OF 3
+How is Nutanix Calm accessed?
+
+*Through Prism Central
+
+You are working with the Senior IT Manager of a large financial services company, helping her and her team modernize their IT infrastructure. One of the items on their list - and yours - is to introduce some amount of automation to the ecosystem to reduce the company’s dependence on IT for manual, cumbersome tasks.
+
+Because they are already running Nutanix, one of the applications that you have been evaluating is Nutanix Calm. After some study, you make a presentation of your findings to the IT Manager. She is interested, but having spent many years working with traditional, 3-tier architecture, she is concerned about adding another brand new piece of software with a brand new interface (and its own potential nuances) to the ones that her team is already working with.
+
+Every new piece of specialized software requires specialized skills to use and she does not want to have to hire new team members exclusively to use one new product, especially when she isn’t yet confident of the benefits it will bring.
+
+How do you respond to her concern?
+
+### QUESTION 3 OF 3
+Read the scenario above and choose the most appropriate response to the Senior IT Manager’s concern.
+
+* Calm integrates with and follows the same UI design as Nutanix Prism. Since the team is already running Nutanix, Calm’s UI will be instantly familiar to them. Calm doesn’t add a new interface, it adds on to an existing one.
+
+## Exercise: Enable Nutanix Calm
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/358.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/359.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/360.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/361.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/362.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/363.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/364.jpg)
+
+## Generate an SSH Key Pair
+
+### VM IaaS for Self-Service IT
+
+### Linux OS, CentOS for a fast, license free base OS
+For simplicity in operating system (OS) licensing and speed to provision a virtual machine (VM), we will focus on using Linux for our courses. Calm works equally well with Windows and nearly every facility we’ll learn with Linux has a compatible or analogous Windows feature.
+
+Linux belongs to the family of Unix-like operating systems. It was written by Linus Torvalds and has the features that are typical of a modern Unix OS, including multitasking, virtual memory, shared libraries, demand loading, shared copy-on-write executables, proper memory management, and multistack networking including IPv4 and IPv6.
+
+To use Linux, you need to download a distribution, which is a complete Linux system including the kernel and applications. Multiple distributions are available for download and one popular choice is CentOS.
+
+The Community Enterprise Operating System (or CentOS) is a Linux distribution that provides a free, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux (RHEL) and uses open source licensing.
+
+### SSH key pairs for secure access to Linux VMs
+Public key authentication is preferred over the use of passwords, because it provides stronger cryptographic strength that even very long passwords cannot offer. Each SSH key pair includes two keys, a public key and a private key.
+
+A public key is copied to a user account on the operating system, which is then used to encrypt data and allow secure access. This secured access requires using the corresponding private key to make the connection and unlock the OS user account on the VM.
+
+A private key remains with a user and acts as proof of that user’s identity. A user will only be able to authenticate successfully with a server if they have a private key that corresponds to the public key used for encryption. Private keys can be password protected for further security if desired.
+
+### Cloud-init for basic, dynamic, secure configuration
+Cloud-init is the industry standard method across multiple Linux distributions for OS initialization. It is supported across all major public cloud providers, provisioning systems for private cloud infrastructure, and bare-metal installations. Linux distributions sometimes distinguish their variants between desktop, server, and cloud editions with only the latter having cloud-init facilities. Increasingly server and cloud editions have combined to offer cloud-init everywhere.
+
+Cloud-init can identify the host infrastructure provider it is running on during boot, read any provided metadata, and initialize the system accordingly. This may involve setting up the network, adding storage devices, provisioning SSH access keys, and configuring many other aspects of the OS. Cloud-init will also parse and process any optional user or vendor data that was passed to the instance.
+
+## Quiz: Generate an SSH Key Pair
+
+### QUESTION 1 OF 2
+What is a Linux distribution?
+
+* A complete Linux system
+
+### QUESTION 2 OF 2
+SSH key pairs involve two keys, namely __.
+
+*A public key and a private key
+
+## Exercise: Generate an SSH Key Pair
+
+In this exercise, you will create and configure an SSH key pair.
+
+You will use this key pair in future exercises by inserting it into Calm blueprints to ensure secure access to Linux VMs.
+
+After this exercise, there will be a video walkthrough.
+
+<strong>Note: The vertical black bar on this page can be dragged as needed to adjust the size of the display fields.</strong>
+
+* Start your lab session by clicking “Access Lab,” and then, after a moment, “Start Streaming.”
+
+* Click the <strong>Start</strong> menu on your Frame desktop and select <strong>Cygwin64 Terminal.</strong>
+
+* Type the following commands in the Cygwin64 Terminal. After creating the .ssh folder, use the <strong>cd</strong> command to make <strong>.ssh</strong> your working directory:
+
+```
+cd /cygdrive/c/cygwin64/workspace
+
+ mkdir .ssh
+
+ cd .ssh
+ ```
+
+* Create a new SSH key pair with the RSA algorithm. To do this, type:
+
+```
+ssh-keygen -t rsa
+```
+
+* When prompted to enter the file where the key will be saved, enter the file path:
+
+```
+./id_rsa 
+```
+ 
+* Press <strong>Enter</strong>. Leave the <strong>Enter passphrase</strong> (empty for no passphrase): prompt empty and press <strong>Enter</strong> to use no passphrase.
+
+* Leave the prompt blank and press <strong>Enter</strong> again to confirm using an empty passphrase.
+
+A key fingerprint and randomart image will populate the screen, confirming you have successfully changed the SSH key pair. Press <strong>Enter.</strong>
+
+View the keys.
+
+```
+    ls -a
+```
+
+On the following new command prompt, type:
+```
+    ssh-keygen -t rsa -p -N "" -m pem -f /cygdrive/c/cygwin64/workspace/.ssh/id_rsa
+```
+<strong>This</strong> modifies the <strong>private</strong> key to ensure that the <strong>public</strong> key may be extracted <strong>from</strong> it and that the key pair can be used <strong>for</strong> password-less SSH authentication.
+
+* Close the Cygwin64 Terminal window.
+
+
+
+
+
+
+
+
+
+
 
 
 
