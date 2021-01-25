@@ -3970,11 +3970,11 @@ After this exercise, there will be a video walkthrough.
 
 <strong>Note: The vertical black bar on this page can be dragged as needed to adjust the size of the display fields.</strong>
 
-* Start your lab session by clicking “Access Lab,” and then, after a moment, “Start Streaming.”
+* 1. Start your lab session by clicking “Access Lab,” and then, after a moment, “Start Streaming.”
 
-* Click the <strong>Start</strong> menu on your Frame desktop and select <strong>Cygwin64 Terminal.</strong>
+* 2. Click the <strong>Start</strong> menu on your Frame desktop and select <strong>Cygwin64 Terminal.</strong>
 
-* Type the following commands in the Cygwin64 Terminal. After creating the .ssh folder, use the <strong>cd</strong> command to make <strong>.ssh</strong> your working directory:
+* 3. Type the following commands in the Cygwin64 Terminal. After creating the .ssh folder, use the <strong>cd</strong> command to make <strong>.ssh</strong> your working directory:
 
 ```
 cd /cygdrive/c/cygwin64/workspace
@@ -3984,21 +3984,21 @@ cd /cygdrive/c/cygwin64/workspace
  cd .ssh
  ```
 
-* Create a new SSH key pair with the RSA algorithm. To do this, type:
+* 4. Create a new SSH key pair with the RSA algorithm. To do this, type:
 
 ```
 ssh-keygen -t rsa
 ```
 
-* When prompted to enter the file where the key will be saved, enter the file path:
+* 5. hen prompted to enter the file where the key will be saved, enter the file path:
 
 ```
 ./id_rsa 
 ```
  
-* Press <strong>Enter</strong>. Leave the <strong>Enter passphrase</strong> (empty for no passphrase): prompt empty and press <strong>Enter</strong> to use no passphrase.
+* 6. Press <strong>Enter</strong>. Leave the <strong>Enter passphrase</strong> (empty for no passphrase): prompt empty and press <strong>Enter</strong> to use no passphrase.
 
-* Leave the prompt blank and press <strong>Enter</strong> again to confirm using an empty passphrase.
+* 7. Leave the prompt blank and press <strong>Enter</strong> again to confirm using an empty passphrase.
 
 A key fingerprint and randomart image will populate the screen, confirming you have successfully changed the SSH key pair. Press <strong>Enter.</strong>
 
@@ -4014,7 +4014,7 @@ On the following new command prompt, type:
 ```
 <strong>This</strong> modifies the <strong>private</strong> key to ensure that the <strong>public</strong> key may be extracted <strong>from</strong> it and that the key pair can be used <strong>for</strong> password-less SSH authentication.
 
-* Close the Cygwin64 Terminal window.
+* 8. Close the Cygwin64 Terminal window.
 
 ## Exercise Solution - Generate an SSH Key Pair
 
@@ -4398,20 +4398,20 @@ In each exercise, we will walk you through the steps to perform these tasks. The
 * 3. Click the <strong>+ Create Project</strong> button and use the values below to complete the General Settings section.
 
 >>* Project Name: <strong>Test-Project</strong>
-* Description: <strong>Test workload</strong>
+>>* Description: <strong>Test workload</strong>
 
 * 4. To the right of <strong>Infrastructure</strong>, click <strong>Select Provider</strong> and select <strong>Nutanix</strong>:
 
-* The pre-selected account should be: <strong>NTNX_LOCAL_AZ</strong>
-* Click <strong>Select Clusters & Subnets.</strong>
-* In the Select Subnets dialog box, select your cluster.
-* Click the check box next to default-net and click <strong>Confirm.</strong>
+>>* The pre-selected account should be: <strong>NTNX_LOCAL_AZ</strong>
+>>* Click <strong>Select Clusters & Subnets.</strong>
+>>* In the Select Subnets dialog box, select your cluster.
+>>* Click the check box next to default-net and click <strong>Confirm.</strong>
 
 * 5. Use the values below to set Quotas:
 
-* <strong>vCPUs:</strong> 20
-* <strong>storage:</strong> 1000
-* <strong>Memory:</strong> 48
+>>* <strong>vCPUs:</strong> 20
+>>* <strong>storage:</strong> 1000
+>>* <strong>Memory:</strong> 48
 
 * 6. Click <strong>Save & Configure Environment.</strong>
 
@@ -4419,9 +4419,9 @@ A message showing <strong>Project data successfully accepted by server</strong> 
 
 * 7. On the Environment page, the Linux configuration should already be expanded. Use the values below to configure the VM:
 
-* <strong>vCPUs:</strong> 1
-* <strong>Cores per vCPU:</strong> 1
-* <strong>Memory (GiB):</strong> 2
+>>* <strong>vCPUs:</strong> 1
+>>* <strong>Cores per vCPU:</strong> 1
+>>* <strong>Memory (GiB):</strong> 2
 
 * 8. Click the check box next to <strong>Guest Customization</strong>. In the Script field, hover your mouse cursor over the up-arrow icon in the upper right corner to reveal <strong>Upload script</strong>. Click <strong>Upload script</strong> and navigate to <strong>C:\Scripts)). Select the</strong> cloud-init.txt <strong>file and click</strong> Open**. This will upload the script to the script field:
 ```
@@ -4434,23 +4434,23 @@ A message showing <strong>Project data successfully accepted by server</strong> 
  ```
  * 9. Scroll down and expand the DISK (1) section to see the disk configuration. Use the information below to configure the disk:
 
-* Type: <strong>Disk</strong>
-* Bus Type: <strong>SCSI</strong>
-* Operation: <strong>Clone from Image</strong>
-* Image: <strong>Select the CentOS8 image</strong>
-* Bootable: <strong>Select the check box</strong>
+>>* Type: <strong>Disk</strong>
+>>* Bus Type: <strong>SCSI</strong>
+>>* Operation: <strong>Clone from Image</strong>
+>>* Image: <strong>Select the CentOS8 image</strong>
+>>* Bootable: <strong>Select the check box</strong>
 
 * 10. Scroll down to <strong>NETWORK ADAPTERS (NICS)</strong> and click the plus button to the right to add a NIC. Use the table below to configure the NIC:
 
-* NIC 1: <strong>default-net</strong>
-* Private IP: <strong>Select Dynamic</strong>
+>>* NIC 1: <strong>default-net</strong>
+>>* Private IP: <strong>Select Dynamic</strong>
 
 * 11. Scroll down to <strong>Connection</strong>. Click the <strong>Credential</strong> drop-down menu and select <strong>Add New Credential</strong>. Use the following information to configure the new credential:
 
-* Credential Name: <strong>superuser</strong>
-* Username: <strong>centos</strong>
-* Secret Type: <strong>SSH Private Key</strong>
-* SSH Private Key: In the upper right corner of the key field, click the box with the arrow, navigate to: <strong>C:\cygwin64\workspace.ssh\id_rsa</strong> and select <strong>Open.</strong> Ensure the inserted key text has <strong>-----BEGIN RSA PRIVATE KEY-----</strong> shown at the top. Click <strong>Done.</strong>
+>>* Credential Name: <strong>superuser</strong>
+>>* Username: <strong>centos</strong>
+>>* Secret Type: <strong>SSH Private Key</strong>
+>>* SSH Private Key: In the upper right corner of the key field, click the box with the arrow, navigate to: <strong>C:\cygwin64\workspace.ssh\id_rsa</strong> and select <strong>Open.</strong> Ensure the inserted key text has <strong>-----BEGIN RSA PRIVATE KEY-----</strong> shown at the top. Click <strong>Done.</strong>
 
 <strong>Note:</strong> Adding new credentials can also be done from the top of the page by clicking the + next to Credentials.
 
