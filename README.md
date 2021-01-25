@@ -4126,6 +4126,23 @@ Please watch the video for instructions:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/371.jpg)](https://www.youtube.com/watch?v=rUum_ORNppY&feature=emb_logo)
 
+## Quiz: Calm Providers
+
+### QUESTION 1 OF 2
+Which of the following infrastructure providers does Calm support? (may be more than one answer)
+
+* AWS
+* Azure
+* AHV
+
+### QUESTION 2 OF 2
+What are the steps you need to follow to create and configure a Provider in Calm?
+
+* Navigate to the Settings page in Calm.
+* Click Providers.
+* Click + Add Provider. 4.Name your provider, select the type, and configure the provider.
+
+
 
 
 
