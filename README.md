@@ -4460,7 +4460,25 @@ A message showing <strong>Project data successfully accepted by server</strong> 
 
 Note: The <strong>HybridCloudEngineer</strong> project shown in the Projects list has the same configuration as your Test-Project.
 
+## Exercise Solution: Create a Calm Project
 
+Watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/377.jpg)](https://www.youtube.com/watch?v=stqznywSDd0&feature=emb_logo)
+
+## Exercise: Publish Blueprint to Marketplace
+
+* 1. Select the <strong>Entities</strong> menu (the three-lined hamburger icon) > <strong>Services</strong> and click <strong>Calm</strong>.
+
+* 2. Hover your mouse cursor over the icons to the far left of the browser. Click the icon named <strong>Marketplace Manager</strong>. On the <strong>Marketplace Manager</strong> page, under the <strong>Marketplace Blueprint</strong> tab, you will find a default blueprint called <strong>ExpressLaunch</strong>.
+
+* 3. Click the check box next to <strong>ExpressLaunch</strong> (default blueprint) in the <strong>Marketplace Blueprints</strong> view.
+
+* 4. In the <strong>ExpressLaunch</strong> panel at the far right of your browser, remove the default project in <strong>the Projects Shared With</strong> drop-down menu. Select <strong>Test-Project</strong> and click <strong>Apply</strong>.
+
+* 5. In the <strong>ExpressLaunch</strong> panel, click <strong>Publish</strong> and verify that the Status column for the blueprint shows <strong>Published</strong>.
+
+* 6. Hover your mouse cursor over the icons to the far left of the browser. Click the <strong>Marketplace</strong> icon. You should see <strong>ExpressLaunch</strong> listed.
 
 
 
