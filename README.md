@@ -4022,6 +4022,71 @@ Watch video for solution
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/365.jpg)](https://www.youtube.com/watch?time_continue=21&v=CKDBjZn7zQU&feature=emb_logo)
 
+## Components of Calm Governance
+
+Calm allows you to empower different groups in the organization to provision and manage their own applications, giving application owners and developers on-demand workloads while elevating infrastructure managers to cloud operators.
+
+Calm provides powerful, application-centric self-service capabilities, while maintaining control with role-based governance that limits user operations based on role, such as IT operator, developer, or manager. Calm allows administrators to safely delegate different levels of operational management, reducing administrative staff work while simultaneously accelerating end-users.
+
+Additionally, Calm logs all critical activities and changes for end-to-end traceability, aiding security teams with key compliance initiatives. For example, you can enable the development team to create, scale, and destroy test and development environments without filing IT ticket requests.
+
+Development teams benefit from rapid provisioning times, while IT maintains control, traceability of user operations, and visibility into resource consumption.
+
+So, in the context of Calm Governance, there are four major capabilities that we need to discuss:
+
+![](https://video.udacity-data.com/topher/2020/September/5f52850f_components-of-calm-governance/components-of-calm-governance.png)
+
+### Providers
+Providers are public and private cloud service providers to deploy and govern your workloads and applications. Essentially, configuring a provider provides the required authorization for Calm to manage your applications using the provider’s resources.
+
+### Projects
+A project defines a set of users and groups with a common set of requirements or a common structure and function, such as a team of engineers collaborating on a product. The project also specifies the roles to associate with its members, networks that they can use, infrastructure to deploy onto, and (optionally) usage limits on infrastructure resources. You can also define the environment associated with a project, in case you want to publish the applications into the Marketplace.
+
+### Role-Based Access Control
+Role-Based Access Control (RBAC) lets you define different roles in an organization and assign permissions accordingly. Within Calm, RBAC enables organizations to control who can perform specific actions, including:
+
+* Marketplace (publish, clone, provision)
+* Blueprint (create, update, clone, delete, launch)
+* Applications (manage, edit, create)
+* Projects (add, update, assign resources)
+* User (add, change, remove, roles)
+
+### Marketplace Publishing
+Before we discuss the Marketplace, it is necessary to talk about Blueprints. A Blueprint is the framework for every application that you model with Nutanix Calm. Blueprints are templates that describe all the steps that are required to provision, configure, and execute tasks on the services and applications that are created.
+
+The Marketplace provides a set of pre-seeded application Blueprints that are available for you to use. The Marketplace is a common platform for both the publisher and the consumer, and provides you with the ability to provision an application instantly.
+
+The Marketplace provides a one-click deployment experience for requesting applications or services. It presents a user with all the applications or services their projects and roles have the rights to access. The user can then select an application and deploy it, enjoying fully automated provisioning and scaling for both traditional multitiered applications and modern distributed services.
+
+And finally, the Marketplace empowers organizations to consume services in a fully self-service manner at their own speed and includes built-in versioning to allow access to multiple revisions of blueprints.
+
+## Quiz: Components of Calm Governance
+
+### QUESTION 1 OF 3
+Why is it necessary to configure a Provider in Calm?
+
+* A configured Provider allows Calm to manage applications using the provider’s virtualization resources
+
+### QUESTION 2 OF 3
+What sort of information does a Calm Project specify? (Choose all that apply.)
+
+* Roles of members in a project
+
+* Infrastructure usage limits
+
+* Infrastructure resources that project members can use
+
+### QUESTION 3 OF 3
+What is the Marketplace?
+
+* A collection of application blueprints
+
+## Calm Providers
+
+
+
+
+
 
 
 
