@@ -4397,7 +4397,7 @@ In each exercise, we will walk you through the steps to perform these tasks. The
 
 * 3. Click the <strong>+ Create Project</strong> button and use the values below to complete the General Settings section.
 
-* Project Name: <strong>Test-Project</strong>
+>>* Project Name: <strong>Test-Project</strong>
 * Description: <strong>Test workload</strong>
 
 * 4. To the right of <strong>Infrastructure</strong>, click <strong>Select Provider</strong> and select <strong>Nutanix</strong>:
