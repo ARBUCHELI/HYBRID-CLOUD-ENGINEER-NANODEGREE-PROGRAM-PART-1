@@ -4279,6 +4279,203 @@ Clone blueprints from the marketplace
 Delete applications if needed
 What is the minimum level of permissions and the associated role that you will need to perform these tasks? When choosing the role, apply the principle of least privilege. That is, choose the role that grants you the bare minimum permissions that you need to perform your work.
 
+### QUESTION 2 OF 2
+Study the table of Calm Roles and Access/Permissions available here and then answer the following question.
+
+You have been assigned some blueprint creation work in Nutanix Calm. Based on the way your tasks have been explained to you, you understand that you need to be able to:
+
+Create, update, and launch blueprints
+Delete blueprints if necessary
+Clone blueprints from the marketplace
+Delete applications if needed
+What is the minimum level of permissions and the associated role that you will need to perform these tasks? When choosing the role, apply the principle of least privilege. That is, choose the role that grants you the bare minimum permissions that you need to perform your work.
+
+* Developer
+
+## The Nutanix Marketplace
+
+At the beginning of this lesson, we briefly talked about blueprints and the Marketplace. Let’s take a moment to discuss blueprints in a little more detail.
+
+A blueprint is the framework for every application that you model with Nutanix Calm. Blueprints are templates that describe all the steps that are required to provision, configure, and execute tasks on the services and applications that are created.
+
+Blueprints are essentially recipes for applications. These recipes encompass application architecture and Infrastructure choices, provisioning and deployment steps, application binaries, command steps, monitoring endpoints, remediation steps, licensing and monetization, and policies. Every time a blueprint is executed it results in an application deployment, these workloads can be managed from the Applications menu.
+
+A blueprint turns an application into a single unit that can be managed by an infrastructure team. This makes application lifecycle management and deployment both automated and repeatable, freeing up the time that infrastructure teams are presently devoting to deploying and managing infrastructure and applications.
+
+The Marketplace provides a set of pre-seeded application blueprints that are available for you to use. The Marketplace is a common platform for both the publisher and the consumer, and provides you with the ability to provision an application instantly.
+
+Generally, the Marketplace displays a collection of blueprints available to the user’s projects. You can view application details, filter and search for custom or pre-seeded blueprints, clone a blueprint, or launch a blueprint from the Marketplace.
+
+Please watch the video for instructions:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/376.jpg)](https://www.youtube.com/watch?v=NgEPwGe6aBk&feature=emb_logo)
+
+### Viewing Application Details
+
+licking a blueprint in the Marketplace will display a page with details about the associated application. Information includes hardware requirements, resources installed, platforms, limitations, and more.
+
+![](https://video.udacity-data.com/topher/2020/September/5f5285d7_marketplace-app-details/marketplace-app-details.png)
+
+### Filtering Blueprints
+
+Creating a blueprint allows you to package automation steps into one centralized package that can be reused in any locale, updated as a whole bundle, and versioned to show the full lifecycle of an application or set of applications. Blueprints in the Marketplace are sorted into categories. You can use the category drop down menu to filter blueprints and find applications in specific categories. These categories are helpful in determining the purpose of the blueprint, and narrowing down your search - making it even easier to quickly deliver value to the business.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528611_marketplace-filter/marketplace-filter.png)
+
+### Searching for Blueprints
+
+The Marketplace also includes a search bar that allows you to search for a specific set of keywords appropriate to the type of blueprint you would like to use. Unlike Categories, where you are browsing a subset of a specific type of blueprint, searching can provide a more targeted list of results that can narrow the resulting scope to exactly what you are looking for.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52862d_marketplace-search/marketplace-search.png)
+
+### Cloning a Blueprint
+If you need to duplicate a blueprint and make customizations, the Marketplace allows you to clone a blueprint. All you need to do is:
+
+* Select the Blueprint.
+* Click Clone.
+* ame the Blueprint.
+* Assign it to a Project.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528655_marketplace-clone/marketplace-clone.png)
+
+### Launching a Marketplace Item
+
+Finally, you can also launch a Marketplace item to deploy the blueprint. We will cover this in more detail in a later lesson, but the basic process is quite straightforward.
+
+On the Marketplace page, you need to:
+
+* Click the application you want to launch and then click Launch.
+* Name the application.
+* Select an application profile.
+* Verify the VM Configuration and Credentials.
+* Click Create.
+
+You can see a walkthrough video of these steps in the solution for the upcoming exercise.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52866e_marketplace-launch/marketplace-launch.png)
+
+## Quiz: The Nutanix Marketplace
+
+### QUESTION 1 OF 2
+Which of the following activities can you perform in the Marketplace? (check all that apply)
+
+* View application details
+
+* Clone blueprint
+
+* Search for application
+
+* Launch application
+
+You are consulting for the IT Department of a large outsourcing company. As part of their digital transformation and modernization efforts, the IT team is investing in technologies that enable self-service for their users, as well as several other automation efforts. They are already running Nutanix and have very recently introduced application automation via Calm to their portfolio of capabilities.
+
+However, they’re stuck on the self-service portion of their activities. While they’re now starting to create Calm blueprints to make apps available to users, they haven’t yet decided on a distribution mechanism. Presently, they are discussing leveraging their internal engineering team to build a custom web portal for them, to which they can upload these Calm blueprints and make them available for their internal users to download and work with.
+
+Do you agree with their approach?
+
+### QUESTION 2 OF 2
+Read the scenario above and choose the best way for the IT Department to move forward with enabling user self-service.
+
+* No, they should be using Calm instead. Since they’re already creating blueprints in Calm, publishing to the Marketplace is the easiest way to enable self-service.
+
+## Exercise: Create a Calm Project
+
+### Series of Four Exercises
+In this series of exercises on this and the upcoming pages, you will:
+
+* Create a Calm project
+* Use the project you created to publish a default blueprint to the Calm Marketplace.
+* Launch the blueprint from the marketplace, name the application and audit the deployment process.
+* Delete the application.
+
+In each exercise, we will walk you through the steps to perform these tasks. There is also a video walkthrough on each of the following “Solution” pages.
+
+### Creating a Calm Project
+* 1. From the Prism Central browser tab, select the <strong>Entities</strong> menu (the three-lined hamburger icon, upper left) and go to <strong>Services</strong> and click <strong>Calm</strong>. If the <strong>Welcome to Calm</strong> pop-up window appears, close it.
+
+* 2. Hover your mouse cursor over the icons at the far left of the Calm page to see each name. Click the <strong>Projects</strong> icon.
+
+* 3. Click the <strong>+ Create Project</strong> button and use the values below to complete the General Settings section.
+
+* Project Name: <strong>Test-Project</strong>
+* Description: <strong>Test workload</strong>
+
+* 4. To the right of <strong>Infrastructure</strong>, click <strong>Select Provider</strong> and select <strong>Nutanix</strong>:
+
+* The pre-selected account should be: <strong>NTNX_LOCAL_AZ</strong>
+* Click <strong>Select Clusters & Subnets.</strong>
+* In the Select Subnets dialog box, select your cluster.
+* Click the check box next to default-net and click <strong>Confirm.</strong>
+
+* 5. Use the values below to set Quotas:
+
+* <strong>vCPUs:</strong> 20
+* <strong>storage:</strong> 1000
+* <strong>Memory:</strong> 48
+
+* 6. Click <strong>Save & Configure Environment.</strong>
+
+A message showing <strong>Project data successfully accepted by server</strong> briefly appears. You will be switched to the Environment page. The <strong>Environment</strong> page allows you to define the components necessary to deploy a VM.
+
+* 7. On the Environment page, the Linux configuration should already be expanded. Use the values below to configure the VM:
+
+* <strong>vCPUs:</strong> 1
+* <strong>Cores per vCPU:</strong> 1
+* <strong>Memory (GiB):</strong> 2
+
+* 8. Click the check box next to <strong>Guest Customization</strong>. In the Script field, hover your mouse cursor over the up-arrow icon in the upper right corner to reveal <strong>Upload script</strong>. Click <strong>Upload script</strong> and navigate to <strong>C:\Scripts)). Select the</strong> cloud-init.txt <strong>file and click</strong> Open**. This will upload the script to the script field:
+```
+ #cloud-config
+     users:
+      - name: centos
+     ssh-authorized-keys:
+ - @@{superuser.public_key}@@
+ sudo: ['ALL=(ALL) NOPASSWD:ALL']
+ ```
+ * 9. Scroll down and expand the DISK (1) section to see the disk configuration. Use the information below to configure the disk:
+
+* Type: <strong>Disk</strong>
+* Bus Type: <strong>SCSI</strong>
+* Operation: <strong>Clone from Image</strong>
+* Image: <strong>Select the CentOS8 image</strong>
+* Bootable: <strong>Select the check box</strong>
+
+* 10. Scroll down to <strong>NETWORK ADAPTERS (NICS)</strong> and click the plus button to the right to add a NIC. Use the table below to configure the NIC:
+
+* NIC 1: <strong>default-net</strong>
+* Private IP: <strong>Select Dynamic</strong>
+
+* 11. Scroll down to <strong>Connection</strong>. Click the <strong>Credential</strong> drop-down menu and select <strong>Add New Credential</strong>. Use the following information to configure the new credential:
+
+* Credential Name: <strong>superuser</strong>
+* Username: <strong>centos</strong>
+* Secret Type: <strong>SSH Private Key</strong>
+* SSH Private Key: In the upper right corner of the key field, click the box with the arrow, navigate to: <strong>C:\cygwin64\workspace.ssh\id_rsa</strong> and select <strong>Open.</strong> Ensure the inserted key text has <strong>-----BEGIN RSA PRIVATE KEY-----</strong> shown at the top. Click <strong>Done.</strong>
+
+<strong>Note:</strong> Adding new credentials can also be done from the top of the page by clicking the + next to Credentials.
+
+* 12. Ensure the box next to <strong>Check Log-in upon create</strong> is selected.
+* 13. Scroll to the bottom of the page and click <strong>Save.</strong>
+* 14. Click the <strong>Projects</strong> icon in the left column to see <strong>Test-Project</strong> in the Projects list.
+
+Note: The <strong>HybridCloudEngineer</strong> project shown in the Projects list has the same configuration as your Test-Project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
