@@ -4573,6 +4573,38 @@ To quickly recap what we discussed:
 
 In later lessons, we’ll walk through how these capabilities come together to allow you to automate application deployments in Calm, so your users can deploy applications with just a few clicks.
 
+________________________________________________________________________________________________________________________________________________________________________________
+
+# LESSON 3 CREATING AND PUBLISHING A SINGLE VM BLUEPRINT 
+
+## Lesson Overview
+
+In this lesson and the next, we’re going to focus on <strong>blueprints</strong>. Blueprints are recipes for applications and infrastructure combined with their operations and governance. Enterprises derive a number of benefits from the one-click simplicity that they provide.
+
+We’ll talk about this in more detail shortly, but the ability to turn an application into a repeatable, automated blueprint offers enterprises a number of benefits:
+
+* Greater agility while minimizing human error
+* Broader self-service capabilities while allowing IT to retain centralized control
+* The ability to modernize app development by pairing Calm with a certified Kubernetes solution
+* The ability to automate provisioning across multi-cloud architectures from a single management interface.
+
+That’s why we’re going to spend the next two lessons on a deep dive into blueprints. In the previous lesson, you used one of the pre-seeded blueprints to deploy an application from the Marketplace. Now, we’re going to talk about how to turn an application into a marketplace blueprint that can be launched with a couple of clicks.
+
+You can create two different types of blueprints based on the complexity of the application that you need to automate, and we will be teaching you how to use both in succession. In this lesson, we will walk through the creation of a single VM blueprint to help you familiarize yourself with blueprints themselves, the components of a blueprint, and the steps involved in creating and publishing one.
+
+Then, with this foundation well-established, in the next lesson we’ll focus on multi-VM blueprints.
+
+So, before we move on, let’s summarize what you will learn in this lesson. We will discuss how you can create, manage, and publish your own application blueprints. We will start with a single-VM blueprint and discuss the various concepts you need to be familiar with.
+
+We will walk through:
+
+The different elements of a Calm blueprint
+Single-VM and multi-VM blueprints
+The various tasks involved in managing blueprints such as uploading, downloading, editing, and deleting
+How to use the Marketplace Manager to publish, unpublish, and delete blueprints.
+Let’s begin.
+
+
 # Adaptation as a repository: Andrés R. Bucheli.
 
 
