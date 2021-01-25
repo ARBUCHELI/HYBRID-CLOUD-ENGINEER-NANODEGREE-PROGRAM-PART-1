@@ -4142,6 +4142,17 @@ What are the steps you need to follow to create and configure a Provider in Calm
 * Click Providers.
 * Click + Add Provider. 4.Name your provider, select the type, and configure the provider.
 
+## Calm: Projects
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/372.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/373.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/374.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/375.jpg)
+
+
+
+
+
 
 
 
