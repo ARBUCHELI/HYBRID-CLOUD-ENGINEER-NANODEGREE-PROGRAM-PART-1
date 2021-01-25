@@ -4480,6 +4480,7 @@ Watch the video to follow the tutorial:
 
 * 6. Hover your mouse cursor over the icons to the far left of the browser. Click the <strong>Marketplace</strong> icon. You should see <strong>ExpressLaunch</strong> listed.
 
+## Exercise Solution: Publish Blueprint to Marketplace
 
 
 
