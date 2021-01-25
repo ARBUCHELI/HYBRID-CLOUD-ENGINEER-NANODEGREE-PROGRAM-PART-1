@@ -4500,10 +4500,33 @@ Watch the video to follow the tutorial:
 
 * 6. When the view changes and you see <strong>PROVISIONING</strong>, click <strong>Audit</strong>. Expand the provisioning view. Continue to expand each new component as it appears to follow the provisioning progress to completion.
 
+## Exercise Solution: Launch Blueprint
 
+Watch the video to follow the tutorial:
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/378.jpg)](https://www.youtube.com/watch?v=4rxk4fdZFEM&feature=emb_logo)
 
+## Exercise: Delete an Application
 
+* 1. Select the <strong>Entities</strong> menu > <strong>Services</strong> and click <strong>Calm</strong>.
+
+* 2. Hover your mouse cursor over the icons at the far left of the browser. Click the <strong>Applications</strong> icon.
+
+* 3. Select the checkbox next to <strong>Test-App</strong>.
+
+* 4. Select <strong>Delete</strong> from the <strong>Action</strong> drop-down menu.
+
+* 5. Click <strong>Confirm</strong> in the <strong>Delete Application</strong> dialog box.
+
+* 6. Click <strong>Audit</strong> to monitor the <strong>Delete</strong> process.
+
+<strong>NOTE: Make sure to delete applications when directed to do so. If left running, you will run out of cluster resources and will be unable to launch applications in future exercises.</strong>
+
+## Exercise Solution: Deleting Application
+
+Watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/379.jpg)](https://www.youtube.com/watch?v=u6A-1rpDFNE&feature=emb_logo)
 
 
 
