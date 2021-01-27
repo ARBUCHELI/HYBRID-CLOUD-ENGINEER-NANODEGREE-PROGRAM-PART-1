@@ -4604,6 +4604,61 @@ The various tasks involved in managing blueprints such as uploading, downloading
 How to use the Marketplace Manager to publish, unpublish, and delete blueprints.
 Let’s begin.
 
+## The Importance of Calm Blueprints and Marketplace Publishing
+
+While we have very briefly discussed both blueprints and the Marketplace in the previous lesson, we will now explore both subjects in more detail.
+
+Nutanix Calm, as we learned previously, is a multi-cloud application management framework. And, as we will see in this lesson, it transforms the way that enterprises work with applications.
+
+In Calm, applications are defined via simple blueprints that can be easily created using industry standard skills and control all aspects of the application’s lifecycle, such as provisioning, scaling, and cleanup. These blueprints can be created through the UI, or via code with a Python-based DSL, including seamless conversion.
+
+Once created, a blueprint can be easily published to end users through the Nutanix Marketplace, instantly transforming a complex provisioning ticket into a simple one-click request.
+
+The ability to turn applications into automated blueprints brings a number of benefits to any enterprise that uses Nutanix Calm.
+
+![](https://video.udacity-data.com/topher/2020/September/5f5288dd_blueprint-benefits-all/blueprint-benefits-all.png)
+
+### Better Agility, Fewer Errors
+A blueprint incorporates relevant VMs, configurations, related binaries, and other elements of each app into a single unit that can be managed by the infrastructure team. This makes application lifecycle management and deployment both automated and repeatable, freeing up the time that infrastructure teams are presently devoting to managing their applications.
+
+### Self-service, Central Control
+As we’ve seen in the previous lessons, self-service and RBAC allow IT teams to empower different groups to provision and manage their own applications. Activities and changes are logged with end-to-end traceability, helping security teams with compliance initiatives.
+
+### Modernized App Development
+When paired with a certified Kubernetes solution, Calm allows you to modernize app development without losing policy control. In addition, Calm natively integrates with Jenkins to empower Continuous Integration and Continuous Delivery (CI/CD) pipelines with automatic infrastructure provisioning or upgrades for all applications.
+
+### Unified Multi-Cloud Orchestration
+Calm unifies the management of all your clouds into a single pane of glass, removing the need to move back and forth between multiple management interfaces. Calm automates the provisioning of multi-cloud architectures, scaling both multi-tiered and distributed applications across different cloud environments.
+
+## Quiz: Importance of Blueprints and Marketplace
+
+### QUIZ QUESTION
+How does Calm turn apps into simple units that can be managed by infrastructure teams?
+
+* By incorporating relevant VMs, configurations, binaries, and other application components into a single blueprint
+
+## Understanding the Full Potential of Blueprints
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/380.jpg)
+
+The reason it’s so important to understand blueprints - so important that we’re spending two lessons in this course on the subject - is because of how Calm contributes to fully realising the potential of a hybrid cloud IT environment.
+
+The Nutanix Enterprise Cloud OS provides a single operating system across multiple cloud environments, while Nutanix Calm delivers application automation and lifecycle management with self-service capabilities.
+
+So, an IT organization can quickly embrace the various clouds that the business wants to consume and satisfy a broader range of needs, while providing the same end-user and administrative experience across clouds. Since Nutanix Prism and Calm provide native capabilities for application automation, application lifecycle management, and self-service, your IT consumers can leverage the Nutanix marketplace to deploy infrastructure services or applications.
+
+When deploying applications from the Marketplace, your customers not only get a simple, one-click experience, but you also get to ensure governance requirements are followed.
+
+You can work with teams in your organization to define specific application policies that must be enforced. Nutanix Calm enables you to optimize the application lifecycle by tailoring application blueprints for each of your end-user groups and making them accessible in a customised service catalog. Nutanix Calm acts as a front-end portal to deploy services.
+
+In addition to Calm, you can also leverage the IaaS self-service capabilities built into the Nutanix Prism management interface. You can work with each customer to define the necessary projects, quotas, and role assignments. For example, DB administrators might be allowed to deploy and manage DB instances but restricted from accessing other application services.
+
+Ultimately, Calm stands to vastly expand on the service and self-service capabilities that IT can deliver to their end users, but as you may have noticed everything begins with blueprints. So, now, let’s talk about them.
+
+
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
 
