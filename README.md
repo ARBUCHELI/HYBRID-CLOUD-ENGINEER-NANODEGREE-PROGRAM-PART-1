@@ -4655,6 +4655,75 @@ In addition to Calm, you can also leverage the IaaS self-service capabilities bu
 
 Ultimately, Calm stands to vastly expand on the service and self-service capabilities that IT can deliver to their end users, but as you may have noticed everything begins with blueprints. So, now, let’s talk about them.
 
+![](https://video.udacity-data.com/topher/2020/September/5f52898e_operational-flexibility-calm/operational-flexibility-calm.png)
+
+## Publishing Your Own Application Blueprints
+
+Blueprints are essentially recipes for applications. These recipes encompass application architecture and Infrastructure choices, provisioning and deployment steps, application binaries, command steps, monitoring endpoints, remediation steps, licensing and monetization, and policies. Every time a Blueprint is executed it results in an application.
+
+Calm uses Services, Packages, Substrates, Deployments, and Application Profiles as building blocks for a blueprint. Together they fully define applications. By encoding these into a blueprint, Calm can understand the application as a whole and properly automate its lifecycle.
+
+And as we discussed in the previous topic, being able to turn application deployment into an automated, repeatable activity can have a significant impact on an IT team’s productivity and efficiency.
+
+This is why this lesson and the one after it are focused entirely on the centerpiece of Calm – application blueprints. In this lesson, we will lay the foundation for everything you need to know about blueprints: key concepts, process overviews, different elements of the Calm interface, and so on. At the end of this lesson, we will bring those concepts together into an exercise to create a single-VM blueprint.
+
+Then, in the next lesson, we will recap some old concepts, introduce some advanced concepts, and tie them all together with a more complex blueprint – a multi-VM blueprint for a web server using a Linux VM.
+
+So, since everything ties together to form the complete picture of application automation, before we move on, let’s quickly recap the Marketplace.
+
+## Quiz: Publishing Your Own Application Blueprints
+
+### QUIZ QUESTION
+Which of these statements is an accurate description of a blueprint?
+
+* Blueprints are recipes for applications
+
+## Recap: The Nutanix Marketplace
+
+As we discussed in the previous lesson, the Marketplace allows you to:
+
+* View details of an application
+* Publish applications for use by specific users and/or groups
+* Control application state e.g. “Approved” or “Pending Approval”
+* Carry out test deployments that ensure an applications functions as expected before publication
+
+### View Details of an Application
+
+![](https://video.udacity-data.com/topher/2020/September/5f5285d7_marketplace-app-details/marketplace-app-details.png)
+
+### Search For and Filter Applications
+
+![](https://video.udacity-data.com/topher/2020/September/5f528611_marketplace-filter/marketplace-filter.png)
+
+### Clone an Application Blueprint
+
+![](https://video.udacity-data.com/topher/2020/September/5f528655_marketplace-clone/marketplace-clone.png)
+
+### Launch a Marketplace Item
+
+![](https://video.udacity-data.com/topher/2020/September/5f52866e_marketplace-launch/marketplace-launch.png)
+
+Take a moment to ensure that you remember these tasks and are familiar with the various capabilities of the Marketplace, as shown in the preceding images.
+
+### Enabling Nutanix Marketplace Applications
+To help you get started with one-click app deployment, Calm offers a collection of pre-seeded blueprints – these are essentially ready-to-use applications that address a number of common use cases.
+
+However, by default, you will not see these applications in the Marketplace. To enable them, navigate to the Settings page in Calm, and click the Nutanix Marketplace Apps toggle.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528a53_enable-nutanix-marketplace-apps/enable-nutanix-marketplace-apps.png)
+
+## Quiz: Marketplace Recap
+
+### QUIZ QUESTION
+What are Nutanix Marketplace applications?
+
+* Ready to use applications that are available in Calm out-of-the-box
+
+
+
+
+
+
 
 
 
