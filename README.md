@@ -5227,6 +5227,145 @@ Watch the video to follow the tutorial:
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/401.jpg)](https://www.youtube.com/watch?v=-Ed3mod0W0g&feature=emb_logo)
 
+Much like the ability to download a blueprint, the ability to upload one is also one of the eleven blueprint management tasks that we briefly discussed in Lesson 3.
+
+You can also upload configured blueprints to the Blueprints tab. To do that:
+
+* 1. Click the Blueprint icon.
+* 2. Click Upload Blueprint.
+* 3. Browse and select the saved blueprint.
+* 4. Give the blueprint a name and select the project you want to assign it to.
+* 5. Click Upload.
+
+If you have previously downloaded the blueprint with credentials and secrets, then during upload you must provide the same password as previously specified.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52ac96_uploading-a-blueprint-image1/uploading-a-blueprint-image1.png)
+
+## Quiz: Uploading a Blueprint
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/402.jpg)
+
+## Calm Services and Substrates
+
+We’ve covered some of the tasks involved in managing the blueprint lifecycle. We will next discuss all of the necessary topics to understand the creation of a multi-VM blueprint. Services, substrates, application profile, and actions are primary elements required to create a multi-VM blueprint.
+
+In this section, we will dive into the process of configuring the substrates, and also discuss its importance. Before that, let’s do a quick recap of services and substrates.
+
+### Services Overview
+Services are logical entities exposed by an IP that span all application profiles and are managed by Calm. End users and services communicate with each other over a network using their exposed IPs and ports.
+
+### Configuring Substrates
+Substrates are combinations of the underlying cloud and the VM instance. When you select the desired cloud in the Calm UI, all the fields required to create a VM instance on that particular cloud are displayed. The combination of these fields is a substrate.
+
+The substrate or VM details are configured in the environment.
+
+The environment depends on the cloud provider selected during the project creation process. The environment consists of the cloud provider and the operating system details. For example, if you choose Nutanix as the provider. You have two options, Nutanix+Linux and Nutanix+Windows.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52acb3_creating-an-environment-image1/creating-an-environment-image1.png)
+
+Calm supports Nutanix AHV, Nutanix Xi Cloud, AWS, VMware, GCP, and Azure as providers for your project. For simplicity, we will be covering the process to configure a Nutanix AHV environment.
+
+### Configuring a Nutanix Environment
+The Environment allows you to add multiple credentials and configure VM details for the selected provider. You can configure an environment when creating a project.
+
+If you have configured the environment when creating a project, you can use the configured details while creating a blueprint or launching an application from the marketplace.
+
+Environment is mandatory to publish the applications into the marketplace. If you do not define VM configuration while creating a blueprint, you must define the configuration as part of the environment. Also, during the application blueprint launch from the marketplace, the values are picked from the environment.
+
+Before configuring a Nutanix environment, ensure that you have configured a project with Nutanix as a provider.
+
+To configure the environment for Nutanix:
+
+In the Create Project page, Under the environments tab, select Nutanix.
+
+Under the Nutanix tab:
+
+* 1. Enter credential details. Nutanix supports both password based and SSH private key based secret type.
+* 2. Select the operating system type.
+* 3. Provide VM configuration details such as name, image, firmware, vCPU, device bus, memory, etc.
+* 4. Confirm whether or not to check log on status after the VM is created.
+* 5. Specify the connection type and port.
+
+## Quiz: Calm Services and Substrates
+
+### QUIZ QUESTION
+Environment is mandatory to ___.
+
+* Publish the applications into the marketplace.
+
+## Calm Macros
+
+efore we talk about macros, it is important to understand variables.
+
+The properties such as IP addresses, DNS names, and instance IDs that are associated with the services provisioned in blueprints are called variables. They can be static, provided at run time, or generated during blueprint or action runs. Variables can have various data types (strings, integers, dates, or times) and various inputs (generated using single value, single input arrays, multiple input arrays, or an API call), and can be validated through regular expressions (regex).
+
+### Macros Overview
+Macros enable you to access the value of variables and properties set on entities, and help you make generic scripts and create reusable workflows.
+
+For instance, a web server install script could use a macro to reference the IP address of a database. At deployment, the system replaces the macro with the actual IP address. Macros begin with “@@{“ and end with “}@@”.
+
+The syntax of a macro is "@@{variable_name}@@", where "variable_name" is the name of the variable.
+
+The syntax to access the value of variables or properties of other entities or dependencies is "@@{.<variable/attribute name>}@@".
+
+* "entity name" is the name of the other entity or dependency
+* "variable/attribute" name is the name of the variable or attribute.
+
+For example, if a blueprint contains a service by the name of app_container, you can access the IP address of the app_container service in any other service using "@@{app_container.address}@@" syntax.
+
+Calm macros are part of a templating language for Calm scripts. These are evaluated by Calm's execution engine before the script is run.
+
+Let’s further explore the supported entities, types of variables, access credentials as macros, access macros of an array service, and a lot more.
+
+### Supported Entities
+Entities supported by macros include:
+
+* Application
+* Service
+* Package
+* Virtual machine
+
+### Types of Variables
+There are two types of variables:
+
+* User-defined
+* Built-in.
+
+There are various built-in macros available for use based on different providers. Refer to the links below to view a list of built-in variables for the following providers.
+
+[Nutanix Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-ahv-c.html)
+[AWS Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-nucalm-aws-variables-c.html)
+[GCP Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-gcp-variables-c.html)
+[Azure Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-azure-variables-c.html)
+[Kuberenetes Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-kubernetes-c.html)
+[VMware Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-vmware-variables-c.html)
+
+### Credentials as Macros
+You can also access credentials as macros. The format to access credential is:
+
+"@@{cred_name.username}@@" and "@@{cred_name.secret}@@" "cred_name": Name of the credential with which the cred is created.
+
+### Access Macros of an Array Service
+Nutanix Calm allows you to access macros of an array service using a special macro, which starts with "calm_array". You can configure a VM with replicas and access the common macros of all the replicas.
+
+Let’s look at some of the examples:
+
+* Use the following macro to retrieve the name of all the instances of VM separated by commas. "@@{calm_array_name}@@"
+* Use the following syntax to retrieve the IP address of all the instances of VM separated by commas. "@@{calm_array_address}@@"
+* Use the following syntax to retrieve the ID of all the instances of VM separated by commas. "@@{calm_array_id}@@"
+
+### Supported Data Types
+Macro supports string and numbers data types. You can use them in the following format:
+
+* <strong>String</strong>: "@@{"some string"}@@" or "@@{'some string'}@@" Newline or other such special characters are not supported. You can use \ to escape quotes.
+* <strong>Numbers</strong>: Supports integer and float. For example, "@@{ 10 + 20.63 }@@"
+
+### Supported Operations
+Following are the supported macro operations:
+
+* Basic binary operations or numbers. For example, "@@{(2 * calm_int(variable1) + 10 ) / 32 }@@".
+* String concatenation. For example, "@@{ foo + bar }@@".
+* Slicing for strings. For example, "@@{foo[3:6]}@@".
 
 
 
