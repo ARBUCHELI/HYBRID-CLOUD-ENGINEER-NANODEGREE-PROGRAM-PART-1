@@ -5168,6 +5168,10 @@ In addition, we will give you an overview of the LAMP stack, the foundation on w
 
 Let’s get started!
 
+## Cloning a Blueprint
+
+### Calm Blueprint Lifecycle: Cloning a Blueprint
+
 
 
 
