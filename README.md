@@ -5902,6 +5902,10 @@ And in the third exercise, you’ll add scalability to the WebServer to increase
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/420.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/421.jpg)
 
+## Exercise Solution: Create Multi-VM Blueprint
+
+Please watch the videos to follow the tutorial
+
 
 
 
