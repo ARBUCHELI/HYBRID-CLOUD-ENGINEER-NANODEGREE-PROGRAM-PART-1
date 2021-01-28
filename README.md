@@ -5529,9 +5529,51 @@ Should he have updated the task in the task library, instead?
 
 * No, updates to the task library do not affect the blueprint. He has to manually update every blueprint.
 
+## The LAMP Stack
 
+* LAMP = Linux, Apache, MySQL, PHP
 
+LAMP is the most common example of a web service stack, and is popularly used to build dynamic websites and web applications.
 
+Over time, LAMP has become a term used to refer to a generic software model, and the model itself has been adapted to include different components. Three common examples are:
+
+* A variant in which Linux is replaced by Windows, abbreviated as WAMP
+* A variant in which Apache is replaced by Nginx, abbreviated as LEMP. Although it may seem odd to have an ‘E’ in the acronym, that comes from the pronunciation of Nginx, which is read as ‘Engine-X’
+* A variant in which Apache is replaced by Internet Information Services (or IIS), amusingly abbreviated as WIMP
+
+The original LAMP stack continues to remain popular, however, largely for its flexibility and because it is capable of hosting a variety of web frameworks. For example, if you are familiar with WordPress, Joomla, or Drupal, you may be interested to know that they run on the LAMP stack.
+
+Owing to both its flexibility and popularity, you are likely to encounter the LAMP stack when working with web applications — which is why we are going to build our three-tier Calm web app on the LAMP stack as well.
+
+But first let’s talk about each component of the LAMP stack.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52ad39_lamp-stack/lamp-stack.png)
+
+### Linux
+Linux belongs to the family of Unix-like operating systems. It was written by Linus Torvalds and has the features that are typical of a modern Unix OS, including multitasking, virtual memory, shared libraries, demand loading, shared copy-on-write executables, proper memory management, and multistack networking including IPv4 and IPv6.
+
+To use Linux you need to download a distribution, which is a complete Linux system including the kernel and applications. Multiple distributions are available for download and, as you may remember, one that we discussed in an earlier lesson is CentOS.
+
+In the LAMP stack, Linux is the foundation. Everything else runs on top of this layer.
+
+### Apache
+The second layer, the web server, is typically the Apache HTTP Server but can also be IIS or Nginx. Apache is used simply because it is a mature, feature-rich product and is arguably the most popular web server on the Internet.
+
+Apache HTTP Server (commonly shortened to just ‘Apache’) is a free, open-source, cross-platform web server that played a pivotal role in the initial growth of the World Wide Web. It overtook NCSA HTTPd, has remained popular since 1996, and became the first web server to host more than one hundred million websites.
+
+Apache’s features include Secure Sockets Layer (SSL) and Transport Layer Security (TSL) support, proxying, large file support, custom log files, and so on. Many features are also implemented as compiled modules, which extend the core functionality of the web server. These include authentication, authorization, support for server-side programming languages such as Perl and Python, and so on.
+
+### MySQL
+The third layer is the database layer and has traditionally been filled by MySQL. Popular alternatives include MariaDB and PostgreSQL, as well as NoSQL databases such as MongoDB.
+
+MySQL is a free, open source relational database management system (RDBMS). As with any relational database, it organizes data into one or more data tables, in which the data types are related to each other. These relations help structure data. And from the perspective of the LAMP stack, MySQL stores data that, when queried via scripts, can be used to construct a website.
+
+### PHP
+The fourth and final layer of the LAMP stack is the application programming language. While this is commonly PHP, the role can be filled by other languages such as Perl and Python.
+
+PHP was created in 1994 by Rasmus Lerdorf, who wrote a number of common gateway interface programs in C. He extended these programs to work with web forms and communicate with databases, and called this implementation Personal Home Page/Forms Interpreter — which is abbreviated as PHP/FI.
+
+PHP is a general purpose scripting language that is especially useful for web development, and is also used as a general purpose programming language. PHP code is interpreted by a web server via a PHP processor module, which generates the resulting web page.
 
 
 
