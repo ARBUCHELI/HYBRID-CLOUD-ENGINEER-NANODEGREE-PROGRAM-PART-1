@@ -5695,6 +5695,64 @@ Tip: Although httpd started the project, the Apache project has grown to a large
 
 Humor: Apache was named after "a patchy server" to indicate the project’s early days of software development.
 
+### QUIZ QUESTION
+Configuration files are under the ___ directory.
+
+* /etc/httpd/
+
+## Load Balancers
+
+Load Balancers are a critical architectural function in modern infrastructure and application design, they serve as a front-end for a service and distribute “load” across service resources. In our lesson, we’ll use a load balancer to split web traffic across the network to a web service array. Often, you will hear the terms request, load, traffic, and transaction used interchangeably. They have very close meanings that may be used separately in each service’s terminology.
+
+For our simple needs, our load balancer will use the simplest distribution mechanism called “round robin.”
+
+![](https://video.udacity-data.com/topher/2020/September/5f52adb6_round-robin-load-balancing/round-robin-load-balancing.png)
+
+A web request from a web client is directed to the load balancer, which picks one web server from the array for the first web request and delivers the web request to it. The web server answers the request and returns the answer through the load balancer back to the web client requestor. For the next web request to the load balancer, it will pick the next web server available in the array. This repeats for each subsequent web request across the entire web server population and will cycle around to the beginning of the web server array.
+
+The load balancer allows flexibility for web operations:
+
+* Performance: distributes web requests, allowing us to scale in and scale out the web tier as transactions grow more complex or resource hungry.
+* High uptime: allows removal of an individual web server for maintenance and return once complete while the remaining web servers handle traffic.
+
+Contrast the above benefits to previous strategies to scale up the resources of a single web server to handle more traffic, but this has definite physical limits to scale combined with increasing expense for more CPU and memory and incurs downtime for maintenance.
+
+### Designing the Load Balancer Tier
+We’ll use a very popular, open source load balancer called HAProxy, which is included in many Linux distributions, including our choice of CentOS. We’ll install HAProxy and configure it to accept web connections on TCP port 80. Furthermore, we’ll configure HAProxy to distribute requests to the web server array specified using Calm macros for the web service array.
+
+### HAProxy Load Balancer Server Administration
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/410.jpg)
+
+HAProxy uses the standard install and maintenance cycle:
+```
+sudo yum install -y haproxy
+sudo systemctl {enable,start,status,stop,restart} haproxy
+```
+We are using HAProxy to direct traffic to web servers, so the Firewall and security group access is for http on TCP port 80.
+
+The HAProxy configuration file is <strong>/etc/haproxy/haproxy.cfg</strong>
+
+For troubleshooting logs:
+
+```
+sudo journalctl -u haproxy
+```
+Further reference: HAProxy Project: Documentation
+
+* HAProxy 1.8 Configuration
+* HAProxy version: haproxy -v
+
+Tip: HAProxy stands for High Availability Proxy.
+
+### QUIZ QUESTION
+What is a load balancer?
+
+* A front-end for a service that distributes “load” across service resources
+
+
+
+
 
 
 
