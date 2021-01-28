@@ -4902,7 +4902,15 @@ In this solution video, you will see us upload a cloud-init configuration file t
 * @@{superuser.username}@@
 * @@{superuser.public_key}@@
 
+Watch the video to follow the tutorial:
 
+[![IMAGE ALT TEXT]([![IMAGE ALT TEXT]([![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/383.jpg)](https://www.youtube.com/watch?time_continue=3&v=gcToVM6H9ms&feature=emb_logo))](https://www.youtube.com/watch?v=qrOpxr4MgV4&feature=emb_logo)
+
+### Downloading and Launching the Blueprint
+
+Watch the video to folow the tutorial:
+
+[![IMAGE ALT TEXT]([![IMAGE ALT TEXT]([![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/390.jpg)](https://www.youtube.com/watch?v=fu10nUn0yzI&feature=emb_logo)
 
 
 
