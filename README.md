@@ -5506,6 +5506,33 @@ Watch the video to follow the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/404.jpg)](https://www.youtube.com/watch?v=PFZmmhJ49xg&feature=emb_logo)
 
+## Quiz: Calm Library
+
+### QUESTION 1 OF 3
+When tasks in the library update, the blueprints using these tasks are also updated automatically. State true or false.
+
+* False
+
+### QUESTION 2 OF 3
+While creating a custom variable type, you are required to select a ___.
+
+* Project
+
+### QUESTION 3 OF 3
+An administrator recognises that a user-defined task (script) can be reused as is by multiple other application blueprints. Hence, he saves the task to the library.
+
+When creating new application blueprints, the admin simply navigates to the task library to copy the task and reuse it, instead of creating one from scratch. This way he has re-used the task for 4 different blueprints.
+
+After a few days, the admin wants to make a few modifications to the task and also ensure that this change is reflected across all the blueprints that are currently reusing this task. So, he manually updates every blueprint using this task.
+
+Should he have updated the task in the task library, instead?
+
+* No, updates to the task library do not affect the blueprint. He has to manually update every blueprint.
+
+
+
+
+
 
 
 
