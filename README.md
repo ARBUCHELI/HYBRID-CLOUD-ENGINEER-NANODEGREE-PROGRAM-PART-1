@@ -5195,6 +5195,9 @@ You can clone an application blueprint from a pre-seeded application blueprint. 
 
 ### Calm Blueprint Lifecycle: Downloading a Blueprint
 
+Watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT]()]()
 
 
 
