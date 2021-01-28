@@ -5213,6 +5213,19 @@ To download a blueprint:
 
 You can also perform the same operation by selecting the blueprint and clicking the Download option under the Actions dropdown.
 
+![](https://video.udacity-data.com/topher/2020/September/5f52ac7b_downloading-a-blueprint-image1/downloading-a-blueprint-image1.png)
+
+## Quiz: Downloading a Blueprint
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/400.jpg)
+
+## Uploading a Blueprint
+
+### Calm Blueprint Lifecycle: Uploading a Blueprint
+
+Watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/401.jpg)](https://www.youtube.com/watch?v=-Ed3mod0W0g&feature=emb_logo)
 
 
 
