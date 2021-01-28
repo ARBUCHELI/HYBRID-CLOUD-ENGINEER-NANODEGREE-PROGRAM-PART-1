@@ -5055,7 +5055,26 @@ Read the scenario above and decide what you should do with the two application b
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/395.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/396.jpg)
 
+## Exercise Solution
 
+### Publishing a Single VM Blueprint to the Marketplace
+
+Watch the video to follow the tutorial:
+
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/392.jpg)](https://www.youtube.com/watch?v=_7rl8c0Us4A&feature=emb_logo)
+
+### Launching a Blueprint from the Marketplace
+
+
+Watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/392.jpg)](https://www.youtube.com/watch?v=Vz4PzWdZQ_A&feature=emb_logo)
+
+### Unpublishing and Deleting a Blueprint
+
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/392.jpg)](https://www.youtube.com/watch?v=PjIUOcXHwfI&feature=emb_logo)
 
 
 
