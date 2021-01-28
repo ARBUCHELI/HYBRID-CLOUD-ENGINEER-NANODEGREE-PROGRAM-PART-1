@@ -5750,9 +5750,112 @@ What is a load balancer?
 
 * A front-end for a service that distributes “load” across service resources
 
+## Creating a Multi-VM Calm Blueprint
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/411.jpg)
 
+Now that you are aware of all the elements required to create a multi-VM blueprint, let’s now learn about the process to create one.
 
+We gave an overview of multi-VM blueprint in the last lesson. Let’s do a recap and explore further.
+
+Multi-VM blueprint is a framework that you can use to create an instance, provision, and launch applications requiring multiple VMs. You can define the underlying infrastructure of the VMs, application details, and actions that are carried out on a blueprint until the termination of the application.
+
+You can create and configure multi-VM blueprints for the Nutanix, AWS, VMware, GCP, and Azure providers. For simplicity we will cover the process for Nutanix.
+
+Once a provider is configured and a project is created, you can then create a multi-VM Calm blueprint. The process involves six tasks:
+
+* 1. Adding a service.
+* 2. Configuring VM, package, and service for your provider.
+* 3. Setting up the service dependencies.
+* 4. Adding and configuring an application profile.
+* 5. Optionally, adding and configuring scale-out and scale in.
+* 6. Creating an action
+
+Let’s explore each of these tasks one by one.
+
+### Adding a Service
+Services are the virtual machine instances, existing machines or bare-metal machines, that you can provision and configure using Nutanix Calm. You can either provision a single service instance or multiple services based on the topology of your application. A service exposes an IP address and ports on which the request is received.
+
+To add a service, from the Blueprint page, click + Create Blueprint and select Multi VM/Pod Blueprint from the dropdown.
+
+In the Blueprint Setup window:
+
+* 1. Enter the name and description for the blueprint.
+* 2. Select a project. The available cloud options depend on the selected project.
+* 3. Click Proceed.
+* 4. Click + next to the Services. The service inspector panel is displayed.
+
+### Configuring VM, Package, and Service for your Provider
+This task involves defining the underlying infrastructure of the VM, application details, and actions that are carried out on a blueprint until the termination of the application on a Nutanix platform.
+
+In the service inspector panel, enter a name for the service. The panel includes three tabs, VM, package and service.
+
+Under the VM tab:
+
+* 1. Enter a name for the VM.
+* 2. Select either the existing machine or Nutanix for platform.
+* 3. Select the OS type .
+* 4. Specify the environment details or clone from the existing one.
+* 5. Add credential details.
+* 6. Specify the connection details such as port, type and protocol.
+
+Under the Package tab:
+
+* 1. Enter the package name.
+* 2. Click Configure Install to install a package.
+* 3. Configure tasks.
+* 4. You can even add the default system actions, if needed.
+
+Similarly, you can configure the tasks for uninstalling a package. When configuring the tasks, you have the choice to either reuse a system task or create one based on your requirement.
+
+Under the Service tab:
+
+* 1. Enter the service name
+* 2. Enter the number of default, minimum and maximum service replicas that you want to create.
+* 3. Add variables.
+
+Once you provide all these details and click Save, the blueprint is saved and listed under the blueprints tab.
+
+### Setting Up Service Dependencies
+Dependencies define the order in which the system runs the tasks; Calm visualizes this process in the design phase with arrows indicating the direction of Nutanix Calm execution. You can manually define dependencies—a web server depends on a database—or automatically define them with the Calm engine when macros are referenced.
+
+To set up a service dependency:
+
+* 1. Select the service.
+* 2. Click the dependency icon.
+* 3. Drag-and-drop to the service on which you need to create the dependency.
+
+### Adding and Configuring an Application Profile
+You need to apply the application profile while launching a blueprint. To add and configure an application profile:
+
+* 1. Click + icon in the Application Profiles.
+* 2. Enter an application profile name.
+* 3. Enter the name and value of the variable.
+* 4. Check the Secret check-box to hide the variable value.
+
+### Adding and Configuring Scale Out and Scale In
+Before creating an action, you can optionally add and configure the scale out and scale in task. The scale-in and scale-out functionality lets you decrease or increase the number of service replicas. When you configure the scaling task as part of a profile action, you can define the number of instances to add or remove for the service per scale action or choose to define the number at runtime.
+
+To add a scale in and scale out tasks, under the Application Profile, click + against Actions.
+
+* 1. Enter the name of the task.
+* 2. Select Scaling from the Type drop-down menu.
+* 3. Select either Scale In or Scale Out.
+* 4. Enter the number in the Scaling Count field.
+* 5. Click Save.
+The scaling out and scaling in number should be less than the minimum and maximum number of replicas defined for the service.
+
+### Creating an Action
+An <strong>action</strong> is a set of operations that you can run on your application that are created as a result of running a blueprint. To create an action:
+
+* 1. Click the + icon in the Actions pane.
+* 2. Select the service on which you want to create the task.
+* 3. Enter the action details.
+* 4. Enter the task details.
+
+Once you have performed all these tasks, you can now see the blueprint in the Blueprints page.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52ade7_creating-an-action-image1/creating-an-action-image1.png)
 
 
 
