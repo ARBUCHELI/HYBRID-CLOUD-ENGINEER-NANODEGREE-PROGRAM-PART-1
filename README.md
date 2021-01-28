@@ -4786,6 +4786,151 @@ Calm Blueprint Canvas
 
 ## Quiz: Blueprints Overview
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/381.jpg)
+
+## Working with Blueprints
+
+Watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/382.jpg)](https://www.youtube.com/watch?time_continue=3&v=JkJebVRaPEY&feature=emb_logo)
+
+Now we’re going to focus on creating blueprints themselves. Whenever you need to work with Blueprints, you’ll need to navigate to the Blueprints page of Calm, pictured below.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528b72_blueprints-page-main/blueprints-page-main.png)
+
+As you can see, the options available to you are very similar to those that you’ll see on other pages in Calm. You can create, upload, filter, launch, download, delete, and clone blueprints from this page.
+
+You’ll also see a table in the middle of the page that lists every available blueprint, as well as some basic information: the type, a description, the project it’s associated with, and so on. You can click the name of a blueprint to open the Blueprint Canvas screen, pictured below.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528bc5_calm-blueprint-canvas-no-labels/calm-blueprint-canvas-no-labels.png)
+
+The Blueprint Canvas screen is a complete view of your blueprint, consisting of all of the elements that we talked about earlier. Here, you can modify the configuration of a blueprint, publish, download, or launch it.
+
+## Creating a Blueprint
+Based on the type of application you intend to deploy, you will find yourself creating one of two different types of blueprints: single VM or multi-VM. And to create a blueprint, you simply need to click + Create Blueprint on the Blueprints page. There, you will see two options:
+
+* Single VM Blueprint
+* ulti-VM/Pod Blueprint
+
+![](https://video.udacity-data.com/topher/2020/September/5f528bf6_create-blueprint-options/create-blueprint-options.png)
+
+In this lesson, we will spend some time on single VM blueprints and follow up with an exercise that will allow you to create one. In the next lesson, we will look at multi-VM blueprints in detail.
+
+## Quiz: Working with Blueprints
+
+### QUIZ QUESTION
+How many types of blueprints can you create?
+* Two: single-VM, and multi-VM
+
+Like the name suggests, a single VM blueprint is a framework that you can use to create an instance, provision, and launch applications that require only a single VM. You can define the underlying infrastructure of the VM, application details, and actions that are carried out on a blueprint until the termination of the application.
+
+### Types of Single VM Blueprints
+The choices that you have when setting up your Providers extend to creating blueprints as well. You can create a single VM blueprint for Nutanix, VMware, AWS, Azure, and GCP.
+
+### Demo: UI for Single VM Blueprints
+Let’s walk you through the user interface for some of the creation steps below.
+
+Watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/383.jpg)](https://www.youtube.com/watch?time_continue=3&v=gcToVM6H9ms&feature=emb_logo)
+
+In general, the process of setting up a single VM blueprint is similar irrespective of the infrastructure you choose to use. While details may vary, as we saw when creating Providers, there are four broad tasks involved in creating a single VM blueprint:
+
+* Updating blueprint settings
+* Providing VM details
+* Specifying VM configuration
+* (Optional) Configuring advanced options
+
+### Blueprint Settings
+Here, you’ll provide a name and a description for the project, and specify the project that it needs to be associated with.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528c34_create-blueprint-1-blueprint-settings/create-blueprint-1-blueprint-settings.png)
+
+### VM Details
+On the VM Details page, you need to provide a name for the VM, choose the infrastructure it will run on, and specify an operating system. If you have already configured an environment as described in the previous lesson, you can simply click the Clone from environment link to duplicate your settings. That allows you to skip this step entirely, and proceed directly to the VM configuration page.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528c4c_create-blueprint-2-vm-details/create-blueprint-2-vm-details.png)
+
+### VM Configuration
+On the VM Configuration page, you will need to provide details about the VM itself, such as the number of vCPUs, cores per vCPU, memory, disks, network details, vGPUs, and so on. As you can see on the right of the screen, you will need to provide information in 7 different categories:
+
+* General configuration
+* Guest configuration
+* Disks
+* vGPUs
+* Categories
+* NICs
+* Serial ports
+
+Take note of the Categories step in this process and think back to earlier lessons where we discussed Categories in Prism Central — this is one example where you would apply any categories you may have set up at that time.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528c6b_create-blueprint-3-vm-configuration/create-blueprint-3-vm-configuration.png)
+
+### (Optional) Configure Advanced Options
+Finally, the last major task is to configure advanced options. This page allows you specify four additional areas for M provisioning:
+
+* Provide credentials: SSH keys and Passwords
+* Check the log on status of the VM after provisioning the blueprint
+* Add pre-create and post-delete tasks in the blueprint
+* Add packages and actions in the blueprint
+
+This is entirely optional and can be skipped if you do not have a need to update any of these settings.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528c84_create-blueprint-4-advanced-settings/create-blueprint-4-advanced-settings.png)
+
+Once you have provided all of the necessary information, review your settings and click Save. You will see your blueprint listed on the Blueprints page, and can then use it to model your application.
+
+## Quiz: Single VM Blueprints
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
