@@ -5333,12 +5333,12 @@ There are two types of variables:
 
 There are various built-in macros available for use based on different providers. Refer to the links below to view a list of built-in variables for the following providers.
 
-[Nutanix Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-ahv-c.html)
-[AWS Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-nucalm-aws-variables-c.html)
-[GCP Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-gcp-variables-c.html)
-[Azure Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-azure-variables-c.html)
-[Kuberenetes Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-kubernetes-c.html)
-[VMware Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-vmware-variables-c.html)
+* [Nutanix Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-ahv-c.html)
+* [AWS Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-nucalm-aws-variables-c.html)
+* [GCP Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-gcp-variables-c.html)
+* [Azure Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-azure-variables-c.html)
+* [Kuberenetes Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-kubernetes-c.html)
+* [VMware Variables](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v2_9_8:nuc-macros-vmware-variables-c.html)
 
 ### Credentials as Macros
 You can also access credentials as macros. The format to access credential is:
