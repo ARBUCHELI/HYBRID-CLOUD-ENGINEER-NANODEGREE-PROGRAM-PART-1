@@ -5443,6 +5443,68 @@ Select the 2 best practices that apply when naming an application profile.
 
 * Use nouns that reflect the audience use case.
 
+## Calm Actions
+
+Now that we have covered Application Profiles, let’s next learn about application profile actions. An application profile consists of several actions.
+
+Application Profile Actions, or Profile Actions, in short, are a set of operations that you can run on your application. For example, when launching a blueprint, the ‘Create’ action is run. If your application is not needed for a period of time, you could then run the ‘Stop’ action to gracefully stop your application. When you’re ready to resume work, running the ‘Start’ action will bring the app back up.
+
+The default application profile also contains several actions, which appear as gray ovals on a service. Actions consist of one or more tasks. Tasks are executed sequentially on each service. The types of tasks are Execute, Set Variable, HTTP, and Delay.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52ad0b_actions-and-tasks-on-a-service/actions-and-tasks-on-a-service.png)
+
+All services execute their actions and tasks in parallel unless a dependency is created to control orchestration, allowing operational control across the entire application.
+
+Let's review the simplest life cycle actions for IaaS.
+
+### Create and Delete
+Create: This action is invoked upon a blueprint launch and covers all services to allow orchestration. It provisions and configures the service in the provider.
+
+Delete: This action deprovisions the services with the provider.
+
+### Start, Stop, and Restart
+These actions are available to operate the entire deployment. But in the simplest blueprints, these typically remain empty until populated with tasks. In addition, when the create action is complete, it will immediately call the start action on each service.
+
+Correspondingly, the delete action will call and complete the stop action before performing its tasks on each service.
+
+## Quiz: Calm Actions
+
+### QUESTION 1 OF 2
+Which action provisions and configures the service in the provider?
+* Create
+
+### QUESTION 2 OF 2
+An administrator is running a complex application with databases, web servers, and load balancers. He wants to create a few actions in order to convert his daily routine tasks to one click operation. What type of tasks can he create for each of these services? Select all that apply.
+
+* Execute
+
+* Set Variable
+
+* HTTP
+
+* Delay
+
+## Calm Library Overview
+
+We covered tasks and variables in the previous sections. Let’s see how these can be reused when configuring an application blueprint.
+
+Calm Library allows you to save user-defined tasks (scripts) and variables that can be used by other application blueprints. By using existing user-defined tasks and variables, you do not have to define the same tasks and variables again. You can share tasks and variables listed as part of the library across different projects. You can also customize an existing task or variable.
+
+### Variable Types Overview
+Users can create custom variable types for added flexibility and utility. Beyond just string and integer data types, you can create more data types such as Date/Time, list, and multi-line string. List values can be defined as a static list of values or attach a script (eScript or HTTP task) to retrieve the values dynamically at runtime.
+
+While creating a custom variable type, you are required to select a project. However, you can share the variable type with multiple other projects using the "Share" option on the same page.
+
+### Calm Library Overview
+You can create tasks while configuring a blueprint and publish these tasks to the library. Nutanix Calm allows you to import these published tasks while configuring other blueprints across multiple projects.
+
+Tasks can be browsed and loaded from or saved to the library, to promote reuse across blueprints. Tasks from the library are copied into a blueprint. They do not update when the library changes, which keeps the blueprints safe.
+
+Let’s see a quick demo on how the Calm library allows you to reuse tasks across blueprints.
+
+Watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/404.jpg)](https://www.youtube.com/watch?v=PFZmmhJ49xg&feature=emb_logo)
 
 
 
