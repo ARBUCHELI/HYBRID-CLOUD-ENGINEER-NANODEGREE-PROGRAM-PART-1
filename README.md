@@ -4931,8 +4931,11 @@ Creating a multi-VM blueprint is a little more involved than a single VM bluepri
 
 Multi-VM blueprints are discussed in much more detail in the next lesson, but it’s helpful for you to have an overview of them now.
 
+## Managing Blueprints: Overview
 
+Watch the video to follow the tutorial 
 
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/391.jpg)](https://www.youtube.com/watch?v=I2WrDc4mVRE&feature=emb_logo)
 
 
 
