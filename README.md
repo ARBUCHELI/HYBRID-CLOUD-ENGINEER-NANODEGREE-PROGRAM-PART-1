@@ -5367,6 +5367,73 @@ Following are the supported macro operations:
 * String concatenation. For example, "@@{ foo + bar }@@".
 * Slicing for strings. For example, "@@{foo[3:6]}@@".
 
+## Quiz: Calm Macros
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/403.jpg)
+
+### QUESTION 2 OF 2
+Consider a scenario where you want to use a script to add an array of VM IP addresses of a service named WebServer to a HAProxy configuration file. Which Macro will you use in the script in order to retrieve a comma delimited list of all IPs of the VMs within WebService?
+
+* @@{WebServer.address}@@
+
+## Calm Application Profiles
+
+One of the tasks involved in creating a multi-VM blueprint is to add an application profile. You must select an application profile while you launch a blueprint.
+
+As we discussed in the previous lesson, application profiles often include choices about where an application should run (AHV or AWS), but they can also be about sizing (small or large), or a combination of the two (small AHV or large AHV or small AWS).
+
+An IT operator or developer should have a good understanding of the underlying differences between these choices, while abstracting that complexity from end users.
+
+Let’s look at some of the tips and best practices when creating an application profile.
+
+### Application Profile Tips and Best Practices
+### Using default profile
+
+Every blueprint has a default profile - it can be thought of as a base layer of the blueprint.
+
+* The default profile is used in the single-VM blueprint, but it is invisible to the user.
+* If needed, the default profile can be renamed for a better description for operators.
+
+### Using additional profiles
+
+Additional application profiles provide the operator role (or higher) deployment choices when using an application deployment.
+
+* This increases blueprint reuse (of actions and governance) by eliminating the need to make separate blueprints for each permutation of deployment.
+* Use application profiles to reduce the number of delegated run-time properties. Less choice reduces complexity and increases productivity.
+
+### Naming convention
+
+When naming an application profile:
+
+* Make it as simple and user-friendly as possible.
+* Use nouns that reflect the audience use case or jargon.
+* Capitalized noun, ideally without spaces.
+* Make application profiles a set of mutually exclusive choices.
+* Avoid overly specific or jargon names when possible.
+* Some examples of right naming conventions are as follows:
+* Production, Staging, UserAcceptanceTesting, Test, QualityAssurance, Development, ContinousIntegration
+* Public, Private, Hybrid
+* AHV, AWS, Azure, GCP, ESX, K8s
+* DataCenter1, BranchOffice9, Colo3, DisasterRecoveryWest, DisasterRecoveryCentral
+* Small, Medium, Large, Jumbo
+* Titanium, Gold, Silver, Bronze
+
+### Sample Usage of Application Profiles
+
+Application profiles express the intent of the blueprint developer to allow end-user choice between multiple deployment scenarios. Some typical choices include:
+
+* Capacity Size: small versus medium versus large resource consumption for different needs on different days. For example, developers may need to frequently create new, small deployments with less CPU, storage, and memory using the latest version of today’s application code, so they would choose a “small” application profile. At the beginning of each week, testers could run a new performance test on a large resource environment using double the CPU, the same amount of memory, and quadruple the storage, so they would choose a “large” application profile, which may also be used by operations for production deployments.
+
+* Infrastructure Provider: for a public, private, and/or hybrid deployment using different infrastructure providers. For example, developers may be restricted by governance to deploy daily workloads only on the private cloud, testers may deploy performance testing only on the public cloud when they need ephemeral resources, and staging and production workloads might always be deployed in a hybrid cloud fashion with a mix of multiple public and private clouds.
+
+* Location and Environmental Resources: different scenarios may need different resources, for example a database address with user and password credentials may vary by location or by environment.
+
+For example, you may have developer teams based in Asia, Europe, and the Americas. An application profile named “Asia” might have a Database variable set for db.asia.example.com, while an application profile named “Europe” might have the same database variable set to db.europe.example.com. Another example could incorporate choice for using development versus a staging database, each with different username and password credentials.
+
+A “development” application profile variables may be set for username = development and password = development_password, while an application profile named “staging” could set the same variables to different values for username = staging and password = staging_password. or Limited to full configuration delegation with run-time property overrides.
+
+* Any combination of the above: a hypothetical “Asia Development” application profile could incorporate all of these elements and more, such as: small capacity size, private cloud provider, located in Asia, and a development environment database variables, including allowing run-time override for any of the properties if desired.
+
 
 
 
