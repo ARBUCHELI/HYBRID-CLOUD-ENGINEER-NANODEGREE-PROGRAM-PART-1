@@ -5575,6 +5575,10 @@ PHP was created in 1994 by Rasmus Lerdorf, who wrote a number of common gateway 
 
 PHP is a general purpose scripting language that is especially useful for web development, and is also used as a general purpose programming language. PHP code is interpreted by a web server via a PHP processor module, which generates the resulting web page.
 
+## Quiz: The LAMP Stack
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/405.jpg)
+
 
 
 
