@@ -5869,9 +5869,38 @@ What is that he should remember when entering a number in the Scaling Count fiel
 
 * The scale count number must be less than or equal to the maximum number of replicas defined for the service.
 
+# VERY IMPORTANT FOR SOLVING THE SECOND PROJECT
 
+### Exercise - Create a Multi-VM Blueprint
+In this series of exercises, you will pull all of the concepts you’ve learned together to build a load-balanced multi-VM web application using the LAMP stack. This is commonly referred to as a “two-tier” web application. You will use a current CentOS distribution for the Linux OS and host the web application on the private cloud with Nutanix AHV as the VM hypervisor.
 
+We’ll walk through these steps together.
 
+In the first exercise, you’ll create a new multi-VM blueprint:
+
+* Add your SSH key credentials
+* Add a WebServer VM and configure CentOS with cloud-init and shell tasks
+* Install and configure an Apache web server
+* Configure a one page PHP web application
+
+In the second exercise, you’ll add a load balancer service:
+
+* Add an HAProxy VM and configure CentOS with cloud-init and shell tasks
+* Install and configure HAProxy load balancer to serve requests to the WebServer
+
+And in the third exercise, you’ll add scalability to the WebServer to increase application performance, making it a web-tier array!
+
+(In the next lesson, you will address orchestration between the Web Server and Load Balancer service dependencies.)
+
+![](
+![](
+![](
+![](
+![](
+![](
+![](
+![](
+![](
 
 
 
