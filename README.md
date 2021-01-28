@@ -5679,7 +5679,7 @@ Firewall and security group access details:
 * http is TCP port 80
 * https is TCP port 443 (outside of the scope of our course)
 
-Configuration files are under the <strong>/etc/httpd/</strong> directory and the web document root where programs and web pages reside in the <code>/var/www/html/</strong> directory.
+Configuration files are under the <strong>/etc/httpd/</strong> directory and the web document root where programs and web pages reside in the <strong>/var/www/html/</strong> directory.
 
 Troubleshooting logs:
 ```
