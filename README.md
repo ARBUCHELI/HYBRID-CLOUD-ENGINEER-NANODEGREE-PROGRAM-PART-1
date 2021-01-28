@@ -5858,6 +5858,21 @@ Once you have performed all these tasks, you can now see the blueprint in the Bl
 ![](https://video.udacity-data.com/topher/2020/September/5f52ade7_creating-an-action-image1/creating-an-action-image1.png)
 
 
+## Quiz: Creating Multi-VM Calm Blueprint
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/412.jpg)
+
+### QUESTION 2 OF 2
+An administrator wants to configure the scale-out functionality when creating a multi-VM Calm blueprint. Thus, he navigates to the Application Profile, clicks + against Actions, enters a name for the task, and selects Scale Out from the Type drop-down menu.
+
+What is that he should remember when entering a number in the Scaling Count field?
+
+* The scale count number must be less than or equal to the maximum number of replicas defined for the service.
+
+
+
+
+
 
 
 
