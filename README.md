@@ -5144,6 +5144,34 @@ If you’re comfortable with these concepts, you’ll find yourself in a good po
 
 
 
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+# LESSON 4 CREATING AND PUBLISHING A MULTI-VM BLUEPRINT
+
+## Lesson Overview
+
+As mentioned in earlier lessons, you can create two different types of blueprints based on the complexity of the application that you need to automate. In the previous lesson, we walked you through the creation of a single VM blueprint to help you familiarize yourself with blueprints.
+
+Now that you know how to create a single VM blueprint, in this lesson, we’ll focus on multi-VM blueprints.
+
+We will start the lesson by covering some of the common blueprint lifecycle management tasks such as cloning, downloading, and uploading a blueprint.
+
+To create a blueprint, you must first create a project and configure the environment. Therefore, we will briefly cover Calm services and substrates and walk you through the process of configuring a Nutanix environment as an example.
+
+We will introduce you to various advanced Calm constructs such as macros, variables, dependencies, library, etc. These concepts will serve as a foundation to understand the process of creating a multi-VM Calm blueprint. Finally, we will wrap-up the lesson by covering each task involved in creating a multi-VM Calm blueprint.
+
+By the end of this lesson, you will be able to perform blueprint lifecycle management tasks, configure a Nutanix environment and create a multi-VM Calm blueprint.
+
+In addition, we will give you an overview of the LAMP stack, the foundation on which we will build our web application. We’ll cover load balancer design with a scaling web service tier to address our “two tier” web application’s high availability and performance.
+
+Let’s get started!
+
+
+
+
+
 
 
 
