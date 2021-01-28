@@ -4913,7 +4913,23 @@ Watch the video to folow the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/390.jpg)](https://www.youtube.com/watch?v=fu10nUn0yzI&feature=emb_logo)
 
+## Multi-VM Blueprints
 
+A multi-VM blueprint is a framework that you can use to create an instance, provision, and launch applications that require multiple VMs. Just like single VM blueprints, you can define the underlying infrastructure of the VMs, application details, and actions that are carried out on a blueprint until the termination of the application.
+
+And, once again, you can choose which infrastructure to leverage when creating a multi-VM blueprint, with Nutanix, VMware, AWS, Azure, and GCP available as options.
+
+### Creating a Multi-VM Blueprint
+Creating a multi-VM blueprint is a little more involved than a single VM blueprint. The process involves 6 major tasks, which are:
+
+* Adding a service
+* Configuring the VM, package, and service for your provider
+* Setting up service dependencies
+* Adding and configuring an application profile
+* (Optional) Adding and configuring scale out and scale in
+* Creating an action
+
+Multi-VM blueprints are discussed in much more detail in the next lesson, but it’s helpful for you to have an overview of them now.
 
 
 
