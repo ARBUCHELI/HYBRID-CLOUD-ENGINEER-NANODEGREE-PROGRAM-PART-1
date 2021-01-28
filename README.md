@@ -5172,6 +5172,9 @@ Let’s get started!
 
 ### Calm Blueprint Lifecycle: Cloning a Blueprint
 
+Watch the video to follow the tutorial:
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/397.jpg)](https://www.youtube.com/watch?v=xHm4v2NH-vk&feature=emb_logo)
 
 
 
