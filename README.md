@@ -5197,7 +5197,21 @@ You can clone an application blueprint from a pre-seeded application blueprint. 
 
 Watch the video to follow the tutorial:
 
-[![IMAGE ALT TEXT]()]()
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/399.jpg)](https://www.youtube.com/watch?v=85r6DHQGrUI&feature=emb_logo)
+
+The ability to download a blueprint is one of the many blueprint management tasks that we talked about in the previous lesson. And while we went over them at a very high level, it’s worth taking a few moments to go into a little more detail on some of those tasks here.
+
+You can download a configured blueprint to your local machine for later use. You also have the option to download the blueprint with the credentials and secrets used in the blueprint.
+
+To download a blueprint:
+
+* 1. Click the blueprint icon.
+* 2. Click the blueprint that you want to download.
+* 3. Click Download.
+* 4. Select the check box, if you want to include credentials and secrets and type a password.
+* 5. Click Continue.
+
+You can also perform the same operation by selecting the blueprint and clicking the Download option under the Actions dropdown.
 
 
 
