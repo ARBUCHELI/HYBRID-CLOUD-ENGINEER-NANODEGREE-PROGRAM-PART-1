@@ -5434,6 +5434,16 @@ A “development” application profile variables may be set for username = deve
 
 * Any combination of the above: a hypothetical “Asia Development” application profile could incorporate all of these elements and more, such as: small capacity size, private cloud provider, located in Asia, and a development environment database variables, including allowing run-time override for any of the properties if desired.
 
+## Quiz: Application Profiles
+
+### QUIZ QUESTION
+Select the 2 best practices that apply when naming an application profile.
+
+* Make it as simple and user-friendly as possible.
+
+* Use nouns that reflect the audience use case.
+
+
 
 
 
