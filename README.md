@@ -5176,6 +5176,25 @@ Watch the video to follow the tutorial:
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/397.jpg)](https://www.youtube.com/watch?v=xHm4v2NH-vk&feature=emb_logo)
 
+This is a topic we’ve discussed earlier in the context of the Calm Marketplace. As you may remember, it’s a very straightforward process which you can complete with a couple of clicks.
+
+You can clone an application blueprint from a pre-seeded application blueprint. Cloning a blueprint is a simple process.
+
+* 1. From the Marketplace, click the application blueprint you want to clone.
+* 2. Click Clone.
+* 3. Enter a name and select the project that you want to assign it to.
+* 4. Click Clone again.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528655_marketplace-clone/marketplace-clone.png)
+
+## Quiz: Cloning a Blueprint
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/398.jpg?token=ADDIJ7MUYM4PPUG5NTDA5LDACKQPS)
+
+## Downloading a Blueprint
+
+### Calm Blueprint Lifecycle: Downloading a Blueprint
+
 
 
 
