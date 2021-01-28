@@ -4891,7 +4891,16 @@ Once you have provided all of the necessary information, review your settings an
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/387.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/388.jpg)
 
+## Exercise Solution: Create Single VM Blueprint
 
+### Exercise Solution
+### Creating a Single VM Blueprint
+Let’s walk you through in this video the steps we discussed above for creating a single VM blueprint. We will create a CentOS VM that is configured by Calm settings and cloud-init that uses your SSH key and creates a login user account named “centos.”
+
+In this solution video, you will see us upload a cloud-init configuration file that refers to your SSH key with Calm macros. The two Calm macros are:
+
+* @@{superuser.username}@@
+* @@{superuser.public_key}@@
 
 
 
