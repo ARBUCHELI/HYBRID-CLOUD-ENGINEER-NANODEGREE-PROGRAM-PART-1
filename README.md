@@ -4981,6 +4981,103 @@ Which of the following tasks are involved in managing blueprints? (may be more t
 
 * Deleting
 
+## Working with the Marketplace Manager
+
+Watch the video to follow the tutorial
+
+
+[![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/392.jpg)](https://www.youtube.com/watch?v=YQ-1RjGyBvE&feature=emb_logo)
+
+The last major topic that we’re going to discuss in this lesson is working with the Marketplace Manager. Like the Marketplace itself, the Marketplace Manager has its own page in Calm.
+
+It allows you to manage the list of custom blueprints and the marketplace application blueprints. You can view the list of published blueprints under the Marketplace Blueprints tab and the list of blueprints that are pending for approval under the Approval Pending tab. The Marketplace Manager page provides the following details about a blueprint:
+
+* Name of the blueprint
+* Name of the entity who created the blueprint
+* The number of projects for which the blueprint is available
+* The category of the blueprint
+* Status of the blueprint
+
+![](https://video.udacity-data.com/topher/2020/September/5f528cfd_marketplace-manager-page/marketplace-manager-page.png)
+
+After you select a blueprint, the inspector panel displays the operations you can perform on the selected blueprint. The inspector panel also displays a brief overview of the blueprint and allows you to select the category and projects for the available blueprint.
+
+Broadly, there are three operations that you are likely to perform on the Marketplace Manager page: publishing a blueprint, unpublishing a blueprint, and deleting an unpublished blueprint.
+
+### Publishing a Blueprint
+It’s worth noting that, if your blueprint is properly set up, publishing, unpublishing and deleting don’t involve more than one or two clicks. To publish a blueprint, for example, you simply need to:
+
+* Navigate to the Approval Pending tab
+* Select an unpublished blueprint from the list
+* Click Approve
+* Assign the blueprint to a Category
+* Click Publish
+
+### Unpublishing a Blueprint
+Unpublishing a blueprint removes it from the Marketplace, but does not delete the blueprint itself. It can also be republished if there is a need.
+
+To unpublish a blueprint:
+
+* On the Marketplace Blueprints tab, select a blueprint from the list
+* Click Unpublish
+
+![](https://video.udacity-data.com/topher/2020/September/5f528d1a_unpublish-a-blueprint/unpublish-a-blueprint.png)
+
+## Deleting a Blueprint
+Deleting a blueprint removes the blueprint itself, and the operation can only be performed on an unpublished blueprint. As you can see in the previous figure, you can only unpublish or launch a published blueprint.
+
+However, with an unpublished blueprint, as shown in the figure below, you will see options to either publish the blueprint or delete it. Simply click the Delete button to remove the blueprint.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528d31_publish-or-delete-a-blueprint/publish-or-delete-a-blueprint.png)
+
+## Quiz: Working with Marketplace Manager
+
+### QUESTION 1 OF 2
+True or false: Any blueprint created in Calm can be deleted later.
+
+*True, any blueprint created in Calm can be deleted. However, it must be unpublished before it can be deleted.
+
+You have just finished taking inventory of all the applications that your company has created blueprints for in Calm. Of the lot, you have found two applications that may no longer need to be in the Marketplace. Application A was a popular image editing application that was being used company wide, until it was replaced by a suite of cloud-based tools from another vendor entirely. Metrics for the blueprint indicate that it has not been used even once in several quarters, so it’s just taking up an unnecessary spot on the Marketplace.
+
+Application B is a web application that it seems only a small number of people have used in the past. Unlike App A, you’re not entirely certain what this one is for. The Marketplace entry isn’t very detailed and there isn’t a lot of information about the application itself. You only know that it’s a web app that was last deployed six months ago and never since. The blueprint hasn’t been updated either, and the person who created it left the company some time ago.
+
+What should you do with these two application blueprints?
+
+### QUESTION 2 OF 2
+Read the scenario above and decide what you should do with the two application blueprints. Remember that App A is the image editing software, and App B is the web application.
+
+* Delete the blueprint for App A and unpublish the blueprint for App B.
+
+## Exercise: Publish Blueprint to Marketplace
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/393.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/394.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/395.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/396.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
