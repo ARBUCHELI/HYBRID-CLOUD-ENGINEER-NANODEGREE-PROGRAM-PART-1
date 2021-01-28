@@ -5664,7 +5664,36 @@ When you do not know how to use a tool or command, which command helps you by gi
 
 * man
 
+## Web Server Administration
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/409.jpg)
+
+### Apache Web Server Administration
+The Apache web server has a standard install and maintenance cycle using:
+```
+sudo yum install -y httpd
+sudo systemctl {enable,start,status,stop,restart} httpd
+```
+Firewall and security group access details:
+
+* http is TCP port 80
+* https is TCP port 443 (outside of the scope of our course)
+
+Configuration files are under the <strong>/etc/httpd/</strong> directory and the web document root where programs and web pages reside in the <code>/var/www/html/</strong> directory.
+
+Troubleshooting logs:
+```
+sudo journalctl -u httpd
+tail /etc/httpd/logs/\*.log
+```
+
+Further reference: [Apache HTTP Server Project: Documentation](http://httpd.apache.org/docs/)
+
+* Apache version: httpd -v
+
+Tip: Although httpd started the project, the Apache project has grown to a large open source organization for many software projects, so the term is used for both the httpd web server and the umbrella parent organization.
+
+Humor: Apache was named after "a patchy server" to indicate the project’s early days of software development.
 
 
 
