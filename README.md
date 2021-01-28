@@ -4937,6 +4937,50 @@ Watch the video to follow the tutorial
 
 [![IMAGE ALT TEXT](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/391.jpg)](https://www.youtube.com/watch?v=I2WrDc4mVRE&feature=emb_logo)
 
+There are a number of tasks that you can perform after you have a blueprint set up and saved. In no particular order, there are 10 tasks that you should be aware of in the context of managing blueprints:
+
+* Publishing blueprints
+* Launching blueprints
+* Uploading blueprints
+* Downloading blueprints
+* Configuring blueprints
+* Viewing blueprints
+* Editing blueprints
+* Deleting blueprints
+* Viewing blueprint errors
+* Recovering deleted blueprints
+
+While most of these are self-explanatory, there are a few details worth noting here. Configuring a blueprint, like most things in Calm, involves filling out a form that requires a name, a description, downloadable image configuration, and so on, as shown in the following figure.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528cc2_blueprint-configuration/blueprint-configuration.png)
+
+Viewing blueprint errors is relevant only if a blueprint has been configured incorrectly, or if an unforeseen issue occurred during development. If you receive an error when saving or publishing a blueprint, look for an exclamation mark icon in the UI, beside the undo and redo buttons. You can click the icon to view details of each error and take corrective action as needed.
+
+![](https://video.udacity-data.com/topher/2020/September/5f528cd8_blueprint-error/blueprint-error.png)
+
+After you configure a blueprint, you can publish, unpublish, launch, or delete it.
+
+Publishing a blueprint allows you to make the blueprint available in the Marketplace, so that other users can use it. This requires administrator approval. Unpublishing a blueprint allows you to remove the blueprint from the Marketplace.
+
+And finally, launching a blueprint allows you to deploy the application associated with the blueprint and start using it
+
+## QUIZ QUESTION
+
+### QUIZ QUESTION
+Which of the following tasks are involved in managing blueprints? (may be more than one answer)
+
+* Uploading
+
+* Downloading
+
+* Publishing
+
+* Unpublishing
+
+* Launching
+
+* Deleting
+
 
 
 
