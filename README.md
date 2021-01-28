@@ -4719,11 +4719,72 @@ What are Nutanix Marketplace applications?
 
 * Ready to use applications that are available in Calm out-of-the-box
 
+## Calm Blueprints: Overview
 
+As we briefly discussed earlier, Blueprints are recipes for applications. Now let’s take a little time to explore what those recipes typically contain.
 
+The eleven main components of a Calm Blueprint are:
 
+* Application Profiles
+* Services
+* Substrates
+* Application Profile Actions
+* System Defined Profile Actions
+* Custom Profile Actions
+* Service Actions
+* System Defined Service Actions
+* Custom Service Actions
+* Package Install/Uninstall
+* VM Pre-create/Post-create
 
+Let’s go over each of these in a little more detail.
 
+Calm Blueprint Canvas
+
+![](https://video.udacity-data.com/topher/2020/September/5f528a8e_calm-blueprint-canvas/calm-blueprint-canvas.png)
+
+### Application Profiles 
+(number 1 in the image above) expose simple choices to your end users. These choices are often about where an application should run (AHV or AWS), but they can also be used for ‘t-shirt’ sizing (small or large), or a combination of the two (small AHV or large AHV or small AWS). You, as an IT operator or developer, should have a good grasp of the underlying differences of these choices, while abstracting that complexity from your end users.
+
+### Services 
+(number 2 in the image) are logical entities exposed by an IP, which span all application profiles, and are managed by Calm. End users and services communicate amongst each other over a network via their exposed IPs and ports. Services are typically deployed based on a disk image that is managed by Prism Central. Take a moment to think back to previous lessons, and to the Image Management topic that we discussed. Services in Calm are one reason why it’s important to understand how to work with images in Prism Central.
+
+### Substrates 
+(number 3 in the image) are a combination of the underlying cloud and the virtual machine instance. When the desired cloud is selected in the Calm UI, all of the fields required for creating a virtual machine instance on that particular cloud are displayed — the combination of all these fields make up a substrate. Substrates do not span application profiles, so it’s considered a best practice to name substrates as a combination of the service name and app profile name (DB_AHV or DB_AWS or DB_Small or DB_Large).
+
+### Calm Application Profiles and Actions
+
+![](https://video.udacity-data.com/topher/2020/September/5f528ab7_calm-application-profiles-and-actions/calm-application-profiles-and-actions.png)
+
+### Application Profile Actions
+(or Profile Actions for short, number 4 in the image above) are a set of operations that you can run on your application. For example, when launching a blueprint, the ‘Create’ action is run. If your application is not needed for a period of time, you could then run the ‘Stop’ action to gracefully stop your application. When you’re ready to resume work, running the ‘Start’ action will bring the app back up. There are two different types of profile actions, system defined profile actions and custom profile actions.
+
+### System Defined Profile Actions
+(5 in the image) are automatically created by Calm in every blueprint and underlying application. Since these are created for you, you cannot directly edit the tasks or the order of tasks within the canvas. However there are ways to control the order of operations, called Dependencies.
+
+### Custom Profile Actions 
+(6 in the image) are created by the blueprint developer, and should be added whenever you need to expose a set of operations to the end user. Common custom profile actions are ‘Upgrade’, ‘Scale In’, and ‘Scale Out’. Since the actions are custom, individual tasks can be manually added in any order desired by the developer.
+
+### Calm Service Actions
+
+![](https://video.udacity-data.com/topher/2020/September/5f528ad3_calm-service-actions/calm-service-actions.png)
+
+### Service Actions
+(7 in the image above) are a set of operations to be run on an individual service. As we discussed earlier, services span application profiles, so their actions (and the operations underlying those actions) do as well. If you create a service action in the ‘AHV’ profile, the same service action will be available in the ‘AWS’ profile. As with profile actions, there are also two different types of service actions: system-defined service actions and custom service actions.
+
+### System Defined Service Actions 
+(8 in the image) are automatically created by Calm in every blueprint and underlying application. While these actions cannot be individually invoked, they are called when the corresponding profile action is run. For instance, any operations placed under the ‘Stop’ service action will be run when an end user invokes the ‘Stop’ profile action.
+
+### Custom Service Actions 
+(9 in the image) are created by the blueprint developer, and should be added for any repeatable operations within the blueprint, like a function definition in a programming language. For instance, during both the ‘Create’ and ‘Upgrade’ profile actions, the ‘App’ service should pull new code from a source code control repository. Rather than maintaining two separate tasks that perform the same set of operations, you could create a single custom service action which is then referenced in both the ‘Create’ and ‘Upgrade’ actions.
+
+### Package Install/Uninstall
+(10 in the image) are operations which are run during the ‘Create’ or ‘Delete’ profile actions. In other words, they are operations that run when a user first launches a blueprint, or finally deletes the entire application. Package Install and Uninstall are unique to each application profile, which means your tasks or the task contents can vary depending upon the underlying cloud or the app’s ‘t-shirt’ size.
+
+### VM Pre-create/Post-delete
+(11 in the image) are operations which are run before the substrate is created, or after it is deleted. A common use case for this is to make an API call into an IP Address Management (IPAM) system to get an IP for a to-be-created VM. Since other operations described so far are run after the substrate has already been created, VM pre-create is necessary if a property of your substrate relies on a 3rd party system.
+
+## Quiz: Blueprints Overview
 
 
 
