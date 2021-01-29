@@ -5906,6 +5906,12 @@ And in the third exercise, you’ll add scalability to the WebServer to increase
 
 Please watch the videos to follow the tutorial
 
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=NquHQtPiTXI&feature=emb_logo)
+
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=ilFzJl_I030&feature=emb_logo)
+
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=kLx5Rq-WLMU&feature=emb_logo)
+
 
 
 
