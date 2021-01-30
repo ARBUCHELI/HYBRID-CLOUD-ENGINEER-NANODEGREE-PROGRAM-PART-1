@@ -6173,7 +6173,11 @@ MySQL version: ```mysqld -v```
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/450.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/451.jpg)
 
+## Exercise Solution: Add Database Service
 
+Please watch the videos to follow the tutorial
+
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=jOLJ0MB56pU&feature=emb_logo)
 
 
 
