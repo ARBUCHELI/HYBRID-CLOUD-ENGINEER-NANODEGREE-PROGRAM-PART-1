@@ -6154,8 +6154,8 @@ A database structure, called a database schema, defines the types of data it wil
 
 Further reference:
 
-[MySQL Documentation](https://dev.mysql.com/doc/)
-[MySQL server administration](https://dev.mysql.com/doc/refman/8.0/en/using-systemd.html)
+* [MySQL Documentation](https://dev.mysql.com/doc/)
+* [MySQL server administration](https://dev.mysql.com/doc/refman/8.0/en/using-systemd.html)
 MySQL version: ```mysqld -v```
 
 
