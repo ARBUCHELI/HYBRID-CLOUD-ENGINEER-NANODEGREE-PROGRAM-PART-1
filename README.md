@@ -6158,6 +6158,7 @@ Further reference:
 * [MySQL server administration](https://dev.mysql.com/doc/refman/8.0/en/using-systemd.html)
 MySQL version: ```mysqld -v```
 
+# VERY IMPORTANT FOR SOLVING THE SECOND PROJECT
 ## Exercise: Add Database Service
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/440.jpg)
@@ -6216,6 +6217,7 @@ How can you create a dependency between services in Calm?
 * Click the Create Dependency icon
 * Drag it to the dependent service
 
+# VERY IMPORTANT FOR SOLVING THE SECOND PROJECT
 ## Exercise: Add Dependencies
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/452.jpg)
