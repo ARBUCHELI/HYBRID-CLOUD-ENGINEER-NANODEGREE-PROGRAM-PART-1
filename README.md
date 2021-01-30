@@ -6362,7 +6362,9 @@ Simply using this automation in the cloud is limiting. There is never a single r
 
 This inherent flexibility is a core benefit of Nutanix Calm. And that is what we’ve really explored in this course: How IT can turn self-service into the expectation, instead of the exception.
 
+## Congratulations
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/465.jpg)
 
 
 
