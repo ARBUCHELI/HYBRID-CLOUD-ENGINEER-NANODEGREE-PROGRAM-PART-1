@@ -6045,6 +6045,120 @@ To achieve a three tier web application, we will be discussing:
 
 Let’s begin.
 
+## Big Picture
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/435.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/436.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/437.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/438.jpg)
+
+Before we move on with this lesson, which is the culmination of everything you have learned so far, let’s take a moment to circle back to the beginning and see how everything ties together.
+
+As you may remember, we spoke about how businesses constantly seek to improve overall IT agility and responsiveness to enable more rapid innovation. However, application development and delivery is growing in complexity, making it challenging for teams to keep up with increasing expectations to move faster.
+
+As a result, when thinking about the applications that drive and support a business, there are a number of important factors to consider about the applications themselves, as well as their deployment and maintenance:
+
+* Today’s mission critical and complex business processes need a plethora of applications to work in harmony
+* The growing number of interdependent components, and reliance on manual processes, lead to frequent unplanned downtime due to errors
+* Knowledge silos force everyone to work in a partial state of isolation, leading to a lack of productivity in the business
+* Hybrid clouds introduce inoperable and disparate platforms, adding significant management challenges
+
+![](https://video.udacity-data.com/topher/2020/September/5f52b103_advanced-app-level-orchestration/advanced-app-level-orchestration.png)
+
+Hyperconverged solutions provide a much simpler infrastructure that scales linearly and radically reduces the complexity inherent to traditional data center architectures. But to truly transform how IT teams can support the business, a new approach that automates all aspects of how applications are created, consumed and governed is needed.
+
+Melding advanced application-level orchestration with a full cloud-driven infrastructure stack can achieve repeatable, simple and automated management of applications – across a variety of environments including private and public clouds.
+
+And as we’ve seen in this course, that advanced application-level orchestration is provided by Nutanix Calm.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52b129_advanced-app-level-orchestration-with-calm/advanced-app-level-orchestration-with-calm.png)
+
+Calm provides a single pane for application automation and lifecycle management for Nutanix, VMWare, and public clouds, as part of the Nutanix Enterprise Cloud Platform.
+
+Calm orchestrates the provisioning, scaling and management of applications across multiple environments to make the entire IT infrastructure more agile and application centric.
+
+And this lesson illustrates how the various components of Calm come together to address the needs of enterprise applications. Using a three-tier web application as our example, you will explore how Calm delivers app-centric automation and lifecycle management, policy-based governance, self-service provisioning to any enterprise in need of these capabilities.
+
+## Quiz: Big Picture
+
+### QUIZ QUESTION
+Which of the following statements are common challenges when working with enterprise applications? (may be more than one answer)
+
+* Mission critical and complex business processes need a plethora of applications to work in harmony
+* Knowledge silos lead to a lack of productivity in the business
+
+## When and When Not to Use Calm Automation
+
+After everything we’ve seen, a good question to be asking yourself is ‘When am I likely to use Calm?’. Helpfully, the answer is remarkably straightforward.
+
+Much of Calm’s power lies in its universality: whenever you need to work with an application, whether you’re deploying it in a single cloud or multiple clouds, if there’s a need for automation and orchestration Calm will be useful to you.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52b174_graphic-2/graphic-2.png)
+
+When you’re considering whether or not to use Calm for an application deployment, there are three key factors that you need to consider.
+
+### How the application will be deployed
+* Will it be on-prem?
+* Will it be on the cloud?
+* Will it be both on-prem and on the cloud?
+* Will part of the application be on-prem and part of it on the cloud?
+
+### The users of the application
+* Is it beneficial for users to be able to deploy the application without intervention from IT?
+* Will this application be deployed frequently?
+* Is the application likely to be deployed multiple times?
+
+### The application itself
+* Is there value in automating deployment?
+* Is there value in automating management?
+* Is there value in making application deployment consistent and repeatable?
+
+If the answer to a good number of these questions is yes, then you have a good use case for Calm on your hands. And, as we’ve learned so far — and will see in this lesson as well — irrespective of the nature and the complexity of the application itself, Calm brings simplicity and ease of use to both your experience, as IT, and to your users’ experience as well.
+
+## MySQL Database Server Administration
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/439.jpg)
+
+The MySQL database upholds the standard install and maintenance command tools:
+```
+sudo yum install -y mysqld
+sudo systemctl {enable,start,status,stop,restart} mysqld
+```
+The {1,2,3} list is shorthand for all of the standard operations you can choose to perform on most services with <strong>systemctl.</strong>
+
+For Firewall and security group access, mysqld listens on TCP port 3306.
+
+The configuration file is <strong>/etc/my.cnf</strong>
+
+For troubleshooting database logs:
+```
+sudo journalctl -f -u mysqld
+sudo tail /var/log/mysqld.log
+```
+The configuration of data, users, and operations inside the database requires the database to be started, then administered via the <strong>mysql</strong> client. Databases contain their own users, credentials, and role permissions. Everything inside the database is independent of operating system user credentials, so the database user root is not the same as Linux user root. <strong>mysqldump</strong> is included in the MySQL package for creating a database backup.
+
+Accessing MySQL from the command line requires database user credentials, e.g.:
+```
+mysql --user=root --password=example
+mysqldump --all-databases --user=root --password=example
+```
+After authenticating with database credentials, commands can be issued. The standard for database commands is SQL: Structured Query Language. While MySQL can deviate from the standard and vary between different MySQL major releases, the majority of SQL is compatible across most different database and versions.
+
+You will see the automation scripts leverage <strong>mysql</strong> command to authenticate as database user root and then perform SQL operations. Those operations will include creating users, granting roles to users, and creating database structures.
+
+Database structures are organized as: databases and tables, which are addressed by database_name.table_name. You can think of a database as a spreadsheet and a database table as a tab or layer in that spreadsheet. So a database is a collection of tables.
+
+Any application not on the database VM can authenticate with a database user over the network and issue SQL commands to interact with a specific database and database table. The web application will need these pieces of information: a database server address, database user and password, and a database name and table. The PHP language database MySQL driver will use the default MySQL TCP port, so it is omitted unless there is a need for custom configuration.
+
+A database structure, called a database schema, defines the types of data it will store. Building on the spreadsheet example, think of a database table as the different columns with data formats in a spreadsheet. Finally, the data is populated into the table via SQL statements such as INSERT, UPDATE, and DELETE. This can be thought of as editing the data cells in spreadsheet rows.
+
+Further reference:
+
+[MySQL Documentation](https://dev.mysql.com/doc/)
+[MySQL server administration](https://dev.mysql.com/doc/refman/8.0/en/using-systemd.html)
+MySQL version: ```mysqld -v```
+
+
 
 
 
