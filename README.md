@@ -6300,7 +6300,11 @@ Because these custom actions can be delegated to any user or group in the projec
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/463.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/464.jpg)
 
+## Exercise Solution: Add Database Backup
 
+Please watch the videos to follow the tutorial
+
+[![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=wGYZ0-2mJ28&feature=emb_logo)
 
 
 
