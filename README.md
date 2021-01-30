@@ -6235,7 +6235,59 @@ This pair of videos will walk through the same steps of the solution we went thr
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=6vx9_MghS94&feature=emb_logo)
 
+## Advanced Calm Actions
 
+As we’ve discussed in previous lessons, an action is a set of operations that you can run on an application or a service. There are two major types of actions: Profile Actions and Service Actions.
+
+Profile Actions are run on applications and are of two types: system-defined profile actions, and custom profile actions. System-defined profile actions are automatically created by Calm in every blueprint and underlying application. These actions are typically Create, Start, Stop, Delete, and so on. Custom profile actions are created by the person developing the blueprint, and are typically Upgrade, Scale In, Scale Out, and so on.
+
+Service Actions are run on individual services and typically span application profiles. So, for example, consider that you have two profiles set up in a blueprint, AWS and AHV. If you create a service action for the AHV profile, it will be available in the AWS profile as well. As with profile actions, there are two types of service actions: system-defined and custom.
+
+For this lesson specifically, we need to take a closer look at how Calm actions can handle more complex PaaS and SaaS needs. This is typically achieved through:
+
+* Additional Create stages
+* Additional Delete stages
+* Scale-in and Scale-out
+* Custom actions for ongoing maintenance and operations
+
+### Additional Create Stages: Pre-create and Package Install
+Pre-create actions are run before the substrate is created. A common use case for this is to make an API call into an IP Address Management (IPAM) system to get an IP for a to-be-created VM.
+
+Package Install actions, on the other hand, are operations which are run during the Create profile action. In other words, they are operations that run when a user first launches a blueprint. Package Install is unique to each application profile, which means your tasks or the task contents can vary depending upon the underlying cloud or the app’s size.
+
+### Additional Delete Stages: Package Uninstall and Post-Delete
+Package Uninstall actions are operations which are run during the Delete profile action. That is, they are operations that run when a user finally deletes the entire application. Like Package Install, Package Uninstall is also unique to each application profile, so tasks or task contents can vary depending upon the underlying cloud or app size. An example of a package uninstall task might be to cancel or release a license entitlement when the software is removed from the service or to orchestrate dependent changes on other services required for the uninstall process.
+
+Post-delete actions are run after the substrate is deleted. For example: when a VM is deleted, the post-delete action would trigger removing the VM server property held by external systems. Typical use cases would involve deprovisioning the IP, DNS, and/or MAC addresses of VMs with various different inventory, monitoring, or change management database (CMDB) systems. For example: when a VM is deleted, the post-delete action would trigger removing the VM server property from any of the following:
+
+* Retire the IP address from the IPAM system, such as Infoblox, BlueCat, Redhat Satellite, etc.
+* Delete all associated DNS records from the DNS provider, such as Bind, PowerDNS, AWS Route53, etc.
+* Remove VM from asset inventory in ServiceNow.
+
+In other words, post-delete action and package uninstall tasks help clean up and remove everything necessary outside of the application services when an application is deleted.
+
+### Scale-in and Scale-out
+Although we’ve discussed these topics previously, let’s take a moment to recap them both here.
+
+Scale-in functionality enables you to decrease the number of replicas of a service deployment. The number of instances to be removed from a service for each scale-in action is defined in the blueprint, or by utilizing macros, can be configured to be set when the action is initiated by an end user. This is typically done when configuring the task in the profile action. The scale count number must be less than or equal to the minimum number of replicas defined for the service. The VM that is created last is deleted first.
+
+Scale-out functionality is the opposite of scale-in — it enables you to increase the number of replicas of a service deployment. The number of instances to be added to a service for each scale-out action is defined in the blueprint, when configuring the task in the profile action. The scale count number must be less than or equal to the maximum number of replicas defined for the service.
+
+### Custom Actions for Maintenance and Operations
+As you’ve learned from the Create action, complex orchestration across the entire application services can be configured during deployment of the application and infrastructure. We’ve also covered the scaling actions for changing a running application’s replica services. How could one perform any other change to a running application?
+
+Custom actions can be created in Calm blueprints by the developer role for post-deployment or “day two” operations, to allow any simple or complex operation to be orchestrated during the running state of the application. Aside from the existing start/stop/restart and delete actions, custom actions allow life cycle operations and updates after the birth, but before the death or termination of the application workload.
+
+Here are some typical maintenance examples:
+
+* Add/update/reset a user credential to a service, e.g.: add a new database user
+* Add/update/reinstall a new version of a package, e.g.: a web application update
+* Add/update a configuration and reload a service, e.g.: a web server change
+* Backup/restore a VM disk or service, e.g.: a database backup
+* Update an operating system, e.g.: install security updates
+* Any combination of the above
+
+Because these custom actions can be delegated to any user or group in the project with Operator role or higher, these auditable actions can be made self-service for end users, freeing valuable time to IT and Operations staff. Even better, periodic scheduling systems or monitoring systems can detect problems that trigger these custom actions for automated, continuous operations via Calm APIs to allow “lights-out” remediation and maintenance of applications around the clock.
 
 
 
