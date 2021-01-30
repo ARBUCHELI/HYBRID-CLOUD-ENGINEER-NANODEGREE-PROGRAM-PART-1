@@ -6179,6 +6179,45 @@ Please watch the videos to follow the tutorial
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=jOLJ0MB56pU&feature=emb_logo)
 
+## Orchestration Dependencies Across Services
+
+By default, tasks are executed sequentially on each service for each action in a blueprint and each service will operate in parallel, fully independent of each other. However, this is rarely useful for multiple services: they often work together and require operational coordination. Orchestration is how Calm drives the order of operations across all services in the blueprint.
+
+Calm automatically determines orchestration dependencies between services when a task in an action uses a macro value from another service in the blueprint. An orange orchestration arrow, or "edge," represents the order in which Calm initiates the various tasks. For example, we saw that the load balancer service configuration depended on knowing each web server IP address using the web service address macro, which is shown with an orange orchestration edge going from the web server "create" task to the load balancer "package install" task.
+
+Calm will validate all dependency arcs when a blueprint is saved and alert if there are any cyclical or ambiguous errors. This is why you may not see dependencies during the creation or editing of a multi-VM blueprint until saving the blueprint.
+
+### Orchestration Dependencies across Services
+A dependency, as the name suggests, it used to define which services in your application depend on another service (or multiple services) for properties or information, such as IP addresses and DNS names.
+
+In essence, since services require operational coordination, dependences allow you to define the order in which tasks must be executed.
+
+If you do not use macros in your blueprint for automated orchestration as covered in the previous section, a simpler method exists to allow logical orchestration across multiple services during all of the standard actions (create, start, stop, restart, delete). Simply use the white arc to connect one service to another, starting from the dependent and ending on the source of the dependency.
+
+When you save the blueprint, you will see orchestration dependency arcs created for each of the actions, even if each action has no tasks. Furthermore, you will notice that the orchestration is reversed in create versus delete and start versus stop actions.
+
+### Setting Up Service Dependencies
+As described earlier, without the use of macros, setting up dependencies is quite literally a matter of drag-and-drop. When you select a service, you will see the Create Dependency icon, as shown in the following figure.
+
+![](https://video.udacity-data.com/topher/2020/September/5f52b205_drag-and-drop-service-dependencies/drag-and-drop-service-dependencies.png)
+
+Simply click that Create Dependency icon and drag it to the dependent service in order to create your dependency. If done correctly, you will see white arcs/lines connecting your services to each other, indicating which services are dependent upon which other services.
+
+## Quiz: Orchestration Dependencies
+
+### QUESTION 1 OF 2
+What is a dependency in Nutanix Calm?
+
+* A way to define the order in which tasks must be executed
+
+## QUESTION 2 OF 2
+How can you create a dependency between services in Calm?
+
+* Click the Create Dependency icon
+* Drag it to the dependent service
+
+
+
 
 
 
