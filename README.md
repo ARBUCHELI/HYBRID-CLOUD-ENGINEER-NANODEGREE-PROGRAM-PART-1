@@ -6289,6 +6289,8 @@ Here are some typical maintenance examples:
 
 Because these custom actions can be delegated to any user or group in the project with Operator role or higher, these auditable actions can be made self-service for end users, freeing valuable time to IT and Operations staff. Even better, periodic scheduling systems or monitoring systems can detect problems that trigger these custom actions for automated, continuous operations via Calm APIs to allow “lights-out” remediation and maintenance of applications around the clock.
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/458.jpg)
+
 
 
 
