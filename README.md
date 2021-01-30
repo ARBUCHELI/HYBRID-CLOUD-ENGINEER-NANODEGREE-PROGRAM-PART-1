@@ -6306,9 +6306,61 @@ Please watch the videos to follow the tutorial
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=wGYZ0-2mJ28&feature=emb_logo)
 
+## Glossary
 
+### Dependency - 
+Defines which services in your application depend on another service (or multiple services) for properties or information, such as IP addresses and DNS names.
 
+### Orchestration dependency - 
+The determination of the order in which dependent tasks are executed across services.
 
+### Profile action - 
+A set of operations run on an application.
+
+### Service action - 
+A set of operations run on a service.
+
+### System-defined profile actions - 
+Basic profile actions offered by default by the system, such as Create, Start, Stop, and Delete.
+
+### Custom profile actions - 
+Profile actions created by the creator of the blueprint for tailored purposes.
+
+### Pre-create actions - 
+Actions that are run before a substrate is created.
+
+### Package Install actions -
+Operations run during the Create profile action, when a user first launches a blueprint.
+
+### Package Uninstall actions - 
+Operations run during the Delete profile action.
+
+### Post-delete actions -
+Actions run after a substrate is deleted.
+
+## Lesson Conclusion
+
+With this, we come to the end of both this lesson and this course. Let’s take a brief moment to recap all that we’ve discussed. We have taken a close look, both conceptually and practically, at:
+
+* Prism Central and how it allows you to efficiently manage multiple clusters and multiple users at scale
+* The Calm interface, how to access it, and its elements
+* Blueprints, which are the heart of Calm’s automation and orchestration capabilities, and turn applications into repeatable, reusable, automated units
+* The Marketplace, which enables true self-service for users and frees up IT time for more strategic initiatives in service of the business
+* The various features that you need to understand in order to work with blueprints and the Marketplace, such as providers, projects, environments, macros, variables, actions, RBAC, and more
+
+And although we’ve spent a lot of time on Calm’s major capabilities, we hope your key takeaway from this course is broader in scope than just the features of a software product.
+
+Calm is valuable only because automation itself is so critical.
+
+For example, why do users like the cloud? With the availability of easily accessible and usable cloud resources, IT is no longer the only provider of infrastructure. In many cases, IT is seen as too slow. How did we get here and how can IT close this gap?
+
+We often talk about cloud adoption in terms of OPEX/CAPEX and saving by closing data centers, but why do end users create their own cloud account? In AWS spinning up a new ‘VM’ is only a few clicks (and credit card swipe) away. The AWS marketplace has over 5000 different applications, ready to launch when you are. It doesn’t require you to fill out a standardized form that doesn’t really meet what you need, doesn’t require waiting, doesn’t require interacting with another person, and doesn’t require fixing misconfigurations from the inevitable game of telephone that follows. One-click and you’re off. How can IT compete with that?
+
+Automation is the public cloud’s true differentiator. Automation is what allows these instant-on experiences and the only way to operate at massive scale. Luckily, automation isn’t a tool exclusive to public clouds and is the key for IT to rise to these new agility demands. With automation, IT can turn complex, multi-step, multi-day provisioning cycles into one-click actions that span across teams and siloed expertise. IT can use automation to provide the same cloud experience that their users expect, while ensuring that corporate policy is properly applied, no matter where it’s deployed. That security rules are followed. That IT is still in control. Automation is the key to a true cloud-like experience on-premises.
+
+Simply using this automation in the cloud is limiting. There is never a single right answer in IT; it’s always a balancing act based on the current situation. New information or capabilities could change our decision calculus. If we use an inflexible automation tool or one locked to a cloud, we’re handcuffed. We can’t extend the automation to existing machines and are forced to use an inferior technology.
+
+This inherent flexibility is a core benefit of Nutanix Calm. And that is what we’ve really explored in this course: How IT can turn self-service into the expectation, instead of the exception.
 
 
 
