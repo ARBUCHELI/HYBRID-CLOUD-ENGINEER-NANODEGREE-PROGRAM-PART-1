@@ -5943,6 +5943,55 @@ Please watch the videos to follow the tutorial
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=tjTA3o04Zro&feature=emb_logo)
 
+## Glossary
+
+### Actions - 
+A set of sequentially executed tasks in a blueprint. Basic actions included in every blueprint consist of: Create, Delete, Stop, Start, Restart.
+
+### Application profiles - 
+Application profiles often include choices about where an application should run (AHV or AWS), but they can also be about sizing (small or large), or a combination of the two (small AHV or large AHV or small AWS).
+
+### Dependency - 
+A logical sequential connection between services, orchestrating their basic actions together.
+
+### Macro - 
+Either a Calm built-in or blueprint specified variable that can be used in tasks and variables.
+
+### Multi-VM Blueprint - 
+Multi-VM blueprint is a framework that you can use to create an instance, provision, and launch applications requiring multiple VMs.
+
+### Service - 
+An instance of a substrate, typically a virtual machine, existing machine, or a Kubernetes pod.
+
+### Substrate - 
+An infrastructure provider instance, a blueprint can use all the providers enabled in a project.
+
+### Task - 
+An individual stage of operational execution in an action.
+
+### Variable - 
+A blueprint property: statically set by the developer role with a default value, used as a macro in task, and specified with a runtime property to delegate setting by an operator role during blueprint launch.
+
+## Lesson Conclusion
+
+This concludes our lesson, Creating and Publishing a Multi-VM Calm Blueprint. Before we move to the next lesson, let's do a quick recap of what was covered.
+
+Some of the common blueprint lifecycle management tasks are cloning, deleting, and uploading a blueprint. You can clone an application blueprint from a pre-seeded application blueprint. You can download the blueprint with the credentials and secrets. You can upload a configured blueprint to the blueprints tab.
+
+The environment is mandatory to publish the application into the marketplace. You can define the environment either when creating a project or when creating a blueprint. If you have configured the environment when creating the project, you can clone that configuration for the VM while configuring a blueprint.
+
+Macros enable you to access the value of variables and properties set on entities. Calm macros are part of a templating language for Calm scripts.
+
+Application profiles often include choices about where an application should run (AHV or AWS), but they can also be about sizing (small or large), or a combination of the two (small AHV or large AHV or small AWS). Every blueprint has a default application profile, it can be thought of a base layer of the blueprint.
+
+Profile Actions are a set of operations that you can run on your application. Actions consist of one or more tasks. Tasks are executed sequentially on each service.
+
+Calm Library allows you to save user-defined tasks (scripts) and variables that can be used by other application blueprints.
+
+Finally, a Multi-VM blueprint is a framework that you can use to create an instance, provision, and launch applications requiring multiple VMs. Creating a multi-VM blueprint involves adding a service, configuring the VM, package and service for the provider, setting up the service dependencies, adding and configuring an application profile, and creating an action.
+
+This completes all the topics necessary to configure a blueprint. So far, we have covered all Calm constructs and walked you through the process to create a single and multi-VM Calm blueprint. In the next lesson, we will explore how Calm automates a 3 tier web application.
+
 
 
 
