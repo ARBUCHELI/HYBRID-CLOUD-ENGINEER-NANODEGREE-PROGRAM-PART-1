@@ -6291,6 +6291,7 @@ Because these custom actions can be delegated to any user or group in the projec
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/458.jpg)
 
+# VERY IMPORTANT FOR SOLVING THE SECOND PROJECT
 ## Exercise: Add Database Backup
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/459.jpg)
@@ -6365,53 +6366,6 @@ This inherent flexibility is a core benefit of Nutanix Calm. And that is what we
 ## Congratulations
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/465.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Adaptation as a repository: Andrés R. Bucheli.
