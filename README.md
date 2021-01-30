@@ -5870,7 +5870,6 @@ What is that he should remember when entering a number in the Scaling Count fiel
 * The scale count number must be less than or equal to the maximum number of replicas defined for the service.
 
 # VERY IMPORTANT FOR SOLVING THE SECOND PROJECT
-
 ### Exercise - Create a Multi-VM Blueprint
 In this series of exercises, you will pull all of the concepts you’ve learned together to build a load-balanced multi-VM web application using the LAMP stack. This is commonly referred to as a “two-tier” web application. You will use a current CentOS distribution for the Linux OS and host the web application on the private cloud with Nutanix AHV as the VM hypervisor.
 
@@ -5912,6 +5911,7 @@ Please watch the videos to follow the tutorial
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=kLx5Rq-WLMU&feature=emb_logo)
 
+# VERY IMPORTANT FOR SOLVING THE SECOND PROJECT
 ## Exercise: Add Load Balancer Service
 
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/423.jpg)
