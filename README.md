@@ -6405,8 +6405,182 @@ If that sounds weighty…well, that’s because it is. But by the end of this co
 
 Let’s begin.
 
+## Overview
+
+![](https://video.udacity-data.com/topher/2020/September/5f63e881_big-picture-nutanix-c3/big-picture-nutanix-c3.png)
+
+The goal for a hybrid cloud engineer is to design and execute the organization's business to run in a uniform and scalable manner for consistent operations and governance. In the <strong>Modern Private Cloud Infrastructure</strong> course, you learned how to operate a modern private cloud and in the <strong>On-Premises Private Cloud Automation</strong>course, you learned how to automate private cloud workloads from an IaaS to PaaS to SaaS cloud experience. We'll use everything covered so far, map the parallels to the public cloud, and then augment our existing automation to use the public cloud in a hybrid manner.
+
+In the <strong>Modern Private Cloud Infrastructure</strong> course, we covered the NIST definition of cloud and the common mistake to conflate the term exclusively with public cloud. Furthermore, we showed how (public) cloud first has not always been the best choice and the strategy has evolved to cloud smart. Hence the industry has emphasized hybrid cloud solutions in order to achieve cloud smart.
+
+Correspondingly, we will tackle the difference between creating and moving workloads; moving or translating a workload between two infrastructure providers does not achieve the goal of cloud smart.
+
+The definition of hybrid from Wiktionary: "Something of mixed origin or composition; often, a tool or technology that combines the benefits of formerly separate tools or technologies." We will explore hybrid in a few manners during this course:
+
+* Combining public and private clouds into a hybrid cloud application deployment for scalable performance
+* Combining different deployment scenarios under the same governance and operational model for consistency
+
+Accomplishing these simple goals can be hard when tools and providers are typically domain specific, resulting in separate silos of abilities and fragmentation. The hybrid cloud engineer must always arbitrate this natural conflict: that is, evaluate a new capability that satisfies a new business requirement (for a single platform, cloud, tool, etc.) against the complexity required to reproduce it in a hybrid model.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63e8ea_developing-your-intuition-nutanix-c3-l1/developing-your-intuition-nutanix-c3-l1.png)
+
+In other words, many bottoms-up and domain-specific automation approaches, methods, and tools challenge the ability to inter-operate consistently with multiple providers. Fortunately, Nutanix Calm blueprints incorporate internal and external technologies and providers which can be blended together easily to create, consume, and manage the workload life cycle: this is an inherently hybrid approach!
+
+## Infrastructure Provider Strategies
+
+Infrastructure providers are similar in that they offer compute, memory, and storage often consumed as VMs. They also offer many advanced PaaS and SaaS-like facilities and applications, although these can be proprietary in their feature set and operation. The potential proprietary nature of any PaaS and SaaS feature, operation, and API can form a dependency which causes fragmentation and provider lock-in. On the other hand, making advanced features and applications work in a provider-independent fashion also has costs to develop and operate.
+
+### The First Problem: Lock-ins and Leaving Providers
+The first problem encountered when we speak to customers who ask how to make one public cloud SaaS offering work the same way on another public cloud or private cloud, is not realizing they have taken on a proprietary arrangement.
+
+A hybrid cloud engineer must be aware of these business lock-ins and negotiate requirements and tradeoffs when adopting or avoiding them. Simply put, a hybrid cloud engineer should advise when the evaluation to leave a provider must be added as a business requirement.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ea43_the-first-problem-lockins-and-leaving-providers/the-first-problem-lockins-and-leaving-providers.png)
+
+Therefore, treating compute, memory, and storage for VMs should be considered a safe target for hybrid cloud applications to preserve infrastructure provider independence for a cloud smart strategy.
+
+### The Second Problem: The Fallacy of Lift-and-Shift
+The second problem customers ask to solve is for tools or services to move VM workloads between public and private clouds.
+
+The most common strategy for migrating workloads among datacenters, infrastructure providers, hypervisors, clouds (or even from physical to virtual machine, or from virtual machine to container) is through a storage conversion. This strategy is often called “lift and shift,” because it represents the equivalent of a fork-load uplift of the entire captured state of the machine - moving the disk image (and any potential conversion) and dropping it off at the new destination to complete reinstantiation.
+
+“Lift and shift” is the easiest strategy to adopt because it can be accomplished with backup and restoral procedures and tooling. Most IT practitioners are familiar with this process given that:
+
+There is an entire industry dedicated to storage backups.
+Backup and restoral should be a standard operation for most IT organizations.
+Backups are often a component for disaster recovery, which is another critical facility for IT organizations.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ea8f_the-second-problem-the-fallacy-of-lift-and-shift/the-second-problem-the-fallacy-of-lift-and-shift.png)
+
+The ultimate issue with a lift and shift strategy is that it is a large, complex state transfer that entails the entire operational effort and history to maintain the workload up to the date of the snapshot or backup. The backup preserves every undocumented change control and pet operation done by hand, such as adjustments to the operating system, application, and server configuration, security updates, and patches.
+
+Of course, any undetected nefarious, bad practices, or temporary and accidental changes, are also preserved and these changes are compounded over the lifecycle of years for a typical workload. Without extreme diligence in tooling and audits for change control operations, the state of the workload is unknowable.
+
+A large auditing industry exists around business documentation and enforcement of operational procedures for change, but short of a disaster recovery event, no audit can empirically test and validate those procedures.
+
+### Working with Different Migration Tools
+There are many tools available for migration, and which one you use depends often on the environment you have and the workload you’re moving.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63eabd_working-with-diff-migration-tools-all/working-with-diff-migration-tools-all.png)
+
+Let’s consider vSphere, as an example. If your migration is relatively simple, you could use Shared Nothing vMotion. vMotion is a very common choice for the vast majority of VMware to VMware migrations and works really well.
+
+But let’s say you have a migration scenario in which orchestration is needed and you need to move large datasets in the background before a cutover occurs. Zerto might be a better solution, and it also works if you’re going between systems that don’t support vMotion for one reason or another.
+
+What about per-VM migration? For that, you have vSphere Replication, which can be used as a standalone, tactical migration tool. You’d typically use this if there’s no vMotion support, if you’re going from AMD to Intel, moving between physical sites, or if you’re preseeding data.
+
+Then, if you have physical workloads that you need to convert to virtual machines, you could always use VMware Converter for those P2V migrations. And then if you want a general-purpose migration tool, there’s Sureline, which supports a wide variety of sources and targets, including physical, virtual, and cloud.
+
+But all of this is only really applicable if you have a vSphere environment.
+
+If you’re running on Hyper-V, Microsoft provides native tooling. Hyper-V also has a shared nothing migration feature that works for systems that are Windows Server 2012 or later.
+
+And finally, Nutanix has a product called Move, which migrates VMs from other platforms to the Nutanix Enterprise Cloud with just a few clicks. It’s available at no cost to any licensed Prism users, so if you have a Prism license, you could go to the downloads area of the Nutanix Support Portal and get Move right now.
+
+You can use Move to migrate from:
+
+* ESXi, Hyper-V, and AWS EC2 to AHV
+* ESXi on legacy infrastructure to ESXi on Nutanix
+* AHV to AWS EC2
+
+And VM migration is a four-step process, largely automated, and fairly simple to execute.
+
+### What a Hybrid Cloud Engineer Needs To Do
+So, as you can see, providers and technologies evolve their capabilities and business models to compete for your business: a hybrid cloud engineer surveys the market to see what their current and competing solutions offer to better improve business operations and requirements. Re-evaluating your current workloads for hybrid cloud deployment can be a difficult task. The best first step is often to reproduce what you currently have with automation to make it IaaS and evolve to PaaS if required. At that point, when you can synthesize a new workload from a blueprint with a few clicks, it becomes easier to reproduce.
+
+## Quiz: Infrastructure Provider Strategies
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/466.jpg)
+
+A company that you are consulting for is considering transitioning some services and applications to the cloud. They’ve narrowed down their selection to two providers: FancyCloud and EasyCloud.
+
+FancyCloud boasts of having cutting edge technology, and is widely considered one of the most powerful, feature-rich public cloud solutions on the market. They attribute this to their proprietary hardware and software setup. They have a consulting team that will help you migrate your applications from your on-prem datacenter to their cloud, and have proprietary tools that will assist with migration and conversion of all VMs and associated resource dependencies to FancyCloud-specific formats.
+
+EasyCloud, on the other hand, has interoperability and ease of use as two of its biggest selling points. While it isn’t necessarily as widely used as FancyCloud, it seems to have feature parity with FancyCloud. EasyCloud’s customer testimonials speak about how easy it is to get up and running, how simple it is to move workloads between on-prem and EasyCloud as needed, and how EasyCloud makes it simple to move workloads between other public clouds as well.
+
+The company you are consulting for asks for your opinion. They want to choose the best cloud for a potentially long-term engagement, but they want to avoid vendor lock-in. Which cloud do you think would be the right choice for them — FancyCloud, or EasyCloud?
+
+### QUESTION 2 OF 2
+Read the scenario above and then determine which cloud would be the right choice for the company to use — FancyCloud, or EasyCloud?
+
+* EasyCloud
+
+## Pets vs Livestock for Scalability
+
+If you take a moment to think back to the beginning of the previous course, you may remember that we spoke about DevOps. We spoke about how digital transformation has triggered an overhaul in the way organizations think about tried-and-true business models and operationalize day-to-day processes.
+
+With the rise of digital transformation and supporting technologies like IoT, data processing, and visualization, the role of software development has become increasingly important. To quickly deliver new applications and services, IT teams are transitioning to DevOps models that close the gap between development and operations.
+
+So even though we’ve been discussing software products and concepts, the underlying message — the perspective that we’ve been providing — is about transitioning to a DevOps mindset. And the traditional values and practices for creating stable, long-lasting infrastructure do not apply when progressing to a DevOps mindset.
+
+IT infrastructure resources, both technological and human, have long been treated as unique and special--that is, treated like irreplaceable and extremely valuable “pets.” For example, most IT shops rely on servers that are bespoke (custom built) and maintained laboriously by hand. But these resources also constitute single points of failure that, when unavailable, can bring a mission-critical application, or even an entire organization, to its knees.
+
+Conversely, DevOps requires that your material resources be distributed, fungible, and ephemeral. When one resource goes down, another takes its place without any disruption to the business. Technical resources like servers are more like members of a herd of livestock or a fleet — no single member is irreplaceable or more valuable than the others, and one is as good as another.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63eb0f_pets-vs-livestock-for-scalability/pets-vs-livestock-for-scalability.png)
+
+In terms of staffing, DevOps also democratizes required skill sets, so that the company is not dangerously reliant on any single “heroic” resource. The overall system should be smart enough so that no single employee possesses such specialized knowledge that their absence would significantly interrupt the flow of work. DevOps also dictates that, whenever possible, businesses should automate menial, error-prone, and repeatable tasks, freeing staff to devote their time and energy towards work that brings real value to the business.
+
+## Quiz: Pets vs Livestock for Scalability
+
+You have been brought in to consult for a company called RandomOrg. For your first task, you have been added to a Digital Transformation Committee that’s helping RandomOrg modernize their IT infrastructure and improve their processes and overall efficiency.
+
+You notice that RandomOrg has a series of custom-built servers in their datacenter, that have been maintained by an IT team consisting of more or less the same people for the last nine years.
+
+While RandomOrg does back up their data, their backups are all on tape and other long-term storage/archival formats. They also run a number of mission-critical applications in their datacenter, but their failover site also consists of similar, custom servers which are managed and maintained by the same IT team.
+
+Some amount of custom documentation is available for the hardware and software. However, since the IT team is so familiar with the system, they only have cursory information written down and manage their environment largely based on their experience.
+
+All of their infrastructure management interfaces have custom-built, and most tasks require either manual input or manual intervention. This keeps the IT team largely focused on making sure the infrastructure is running smoothly, and generally keeping the lights on.
+
+After a few days of exploring their environment and talking to the right people, you believe you have some general observations and concerns that you can share with RandomOrg, so they can start making changes.
+
+### QUIZ QUESTION
+Read the scenario above and select all of the things that RandomOrg is doing wrong in their environment and with their IT team, so that they can make changes.
+
+Choose all that apply.
+
+* Custom-built servers maintained by hand constitute single points of failure
+
+* The IT environment requires too much specialized knowledge to maintain
+
+* There are too many manual tasks, which increases the risk of errors and keeps staff too busy to add value to the business
+
+* The IT team has so much specialized knowledge that the absence of one or more resources could potentially and significantly interrupt the flow of work
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Adaptation as a repository: Andrés R. Bucheli.
+
 
 
 
