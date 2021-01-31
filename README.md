@@ -6368,6 +6368,44 @@ This inherent flexibility is a core benefit of Nutanix Calm. And that is what we
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/465.jpg)
 
 
+
+________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+# FOURTH COURSE PUBLIC AND HYBRID CLOUD MANAGEMENT
+
+________________________________________________________________________________________________________________________________________________________________________________
+
+# LESSON 1 STRATEGIES FOR HYBRID CLOUD DESIGN 
+
+## Lesson Overview
+
+Welcome to the final course of your Hybrid Cloud Engineer Nanodegree program. In this course, we’re going to elevate and wrap up the conversation that we’ve been having about Nutanix Calm automation.
+
+In the very first course of this Nanodegree, we spoke about the hybrid cloud: everything you needed to know to understand what it means to be hybrid and to transition your company to being cloud smart. Then, in the next course, we covered several key principles of automation and a product that will help you implement them — Nutanix Calm. And now, as we begin this course, we’re going to take a step back and upwards, and look at our subject from twenty thousand feet.
+
+At the very beginning of the previous course, we spoke about how automation alone isn’t enough. Workloads change rapidly and keeping up with configuration and deployment changes is both complicated and error prone. At the same time, digital transformation has changed the way organizations think about business models and processes.
+
+As a result, IT teams are transitioning to DevOps models to deliver new applications and services, close the gap between development and operations, and keep pace with the evolving needs of the business.
+
+That mindset, the DevOps mindset, is what we’re going to focus on in this lesson. DevOps isn’t about just implementing processes here or optimizing a workflow there. DevOps changes the way you evaluate, analyze, and design solutions for business problems.
+
+We will discuss:
+
+* Your role in evaluating infrastructure providers and avoiding lock-in, as well as tools and resources that you can use to move workloads between clouds
+* The pets vs. livestock view of infrastructure to remove single points of failure, implying that resources be distributed, fungible, and ephemeral
+* How thinking about push button environments, configuration management, and automation across hybrid and multi-cloud deployments accomplish agility
+* The rise of immutable infrastructure and the benefits it offers to a business
+* Four key concepts for the software development lifecycle — continuous integration, delivery, deployment, and operations
+* Advanced Calm features, such as Windows alternatives to Linux and various associated components, and the options available to you when working with Prism Central APIs
+
+If that sounds weighty…well, that’s because it is. But by the end of this course, you will have learned how to extend your previously created blueprint into the public cloud and will have a clearer, firmer grasp of how to think about, design, and architect truly hybrid solutions.
+
+Let’s begin.
+
+
 # Adaptation as a repository: Andrés R. Bucheli.
 
 
