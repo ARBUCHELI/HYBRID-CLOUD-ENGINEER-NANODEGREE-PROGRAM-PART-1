@@ -6646,6 +6646,91 @@ We’re going to discuss:
 >> * Gartner defines continuous operations as “Those characteristics of a data-processing system that reduce or eliminate the need for planned downtime, such as scheduled maintenance. One element of 24-hour-a-day, seven-day-a-week operation.”
 >> * To simplify this definition even further, continuous operations is about ensuring that IT operations are non-disruptive to users.
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/477.jpg)
+
+## Immutable Infrastructure and Build Artifacts
+
+Before we talk about immutable infrastructure, let’s take a moment to understand what traditional infrastructure management is like. This is something that happens every day, everywhere, perhaps even in your organization, but it isn’t always something we pay attention to.
+
+With traditional infrastructure, updates to servers happen ‘in-place’. That is, after a server is deployed, someone connects to it, updates it, makes configuration changes and optimizations, and so on. These servers are mutable — that is, they change after they have been deployed.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ec7b_immutable-infrastructure-and-build-artifacts-1/immutable-infrastructure-and-build-artifacts-1.png)
+
+While this is a common practice, it results in a number of common problems. The first and most common is that because these configuration changes are so small, they are rarely documented. And second, they lead to configuration drift.
+
+Configuration drift, if you’re unfamiliar with the term, refers to active configurations diverging from the configuration that was originally tested, approved, and deployed. Configuration drift is largely the result of manual processes, since these changes usually involve an actual person connecting to the server to make changes.
+
+A significant portion of configuration drift is often largely the result of simply needing to get a job done. During an outage, for example, a one-time edit to a configuration file can save the day — but that edit never makes it into documentation. Cron jobs running critical functions that only a handful of people are familiar with make their way onto the server. Application code is deployed without using the normal, source control process.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ec9c_immutable-infrastructure-and-build-artifacts-2/immutable-infrastructure-and-build-artifacts-2.png)
+
+As these changes accumulate in infrastructure, your servers become finicky. Deployments can only be performed in certain, specific ways. Init scripts don’t work unless something very specific and unexpected is done.
+
+And, over time, the system becomes a house of cards.
+
+The solution to this problem is immutable infrastructure. Like the name suggests, with immutable infrastructure, the system simply does not change after deployment. This means that no updates, patches, or configuration changes are made to production systems. If changes are needed, a new version of the architecture is built and deployed into production.
+
+### An Example of Mutable and Immutable Infrastructure
+Let’s use web servers as an example here, since we touched on web server blueprints in a previous project. Consider an environment in which you have spun up a VM, deployed Apache as your web server, and have deployed your application as well. This is your v1 setup. Over time, you may want to upgrade Apache to a newer version, or perhaps change your web server from Apache to Nginx.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ecd5_an-example-of-mutable-and-immutable-infrastructure-1/an-example-of-mutable-and-immutable-infrastructure-1.png)
+
+In a mutable infrastructure environment, you would do this with a configuration management tool such as Chef or Ansible.
+
+If everything works as expected and the upgrade proceeds smoothly, both your web server and web application will be deployed and running. But what if it doesn’t? Perhaps due to network issues, perhaps DNS is down at the time, perhaps repos aren’t responsive — whatever the reason, there are plenty of ways in which something could go wrong during an upgrade.
+
+Perhaps during the process, the Nginx installation doesn’t go as planned but the web application deploys successfully. In this scenario, your environment doesn’t go from v1 (Apache + web app v1) to v2 (Nginx + web app v2). It shifts to some partial, problematic version in between the two (Apache + web app v2).
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ecf2_an-example-of-mutable-and-immutable-infrastructure-2/an-example-of-mutable-and-immutable-infrastructure-2.png)
+
+While this isn’t a commonplace occurrence, it is a very, very important consideration at scale. When you’re upgrading one VM, one server, this may seem like a very small problem with a very low probability of occurring. But when you’re upgrading hundreds of VMs or servers? Thousands? Then the potential for problems increases exponentially. And this is where immutable infrastructure demonstrates its value.
+
+With immutable infrastructure, in this same scenario, after Apache and the web application are deployed, a snapshot is taken (let’s call it version1) and that system is never touched again. When the time comes to upgrade, a new VM will be created, but with Nginx and a new version of the web application — let’s call this version2. The old one (i.e., version1) will be left intact.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ed0f_an-example-of-mutable-and-immutable-infrastructure-3/an-example-of-mutable-and-immutable-infrastructure-3.png)
+
+During deployment, if there’s an error with version2, the process of spinning up the VMs and deploying the application will simply start over with no impact to the production environment. If everything goes as planned, once version2 is up and running, traffic will be switched over and version1 will be decommissioned.
+
+In this situation, despite the potential for errors, the production environment remains unaffected and there’s much lower risk overall.
+
+## Quiz: Immutable Infrastructure and Build Artifacts
+
+Consider the following scenario.
+
+You’re running a web application on a traditional LAMP stack – Linux is the OS, on top of which Apache and MySQL are running. You want to upgrade both Linux and Apache, and want to follow immutable infrastructure principles to do it.
+
+So, you consider your current Linux and Apache installation as v1 and take a snapshot of the current, working state of the system. Then, in preparation for v2, you set up, test, and debug your new system consisting of upgraded versions of both Linux and Apache. The v1 system continues to run at this time.
+
+Once v2 is ready for launch, you perform the following tasks in the order they are listed below:
+
+Decommission v1 of the system.
+Deploy v2 of the system.
+Route traffic to the v2 system.
+Test to make sure that the v2 system is running as expected in production.
+
+### QUIZ QUESTION
+Read the scenario above. Based on the sequence of tasks described there, have you correctly followed the principles of immutable infrastructure?
+
+* No
+
+### Continuous Integration, Delivery, and Deployment Overview
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
