@@ -7089,6 +7089,26 @@ Although there are multiple services provided by cloud providers these days, it 
 
 Multi-cloud can be a great idea. This ensures that you aren't primarily dependent on a single provider. Building an interconnected web of clouds, you make it easier to protect yourself if you must make a quick jump from one of your providers.
 
+## Quiz: Public Cloud Overview
+
+### QUESTION 1 OF 2
+Select the three primary challenges that the customers faced during the initials days of public cloud adoption?
+
+* Poor connectivity
+
+* Lack of trained staff
+
+* Loss of control
+
+### QUESTION 2 OF 2
+True or False: Cloud providers now have advanced tools and services to enhance security in public cloud.
+
+* True
+
+
+
+
+
 
 
 
