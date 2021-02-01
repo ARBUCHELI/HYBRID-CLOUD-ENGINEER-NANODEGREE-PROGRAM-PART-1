@@ -7273,6 +7273,24 @@ Under Service health, Zone status, you can view all the availability zones avail
 
 ![](https://video.udacity-data.com/topher/2020/September/5f63f8be_ec2-regions-and-availability-zones-image2/ec2-regions-and-availability-zones-image2.png)
 
+## Quiz: EC2 Regions and Availability Zones
+
+### QUESTION 1 OF 2
+What is the benefit of multiple availability zones?
+
+* Redundancy
+
+### QUESTION 2 OF 2
+True or False: Availability zones are isolated from each other and are not connected.
+
+* False
+
+
+
+
+
+
+
 
 
 
