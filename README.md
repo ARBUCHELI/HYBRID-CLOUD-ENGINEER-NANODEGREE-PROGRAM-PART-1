@@ -7020,6 +7020,44 @@ A set of open-source tools built around the OpenAPI Specification that can help 
 In the next lesson, we’ll take a deep dive into the public cloud — specifically Amazon Web Services — and various features that you need to be familiar with to extend your blueprint into the public cloud. We’ll also compare and contrast those features with equivalent capabilities in your Nutanix Private Cloud, so you understand how these various components are analogous to each other. And then, you’ll spend some hands-on time with your blueprint in order to begin the work needed to change it from a private cloud-based application to a hybrid one.
 
 
+________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+# LESSON 2 WORKING WITH A PUBLIC CLOUD INFRAESTRUCTURE PROVIDER
+
+## Lesson Overview
+
+Welcome to the lesson, Working with a Public Cloud Infrastructure. In this lesson, we will discuss one of the industry’s giant public cloud infrastructure providers, Amazon Web Services - often referred to as “AWS”.
+
+We will start the lesson by covering an overview of public cloud. We will cover the various challenges consumers faced during initial days of adoption and see how these challenges have been overcome in the recent days. At the end of that topic, we will explain how an effective blend of multiple cloud services can help businesses be more agile to adapt to changing business needs.
+
+We will then introduce you to AWS. We will cover what AWS is and also introduce you to some of the common AWS services. We will explain one of the popular AWS services, called the Amazon Elastic Compute Cloud (EC2). We will use EC2 as an example to explain various features associated with AWS. These features are used by many other services available on AWS as well.
+
+We will also introduce you to terminologies such as instance, instance type, AMI, etc. We will relate these terms to Nutanix concepts to help you understand them better.
+
+We will then cover the other major aspect of public cloud that was initially considered as a threat. Security and governance have always been a great concern in adopting a public cloud environment. But cloud providers these days have advanced tools, services and technologies that provide enhanced security, and also serve various compliance and governance requirements.
+
+We will present various governance and security features such as regions, availability zones, security groups, SSH key pairs, IAMs, VPC. Each of these features has been a contributor to an increase in customers’ trust in cloud services.
+
+By the end of this lesson, you will be familiar with several different AWS features, such as creating an Amazon account, picking a region for your account, and configuring all the security features that VPC, IAM, SSH key pairs and security groups. And, since the goal of this course is to extend your blueprint to the public cloud, we will also cover how to configure AWS as a provider in a Calm project environment.
+
+## Big Picture
+
+A cloud experience should generally be similar across different providers, but each will have particular differences in terminology and implementation. In the <strong>Modern Private Cloud Infrastructure</strong> course, we outlined the progression from IaaS to PaaS to SaaS offerings. When dealing with a public cloud provider, you will be able to choose from various data centers in different regions of the world, anchoring you to the local capabilities of the region. Generally, while most public cloud facilities are available in all regions, they may have different costs and potential limitations.
+
+In the <strong>Public and Hybrid Cloud Management</strong> course, we will focus on just adding one public cloud provider: the leader of the industry, Amazon Web Services (AWS). We will add AWS as a new Calm provider and then enable it in your project. Then we will augment our three-tier web app blueprint to become a hybrid cloud web tier across both public and private cloud IaaS.
+
+## Developing Your Intuition
+
+We'll explore governance in AWS public cloud with IAM, then VM, OS Image, and SSH keypair properties of EC2, just as we did with Nutanix AOS and AHV.
+
+Here's a map:
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/490.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/491.jpg)
+
+
 
 
 
