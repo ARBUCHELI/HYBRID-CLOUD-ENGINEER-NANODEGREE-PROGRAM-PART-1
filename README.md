@@ -7160,9 +7160,61 @@ The instances are launched from a template called an AMI, Amazon Machine Image. 
 
 A single AMI can be used to launch multiple instances.
 
+## Quiz: Understanding Amazon Web Services
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/492.jpg)
 
+## Free Tier: t2.micro and t3.micro
 
+### Free Tier
+We just covered a brief overview of what AWS is. Now, let’s explore how you can use a few AWS services to explore its functionalities and capabilities without actually paying for the service.
+
+Amazon provides various services for free to get hands-on experience on the AWS platform. This is called the free tier.
+
+As shown in the picture below you can filter the free tiers by product or tier type and identify the ones that would like to explore and learn more.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f7f6_free-tier-t2micro-and-t3micro-image-1/free-tier-t2micro-and-t3micro-image-1.png)
+
+Free tier services have different limits. A few of these offers are always free. Some have a 12-month limit, and a few are available on a trial basis. Some services, such as AWS EC2 and Amazon RDS, have a monthly cap that can be used for 12 months.
+
+For example, let’s consider the most common and frequently used service, AWS EC2 free tier. An AWS EC2 free tier includes 750 hours of Linux usage and 750 hours of Windows usage per month for 12 months. You can use these hours as per your requirement. To elaborate, you can use 1 Windows and 1 Linux instance for 750 hours every month or 12 Windows and 12 Linux instances for 75 hours every month.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f814_free-tier-t2micro-and-t3micro-image2-/free-tier-t2micro-and-t3micro-image2-.png)
+
+### t2.micro and t3.micro
+t2.micro and t3.micro are a free tier instance type available when creating an instance. Before we explain what t2.micro and t3.micro are, let’s first understand what an instance type is.
+
+### Instance Types
+As mentioned previously, instances are like VMs and AMI are images used to create those VMs. Instances can be configured with various sizes and configurations. An instance type defines the hardware configurations used for an instance.
+
+Amazon provides a variety of instance types, with each instance type providing different combinations of processor, memory, and storage capabilities that caters to various use-cases.
+
+The instance types in Amazon EC2 are classified into five categories.
+
+* General purpose: A1, T3, T2, M5, M5a, M4, T3a
+* Compute optimized: C5, C5n, C4
+* Memory optimized: R5, R5a, R4, X1e, X1, high memory, z1d
+* Accelerated computing: P3, P2, G3, F1
+* Storage optimized: H1, I3, D2
+
+These instance types are available in various sizes. These sizes are nano, micro, small, medium, large, xlarge, 2xlarge, 4xlarge, 8xlarge, and so on.
+
+### Example
+
+For example, C4, C5, and C5n are different instance types available in the compute optimized category. C4 is available in five different sizes that include c4.large | c4.xlarge | c4.2xlarge | c4.4xlarge | c4.4xlarge.
+
+### T2 and T3 instance types
+T2 and T3 are general-purpose instance types that provide burstable CPU performance. General category instance type is used for a wide range of workloads that don’t specifically have compute/memory/storage optimization requirements.
+
+T2 provides baseline level CPU performance with ability to burst beyond baseline level when required. They are charged on an hourly basis. T2 is widely used for websites and web applications, development environments, build servers, code repositories, and so on.
+
+T3 are next generation instance types that can also burst beyond baseline but for as long as you need and whenever you want. These are widely used in micro-services, low-latency interactive applications, small and medium databases, virtual desktops, and so on; T3 uses AWS Nitro system and high frequency Intel xeon scalable processors. Compared to T2, T3 provides up to a 30% price performance improvement.
+
+t3.micro and t2.micro are free tier instance types that are available in Amazon EC2 free tier. As mentioned earlier, in this free tier, you can use 750 hours of a t3.micro/t2.micro Linux instance and 750 hours of a t3.micro/t2.micro Windows instance per month for 12 months.
+
+Both of these instance types work by collecting CPU credits during idle time and utilizing them when there is a spike.
+
+A single AMI can be used to launch multiple instances of different types. These instance types differ by their compute, storage, and memory capabilities. Using a single AMI, you can also launch multiple instances of the same type.
 
 
 
