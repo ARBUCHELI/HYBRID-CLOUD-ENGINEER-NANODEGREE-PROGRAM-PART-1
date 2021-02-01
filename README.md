@@ -6825,13 +6825,105 @@ The Windows alternative to Linux Shell scripting is PowerShell. PowerShell is a 
 
 ## Quiz: Analogs to Linux, Cloud-init, Shell
 
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/479.jpg)
 
+## Protecting AHV VM Workloads with Microsegmentation and Flow
 
+In many ways, the modern data center has outgrown the traditional perimeter firewall, thus increasing the risk of a security breach. Security controls must evolve to work within today’s IT environment — an environment that’s characterized by rapid growth, change, and complexity. Organizations need security controls that provide granular protection behind traditional perimeter security to prevent the spread of threats and protect IT assets wherever they go.
 
+![](https://video.udacity-data.com/topher/2020/September/5f63ef03_protecting-ahv-vm-workloads-with-microsegmentation-and-flow-policies/protecting-ahv-vm-workloads-with-microsegmentation-and-flow-policies.png)
 
+App-centric security from Nutanix Flow is the answer. Nutanix Flow simplifies network and policy management with a focus towards applications, enabling applications and environments to be governed independent of the physical infrastructure. Fully integrated into the Nutanix platform, Flow delivers powerful networking and microsegmentation functionality with an intuitive policy creation and management interface that allows IT teams to easily visualize and secure the most complex enterprise applications.
 
+App-centric security from Nutanix Flow is the answer. Nutanix Flow simplifies network and policy management with a focus towards applications, enabling applications and environments to be governed independent of the physical infrastructure. Fully integrated into the Nutanix platform, Flow delivers powerful networking and microsegmentation functionality with an intuitive policy creation and management interface that allows IT teams to easily visualize and secure the most complex enterprise applications.
 
+### Why Switch to App-centric, Microsegmentation-based Security
+By its nature, a virtualization platform understands all of the VMs and how they are connected to the network regardless of any deployment or configurations changes. When you leverage that network knowledge, security policy becomes something that can be automated, and switching to defining security in terms of the application instead of the network endpoints just makes sense. That’s where microsegmentation and app-centric policy come into play.
 
+![](https://video.udacity-data.com/topher/2020/September/5f63ef3c_why-switch-to-app-centric-microsegmentation-based-security/why-switch-to-app-centric-microsegmentation-based-security.png)
+
+Being app-centric means shifting the focus away from individual VMs and their network identity to the applications themselves. Doing this application-based segmentation decouples policy from the network, simplifying policy administration and management.
+
+Microsegmentation, sometimes called east-west firewalling, is the concept of creating granular network policies between applications and services. Implementation of microsegmentation is a key part of a defense-in-depth strategy against modern datacenter threats by providing the next layer of defense beyond traditional perimeter firewalls.
+
+Microsegmentation essentially reduces the security perimeter to a fence around each service or virtual machine. The fence can permit only necessary communication between application tiers or other logical boundaries, thus making it very difficult for cyber threats to spread laterally from one system to another. Therefore, compromising one tiny perimeter doesn’t automatically expose any other targets.
+
+Making microsegmentation application-centric further streamlines security operations by enabling the ability to define high-level policies without needing details about the underlying infrastructure or network identifiers. Policy focuses on application tiers or groups and what types of communication are allowed.
+
+This is an important distinction as it separates the policy and groups from more dynamic network identifiers like IP addresses. This significantly reduces the complexity typically involved in policy management. The responsibility for understanding the infrastructure or network connectivity is removed from the human policy writers and left to the virtualization platform, which always knows the information needed to automatically update the policy accordingly.
+
+## Quiz: Protecting AHV VM Workloads: Microsegmentation & Flow
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/480.jpg)
+
+## Nutanix Calm DSL
+
+A domain-specific language (DSL) is a computer language specialized to a particular application domain. This is in contrast to a general-purpose language (GPL), which is broadly applicable across domains.
+
+A general-purpose (GPL) language, from a usage point of view, can be described as deliberately missing features that are specific to a product or technology. With that in mind, they are therefore much better suited to working with a broad-range of technologies. Some examples of general-purpose languages could be HTML (markup), Python (programming), and C# (programming).
+
+On the other hand, you can think about a DSL as a way of simplifying programming tasks that are specific to a domain or product. In this case, the Nutanix Calm DSL, as suggested by the name, is specifically written to work with the Nutanix Calm product. It won’t interact with an operating system from the perspective of writing a custom application and it certainly won’t create a dinner recipe.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ef66_nutanix-calm-dsl/nutanix-calm-dsl.png)
+
+DSL offers all the richness of the Calm UI, but with the additional benefit of being human readable, with version controllable code that can handle even the most complex application scenario.
+
+For example, entities like Services, Packages, Substrates, Deployments, and Application Profiles, which form the building blocks of a blueprint, can be defined as Python classes. Users can specify their attributes as class attributes, and neatly define actions on those entities (procedural runbooks) as class methods. Calm DSL can also accept native data formats such as YAML and JSON, allowing reuse into the larger application lifecycle context of a Calm blueprint.
+
+## Runbooks
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ef92_runbooks/runbooks.png)
+
+Calm Runbooks helps orchestrate automation tasks across infrastructure and applications in a hybrid cloud infrastructure. Runbooks provides users with an easily scalable way to orchestrate tasks outside the lifecycle management already enabled by Calm blueprints.
+
+A Runbook is a collection of orchestration tasks defining “What to do” and “Where to do it.” Calm Runbooks support shell/PowerShell commands, variables, HTTP requests, delay, loops, and decision tasks, among other existing Calm constructs.
+
+By their very nature, Runbooks are agnostic to the application grouping, and use an endpoint such as a hostname or IP address and port, or a URL, to run against. To make them truly versatile, Runbook tasks can run on VMs, applications, and categories. And to help you get started with Runbooks, Calm’s task library comes pre-seeded with over 200 ready-to-use tasks.
+
+Runbooks can be triggered both manually by end-users, based on role-based access, or hooked up via REST APIs to monitoring and service-desk tools for automated execution.
+
+A good example of where Runbooks are useful is for upgrades or patch management. Previously, tasks such as patching a critical vulnerability across hundreds of database instances was hard to do via blueprints, as you would have to patch each instance of the application. Runbooks simplify life cycle management across hundreds of application instances, or shared resources, which cut across the application layer and apply to multiple groups of infrastructure components.
+
+## Quiz: Nutanix Calm DSL and Runbooks
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/481.jpg)
+
+## Working with Prism Central APIs
+
+### Nutanix REST API Explorer
+As part of Nutanix’s software-defined environment, Nutanix provides a vast array of interfaces allowing for simple programmability and interfacing.
+
+Nutanix REST APIs allow you to create scripts that run system administration commands against the Nutanix cluster. The API enables the use of HTTP requests to get information about the cluster as well as make changes to the configuration. Output from the API calls are returned in JSON format. The REST API exposes every capability and data point of the Prism UI and allows for orchestration and automation within the Nutanix framework.
+
+A utility called the REST API Explorer is available within Prism to help you get started with using the REST API. The Explorer displays the parameters and format for the API calls that can be included in scripts. Sample API calls can be made to show the type of output you should expect to receive.
+
+### Accessing the Nutanix REST API Explorer
+There are multiple ways to access the REST API Explorer, depending on which interface you happen to be working with at the time.
+
+If you’re in Prism, simply click the Admin menu and select REST API Explorer from the list of options.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63efbf_access-rest-api-explorer-1/access-rest-api-explorer-1.png)
+
+If you’re viewing Calm, click the question mark icon at the bottom left corner of the screen. In the About Nutanix Calm popup that appears, click the REST API Explorer link.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f039_access-rest-api-explorer-3/access-rest-api-explorer-3.png)
+
+### OpenAPI/Swagger
+When you search for OpenAPI, you’ll often see the terms OpenAPI and Swagger used interchangeably. While it isn’t strictly true now, this wasn’t always the case.
+
+What is now known as the OpenAPI Specification began life as the Swagger Specification in early 2010. It was created by Tony Tam, who was working at an online dictionary company named WordNik. In 2015, the Swagger Specification was acquired by SmartBear Software, which created a new organization called the OpenAPI Initiative, sponsored by the Linux Foundation.
+
+In January 2016, the Swagger Specification was renamed to the OpenAPI Specification — and that has been its name ever since. Now, ‘OpenAPI’ is used to mean the specification itself, while ‘Swagger’ refers to some of the most popular tools used to implement the specification.
+
+### What is OpenAPI?
+The Open API Specification is a format that you can use to describe the entirety of a REST APIs, including endpoints and endpoint operations, authentication methods, licenses, terms of use, and more.
+
+### What is Swagger?
+Swagger is a set of open-source tools that allow you to use the OpenAPI Specification to work with REST APIs. As per their documentation, the major Swagger tools include:
+
+* Swagger Editor, a browser-based editor where you can write OpenAPI specs
+* Swagger UI, which renders OpenAPI specs as interactive API documentation
+* Swagger Codegen, which generates server stubs and client libraries from an OpenAPI spec
 
 
 
