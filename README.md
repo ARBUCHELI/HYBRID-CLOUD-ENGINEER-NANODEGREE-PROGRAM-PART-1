@@ -6925,6 +6925,26 @@ Swagger is a set of open-source tools that allow you to use the OpenAPI Specific
 * Swagger UI, which renders OpenAPI specs as interactive API documentation
 * Swagger Codegen, which generates server stubs and client libraries from an OpenAPI spec
 
+## Quiz: Working with Prism Central APIs
+
+### QUIZ QUESTION
+What is the difference between OpenAPI and Swagger?
+
+* OpenAPI is the set of open source tools built around the Swagger Specification.
+
+## Exercise: HTTP Task for APIs
+
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/482.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/483.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/484.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/485.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/486.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/487.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/488.jpg)
+![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/489.jpg)
+
+
+
 
 
 
