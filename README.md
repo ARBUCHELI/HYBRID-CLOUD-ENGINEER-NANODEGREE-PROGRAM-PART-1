@@ -6574,14 +6574,77 @@ These four videos walk through the same steps for the exercise that we provided 
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=XZkLASS10Io&feature=emb_logo)
 
+## DevOps for Agility and Operational Maturity
 
+Decades of habits and traditions can make it difficult to see alternative strategies for solving problems, especially when there’s significant risk involved. Until fairly recently, it’s been taken as a given that medium to large companies organized themselves into separate silos of functional expertise and responsibilities, with projects following a linear “waterfall” process.
 
+But legacy approaches have proven not only slow, inefficient, and costly, they also lead to buggy, substandard products that disappoint customers (or worse) and wreak havoc on the production environment. These shortcomings have become even more glaring with the advent of virtualization, distributed systems, and cloud computing. The search for agility has prompted some to go “all-in” on public cloud, but for most workloads, this is an extremely expensive way of doing business (as borne out by monthly sticker shock) and can end up being another form of vendor lock-in.
 
+A reasonable person might ask, why do companies need DevOps when IT and Operations are successfully delivering security and uptime, using administrative tools to maintain, backup, and restore those systems? The answer is that if Operations is ever going to become a force multiplier that helps the business drive innovation, instead of a cost center whose primary function is to keep the lights on, it must become agile. For this to happen, Operations must be documented, democratized, and distributed.
 
+So, in the following sections, we’re going to describe and discuss three important considerations that you — as a hybrid cloud engineer — need to keep in mind when working with a business to help facilitate and ease the transition to cloud smart.
 
+## Push Button Environments
 
+This refers to changing your existing, brownfield workloads (which have a lot of hard-coded configuration, data, and state in them) to push-button simplicity for new workload instances.
 
+How often does your software development and test team ask for a new environment and then wait around for days and weeks for IT to manually fulfill the requests? Nobody can afford to have developers wait to become productive anymore. With the advent of continuous integration, the demand for a new environment could happen with every developer check-in, multiple times per hour.
 
+![](https://video.udacity-data.com/topher/2020/September/5f63eb4e_push-buttons-environments/push-buttons-environments.png)
+
+## Configuration Management
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ebe4_configuration-management-set/configuration-management-set.png)
+
+Configuration Management (CM) is a category of software that can be considered the next generation of scripting. It may also be beneficial to bootstrap from community contributions for web and database, potentially allowing you to change operating system versions, which may help with your workload portability. Many provisioning tools can orchestrate configuration management on each VM guest — client-only CM has been very popular for adopting this new ability. More advanced CM systems support client-server models with change management database (CMDB) features, secure orchestration of secrets, fleet management, and more.
+
+Blueprints can easily bootstrap, configure, and run a configuration management client tool. In fact, you can mix and match your old procedures and new CM procedures, or even multiple CM systems, inside a blueprint. This flexibility is crucial for expressing your work using your current skill sets alongside new facilities, while also leaving open the option to refactor for future efficiencies. Also, given that different teams typically adopt different tools, your system should be able to accommodate this heterogeneity through orchestration — bringing all of the knowledge in your organization under one roof to deliver business with a single click.
+
+Perhaps the most interesting benefit of CM is that after the initial provisioning and execution, periodic rerunning of CM on each VM can identify and (if desired) remediate configuration drift back to the desired state. This capacity constitutes one aspect of self-healing infrastructure and is an essential tool for establishing on-going security of your environments. (Some CM tooling can work in a client-only mode; we assume this capacity below for simplicity of adoption.)
+
+CM communities offer official and community-supported workload automation, which can accelerate new workload adoption. After you are comfortable with the benefits of configuration management, CM support may become a new requirement or qualification for any new vendor, workload, or solution. CM can also expand to large client-server systems to manage large fleets of datacenters and VMs.
+
+The configuration management option has begun to wane, however, with the onset of Docker containers and Kubernetes. These technologies have led application architecture towards immutable infrastructure artifacts, which are built and orchestrated with a minimum of runtime configuration — in contrast to entirely synthesized configuration during provisioning time. These more lightweight options optimize time, storage, and compute, so the next stage begins down that path.
+
+## Quiz: Configuration Managemen
+
+### QUIZ QUESTION
+Which of the following statements are TRUE of configuration management?
+
+* Periodic rerunning of configuration management on VMs can identify and remediate configuration drift back to the desired state
+
+* Configuration management can expand to large client-server systems to manage large fleets of datacenters and VMs
+
+* Configuration management systems support client-server models with change management database (CMDB) features, secure orchestration of secrets, fleet management, and more
+
+## Enterprise, Hybrid, and Multi-Cloud Deployments
+
+Expanding deployments to multiple providers is yet another refinement of the blueprint to ensure that one can deploy and blend workloads across on-prem and off-prem infrastructure offerings, achieving a hybrid cloud stance. Most importantly, the business must retain a consistent governance and operational model so that workloads can meet fiscal and customer performance service level objectives, no matter where the workload lands.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ec1f_enterprise-hybrid-and-multi-cloud-deployments/enterprise-hybrid-and-multi-cloud-deployments.png)
+
+You can clone and refactor a blueprint for parallel deployments to multiple hypervisors, public clouds, and datacenters. You can also schedule and orchestrate a mixture of VMs and containers into Kubernetes pods for hybrid deployments across multiple clouds, supporting teams at different stages of container maturity. This flexibility allows all of the infrastructure market to compete for your business service level agreements. Freedom of choice among vendors empowers you to not only select the best products and services, but the optimal fiscal and operational models.
+
+## Advanced Automation Concepts
+
+Now, we’re going to spend a little time on a few concepts that are extremely critical to your understanding of DevOps and your ability to architect an environment that follows agile, modern development principles.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ec47_advanced-automation-concepts/advanced-automation-concepts.png)
+
+We’re going to discuss:
+
+* Immutable infrastructure and build artifacts
+>> * Immutable infrastructure refers to a system that does not change after deployment. This means that no updates, patches, or configuration changes are made to production systems. -If changes are needed, a new version of the architecture is built and deployed into production.
+
+* Continuous integration, delivery, and deployment
+>> * These are terms that you may already be familiar with, but we’ll explore them in a little more detail.
+>> * Continuous integration is a software engineering practice that involves multiple developers merging their individual code changes into the main repository as frequently as possible, usually multiple times a day.
+>> * Continuous delivery is an extension of continuous integration and involves keeping code in a state in which it is ready to deploy at any given time.
+>> * Continuous deployment is about the frequent, automated release of this code to production.
+
+* Continuous operations
+>> * Gartner defines continuous operations as “Those characteristics of a data-processing system that reduce or eliminate the need for planned downtime, such as scheduled maintenance. One element of 24-hour-a-day, seven-day-a-week operation.”
+>> * To simplify this definition even further, continuous operations is about ensuring that IT operations are non-disruptive to users.
 
 
 
