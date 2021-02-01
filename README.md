@@ -6762,6 +6762,79 @@ Read the scenario above. Based on the situation described there, what do you thi
 
 * Their implementation of a continuous integration workflow is incorrect
 
+## Continuous Operations
+
+Helpfully, there is a widely accepted, clear, succinct definition of what continuous operations is. Gartner defines continuous operations as “Those characteristics of a data-processing system that reduce or eliminate the need for planned downtime, such as scheduled maintenance. One element of 24-hour-a-day, seven-day-a-week operation.”
+
+To simplify this definition even further, continuous operations is about ensuring that IT operations are non-disruptive to users. If we return to the web server example that we used to talk about immutable infrastructure, you’ll see that an aspect of continuous operations is already built into the workflow.
+
+Users will stay on version1 of the application, which is live until version2 has been successfully deployed. Once version2 is deployed, traffic is switched over — which means users move seamlessly from the old version of the application to the new. And, because of this approach, users will simply not realize that the upgrade has taken place until they are enjoying new features and functionality.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63edcc_continuous-operations/continuous-operations.png)
+
+A fairly high level of automation is required to ensure that the user experience is non-disruptive. It also requires an established continuous integration, delivery, and deployment workflow, simply because they are the foundation on which continuous operations is built.
+
+And finally, it’s worth noting that setting up continuous operations in a DevOps pipeline can potentially be a costly endeavor. However, since it minimizes the downtime of core systems, the cost involved is more than recovered over the long term.
+
+## Advanced Calm Features
+
+In the following sections, we will explore several advanced Calm features, now that you’re familiar with what Calm does and how it works. We will discuss:
+
+* Windows analogs to Linux, Cloud-init, and Shell
+>> * So far, we’ve used Linux as our base for VMs and blueprints. But depending on the needs of your application or perhaps due to business directives, you may need to use Windows instead. Then, it becomes necessary to find and use alternatives to some associated components that we’ve previously discussed.
+
+* Protecting AHV VM Workloads with Microsegmentation and Flow
+>> * Nutanix Flow simplifies network and policy management with a focus towards applications, enabling applications and environments to be governed independent of the physical infrastructure.
+>> * In this section, we’ll look at how it can be used to protect workloads. Later in this course, we’ll examine Flow’s security capabilities in more detail.
+
+* Nutanix Calm DSL
+>> * A domain-specific language (DSL) is a computer language specialized to a particular application domain. You can think of a DSL as a way of simplifying programming tasks that are specific to a domain or product.
+>> * In this case, the Nutanix Calm DSL has been specifically written to work with the Nutanix Calm product.
+
+* Runbooks
+>> * A Runbook is a collection of orchestration tasks defining “What to do” and “Where to do it.” Calm Runbooks helps orchestrate automation tasks across infrastructure and applications in a hybrid cloud infrastructure.
+
+* Working with Prism Central APIs
+>> * Nutanix REST APIs allow you to create scripts that run system administration commands against the Nutanix cluster.
+>> * The REST API exposes every capability and data point of the Prism UI and allows for orchestration and automation within the Nutanix framework.
+
+## Working with Windows: Analogs to Linux, Cloud-init, Shell
+
+So far, we’ve discussed using Linux as the foundation for your VM and blueprint creation, because it’s easily the most common OS for these sorts of activities. However, based on your application or perhaps due to business directives, you may find yourself needing to use Windows instead. In that case, it’s necessary to find and use alternatives to some of the associated components that we’ve previously discussed.
+
+### Cloud-init and Cloudbase-init
+If you think back to earlier lessons in the previous course, one topic that we covered was Cloud-init. Cloud-init is the reason that, when you start a cloud instance, it comes up with the required software installed, completely ready to use. It is essentially a service that’s installed inside an instance, runs on Linux workloads, and executes a series of scripts to ensure that the system is initialized as needed.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63eec9_linux-systems-updated-1/linux-systems-updated-1.png)
+
+If the same activities need to be performed on a Windows system, the alternative is Cloudbase-init.
+
+When deployed as a service on Windows, Cloudbase-init handles all guest initialization actions, including disk volume expansion, user creation, password generation, custom PowerShell, CMD and Bash scripts execution, Heat templates, PowerShell remoting setup and so on.
+
+### Sysprep
+Sysprep is a utility that prepares a Windows installation for duplication (imaging) across multiple systems. Sysprep is most often used to generalize a Windows installation.
+
+During generalization, Sysprep removes system-specific information and settings such as the security identifier (SID) and leaves installed applications untouched.
+
+You can capture an image of the generalized installation and use the image with an answer file to customize the installation of Windows on other systems. The answer file contains the information that Sysprep needs to complete an unattended installation.
+
+### Shell and PowerShell
+For scripting needs on Linux, one of the more commonly used tools is Shell. A shell, simply put, is a command-line interpreter. A Shell script is a program designed to be run by the Unix or Linux shell. Shell scripts are typically used to perform operations such as file manipulation and program execution.
+
+The Windows alternative to Linux Shell scripting is PowerShell. PowerShell is a cross-platform task automation and configuration management framework. It consists of a command-line shell and scripting language. PowerShell is built on top of the .NET Common Language Runtime (CLR). So, while most common shells accept and return text, PowerShell accepts and returns .NET objects.
+
+## Quiz: Analogs to Linux, Cloud-init, Shell
+
+
+
+
+
+
+
+
+
+
+
 
 
 
