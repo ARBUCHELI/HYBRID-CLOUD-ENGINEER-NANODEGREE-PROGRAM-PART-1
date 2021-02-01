@@ -7216,13 +7216,62 @@ Both of these instance types work by collecting CPU credits during idle time and
 
 A single AMI can be used to launch multiple instances of different types. These instance types differ by their compute, storage, and memory capabilities. Using a single AMI, you can also launch multiple instances of the same type.
 
+## Quiz: Free Tier: t2.micro and t3.micro
 
+### QUIZ QUESTION
+What is an instance type?
 
+* An instance type helps in defining the hardware configurations used for an instance.
 
+## EC2 Regions and Availability Zones
 
+Data locality is another primary concern that haunts multiple customers when hosting data on public cloud. Customers did not want their proprietary or sensitive workload to be stored on clouds whose data centers were not hosted in their local region, as this would result in non-adherence to their compliance and governance requirements.
 
+They wanted their workloads and data to be running in the geographical region to which the data belonged in order to meet the local government compliance. This was especially crucial for the finance, banking, and government sectors.
 
+In order to address this, it is important that the cloud provider has datacenters or clusters of datacenters running in a wide range of geographical areas to meet customers’ cloud requirements across the globe.
 
+### Regions
+Amazon cloud computing resources are hosted in different geographical locations across the world. These physical geographical locations are termed as regions.
+
+Each region is completely independent from the other. The resources are very specific to a given region and are not replicated across different regions.
+
+An Amazon account is used to decide the regions that are accessible to the user. This enables customers to meet proprietary and compliance requirements for any region. For example, the Amazon account holders in China can only access Beijing and Ningxia regions. Another example of compliance is AWS GovCloud. This cloud is accessible only using the AWS GovCloud account.
+
+AWS provides a broad and increasing number of regions to cater to customer requirements across the globe. Multiple AWS regions are present in regions such as North America, South America, Europe, China, Asia Pacific, South Africa, and the Middle East.
+
+They have around 24 geographical regions with around 77 availability zones across the globe.
+
+New to availability Zones? Let’s understand what an availability zone is.
+
+### Availability Zones
+Within each region, there are multiple, isolated sub sections of regions called availability zones. Unlike regions, availability zones are connected and are dependent within a given region. Multiple availability zones ensure redundancy in order to failover to a new availability zone during a failure. Availability zones are connected using a high bandwidth, low-latency network in order to be able to synchronously replicate across availability zones. The communications between Availability zones are encrypted to secure data during transmission.
+
+Availability zones are ensured to be at least 60 miles away from each other in order to be able to restore during a disaster. Multiple Availability zones in a single region results in high availability. This enables customers to run their applications in a fault tolerant environment.
+
+For example, you can design your application to be distributed across multiple availability zones. In scenarios where an availability zone fails, the application can still function on the other availability zones.
+
+Each region has a code of its own. An availability zone is represented by using the region code followed by a letter identifier. For example, us-east-2 is the region code for US East (Ohio) and an availability zone can be us-east-2a.
+
+When launching an instance, you have the option to specify an availability zone for that instance. If you don't specify an availability zone, AWS will choose an instance based on the system health and available capacity. You can also migrate an instance from one availability zone to another based on your requirement.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f87c_availability-zone/availability-zone.png)
+
+### Identifying the regions available for your AWS account
+You can find out the regions available for your account either using the AWS console or command line.
+
+To find the AWS regions using the AWS console, simply select the regions dropdown at the corner of the screen. The regions available for that account are listed in the dropdown.
+
+You can also see a dashboard of your resources in a given region on the EC2 dashboard.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f89d_ec2-regions-and-availability-zones-image1/ec2-regions-and-availability-zones-image1.png)
+
+### Identifying the availability zones available for your AWS account
+Using the AWS console, Open the Amazon EC2 console. Select EC2 Dashboard on the navigation pane.
+
+Under Service health, Zone status, you can view all the availability zones available for your amazon account.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f8be_ec2-regions-and-availability-zones-image2/ec2-regions-and-availability-zones-image2.png)
 
 
 
