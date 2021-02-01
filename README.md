@@ -6955,8 +6955,69 @@ Please watch the videos to follow the tutorials:
 
 [![IMAGE ALT TEXT](https://github.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/blob/main/images/422.jpg)](https://www.youtube.com/watch?v=kUo6UyvUc4k&feature=emb_logo)
 
+## Glossary
 
+### Configuration drift: 
+Refers to active configurations diverging from the configuration that was originally tested, approved, and deployed. Configuration drift is largely the result of manual processes, since these changes usually involve an actual person connecting to the server to make changes.
 
+### Configuration management:
+A category of software that can be considered the next generation of scripting.
+
+### Continuous delivery:
+A software engineering practice that involves keeping code in a state in which it is ready to deploy at any given time.
+
+### Continuous deployment:
+A software engineering practice that Involves the frequent, automated release of code to production.
+
+### Continuous integration: 
+A software engineering practice that involves multiple developers merging their individual code changes into the main repository as frequently as possible, usually multiple times a day.
+
+### Continuous operations:
+A software engineering practice which involves ensuring that IT operations are non-disruptive to users.
+
+### Domain-specific language (DSL): 
+A computer language specialized to a particular application domain. You can think of a DSL as a way of simplifying programming tasks that are specific to a domain or product.
+
+### General-purpose language (GPL): 
+A computer programming language which is broadly applicable across domains.
+
+### Immutable infrastructure:
+A system that does not change after deployment. This means that no updates, patches, or configuration changes are made to production systems. If changes are needed, a new version of the architecture is built and deployed into production.
+
+### Lift and shift:
+The most common strategy for migrating workloads among datacenters, infrastructure providers, hypervisors, clouds (or even from physical to virtual machine, or from virtual machine to container), which is done through storage conversion.
+
+### OpenAPI Specification: 
+Formerly called the Swagger Specification, the OpenAPI Specification is an API description format for REST APIs.
+
+### Push button environments:
+This refers to changing your existing, brownfield workloads (which have a lot of hard-coded configuration, data, and state in them) to push-button simplicity for new workload instances.
+
+### Runbook:
+A collection of orchestration tasks defining what to do and where to do it.
+
+### Swagger:
+A set of open-source tools built around the OpenAPI Specification that can help you design, build, document and consume REST APIs.
+
+## Lesson Conclusion
+
+* Congratulations! You’ve completed a major piece of this course and are one step closer to achieving your Hybrid Cloud Engineer Nanodegree.
+
+* In this lesson, we discussed:
+
+* Your role in evaluating infrastructure providers and avoiding lock-in, as well as tools and resources that you can use to move workloads between clouds
+
+* The pets vs. livestock view of infrastructure, since DevOps requires that your material resources be distributed, fungible, and ephemeral
+
+* How thinking about push button environments, configuration management, and automation across hybrid and multi-cloud deployments are pushing organizations further down the path towards agility
+
+* The rise of immutable infrastructure (as configuration management begins to wane in popularity) and the benefits it offers to a business
+
+* Four key concepts that you may have heard before in the context of DevOps — continuous integration, delivery, deployment, and operations
+
+* Advanced Calm features, such as Windows alternatives to Linux and various associated components, and the options available to you when working with Prism Central APIs
+
+In the next lesson, we’ll take a deep dive into the public cloud — specifically Amazon Web Services — and various features that you need to be familiar with to extend your blueprint into the public cloud. We’ll also compare and contrast those features with equivalent capabilities in your Nutanix Private Cloud, so you understand how these various components are analogous to each other. And then, you’ll spend some hands-on time with your blueprint in order to begin the work needed to change it from a private cloud-based application to a hybrid one.
 
 
 
