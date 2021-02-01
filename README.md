@@ -7057,7 +7057,37 @@ Here's a map:
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/490.jpg)
 ![](https://raw.githubusercontent.com/ARBUCHELI/HYBRID-CLOUD-ENGINEER-NANODEGREE-PROGRAM-/main/images/491.jpg)
 
+## Public Cloud Overview
 
+Let us begin the lesson by a quick overview of what public cloud is. Public cloud is a cloud service offered by a third party cloud provider. In public cloud, you will be sharing the resources with other customers and will have no visibility on where your data is hosted. The customer can use the cloud services for free or pay for what they use, based on the service they choose. Some of the common public cloud providers are AWS, Microsoft Azure, Google Cloud Platform (GCP) and so on.
+
+Many organizations are using public cloud for two major benefits, lowers CapEx and increases scalability. It eliminates the cost involved in buying, configuring, and maintaining an infrastructure. Public cloud eliminates the need to buy additional hardware to adapt to unpredictable workloads. With public cloud, you can simply add more servers and storage when required and release them required.
+
+### Initial Challenges of Public Cloud
+Even though organizations have increasingly used public cloud for their low cost and flexibility, there were challenges that cloud providers faced during the initial days of public cloud. Let’s look at those challenges.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f782_challenges-of-public-cloud/challenges-of-public-cloud.png)
+
+### Poor Connectivity
+Internet bandwidth during initial days of cloud adoption was definitely a challenge in certain regions. With poor connectivity, organizations struggled to get access to their resources. Even though the best of infrastructure was provided by cloud providers, with poor internet connectivity the resources became near useless. Now, we have come a long way from what it was before. Internet bandwidth has evolved tremendously in certain regions, although some regions still continue to struggle.
+
+### Loss of Control
+Back then there were specific tools to access or integrate with the cloud environment. The tools to manage the on-premises datacenter and the cloud remained isolated. Public cloud remained like an island of inaccessible resources. Today, a huge number of tools exist in the market that help you to seamlessly manage and connect your environment with the cloud.
+
+### Lack of Trained Staff
+When the cloud was new, there was a lack of trained professionals who could understand the concept of cloud and implement that into their business. Lack of knowledge resulted in poor management and adoption of cloud. Today, cloud is no longer a new term, and is ingrained in our daily routine. There are also many trained and certified professionals that help organizations manage and adopt public cloud. The growth of cloud has also led to increased demand for cloud administrators and cloud architects.
+
+### Security with public cloud
+Security was the biggest concern of adopting a public cloud model. According to recent trends, we can see that people are willing to trust the public cloud and it is evident with massive growth in adoption of Office 365 or use of Amazon Web Services.
+
+With increased adoption people have realized that public cloud is not meant to serve as a threat to sensitive information. Industry’s prominent public cloud providers now have various features to secure your information. Further in this lesson we will explore many such security and governance features available for AWS.
+
+Thus, by choosing the right provider for your requirement you can still continue to run sensitive workloads on public cloud.
+
+### Adapting to any cloud
+Although there are multiple services provided by cloud providers these days, it is not a great strategy to run all your workloads on resources from a single cloud provider. If a provider goes out of business or increases pricing, you must be able to move quickly. You should always have a way to support any cloud, at any time .
+
+Multi-cloud can be a great idea. This ensures that you aren't primarily dependent on a single provider. Building an interconnected web of clouds, you make it easier to protect yourself if you must make a quick jump from one of your providers.
 
 
 
