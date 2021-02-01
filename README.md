@@ -6715,6 +6715,54 @@ Read the scenario above. Based on the sequence of tasks described there, have yo
 
 ## Continuous Integration, Delivery, and Deployment Overview
 
+Three terms that you’ll hear very often in the context of DevOps are continuous integration, continuous delivery, and continuous deployment. And while it’s often assumed that they’re similar or overlapping terms, the truth is that they’re distinct and it’s important to be aware of those distinctions.
+
+They are concepts that have arisen as a result of the increasing complexity of applications, the teams that build these applications, and the development practices that are commonplace in the industry. And ultimately, these three concepts allow organizations to develop, test, and release software in a way that is fast, consistent, and automated.
+
+### Continuous Integration
+To understand continuous integration, think about how a shirt is sewn. Then imagine that you have two people working on the sleeves, one person creating the body, and a fourth person sewing the collar. If you only put these pieces together at the moment you have to deliver a shirt to your customer, you’re going to discover errors too late – things like mismatched sleeves, a too-large collar, an ill-fitting body, and so on.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ed52_continuous-integration/continuous-integration.png)
+
+On the other hand, if you check the pieces early and often to see how they fit together, when the time comes to deliver a shirt, you’re much more likely to deliver a quality product.
+
+In the same way, continuous integration is a software engineering practice that involves multiple developers merging their individual code changes into the main repository as frequently as possible, usually multiple times a day. The overarching goal is to ensure that the main branch of the repository has the most recent version of the source code, so developers are always using the latest possible version.
+
+This helps prevent scenarios in which code works independently on individual machines, but falls apart when combined. It also helps developers by providing immediate feedback on integration errors early and regularly during development, which allows for swift resolution as the code is still fresh in the developers’ minds. As these integration errors are corrected, testing tools report when code is working and accepted, forming a feedback loop that helps improve developer productivity.
+
+### Continuous Delivery
+
+Continuous delivery is an extension of continuous integration and is entirely about the state of the code. The goal is to keep code in a state in which it is ready to deploy at any given time. That means code has been tested and debugged, and can be deployed at a moment’s notice. Whether or not that code is actually deployed is a secondary concern — the key consideration is: “can it be deployed?”
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ed71_continuous-delivery/continuous-delivery.png)
+
+Essentially this refers to a build cycle with short sprints, that allow bugs to be identified quickly and early — which in turn allows for faster bug fixes and a more stable code base.
+
+Continuous delivery has the added advantage of benefiting business users. Because code is always production-ready, it can be released to users for rapid feedback. And this process can take either a few hours or a few days, which is a dramatic improvement from waterfall models of development in which users sometimes have to wait for months to see new features in a product.
+
+### Continuous Deployment
+And finally, continuous deployment is about the frequent, automated release of this code to production. Since code is always ready to deploy (from continuous delivery), release to production can happen as soon as the code is accepted into the system. Continuous deployment makes it possible to move hundreds of releases into production on a daily basis with no manual intervention.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63ed9a_continuous-deployment/continuous-deployment.png)
+
+## Continuous Integration, Delivery, and Deployment Quiz
+
+You have been brought onboard as a consultant to assist a medium-sized software company in making the transition to a proper DevOps mindset. Some internal training sessions have been conducted already, new processes have been put in place, and by the time you are required to assist them, their engineering team has run into some problems.
+
+They are finding a dramatic increase in rejected code from their automated tests and are unable to determine the source of the problem. You conduct a series of meetings in an attempt to understand what the problem is.
+
+You discover that the engineering team has roughly 100 members. Recently, while making the shift to DevOps, they’ve implemented continuous integration, delivery, and deployment processes. They also use two types of development sprints — one that takes one week for smaller, easier to implement features, and a second, two-week sprint for work that is slightly more time-consuming. Within a single team or sub-team, based on an individual’s assigned task, an engineer can be working on code for either one week or two weeks.
+
+In adherence with Continuous Integration principles, all engineers check code out on Monday of a given week. Depending on whether they are part of a one-week sprint or a two-week sprint, they will check their code back in when finished. Some developers check their code in on Friday of that week. The rest check their code in on Friday two weeks later.
+
+However, when integration tests are run, they are failing repeatedly. Engineers are having to repeatedly rework their code and are more frustrated now than they were before DevOps workflows were implemented.
+
+### QUIZ QUESTION
+Read the scenario above. Based on the situation described there, what do you think the company is doing wrong? Why are engineers having to repeatedly rework their code?
+
+* Their implementation of a continuous integration workflow is incorrect
+
+
 
 
 
