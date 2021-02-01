@@ -7105,7 +7105,60 @@ True or False: Cloud providers now have advanced tools and services to enhance s
 
 * True
 
+## Understanding Amazon Web Services
 
+### Understanding AWS
+
+As mentioned previously, AWS is the industry’s leading public cloud provider. In this lesson, we will explore various features provided by AWS. Let’s start with a quick introduction to AWS.
+
+Amazon Web Services, as the name suggests, is a set of various Amazon cloud services that can be accessed over the web/internet. These services are available for a variety of domains that range from compute, storage, network, database, to even security and identity compliance.
+
+To explore the list of services, simply visit the AWS website and click the services dropdown. You can see a list of domains in alphabetical order and when you hover over it, you can explore all the services available for that domain. Shown here is an example of services available under analytics.
+
+![](https://video.udacity-data.com/topher/2020/September/5f63f7b4_understanding-aws/understanding-aws.png)
+
+Let’s briefly explore some of the services available under a few domains:
+
+### Compute Services
+
+* EC2, Elastic Cloud Compute, is a compute service for your applications.
+* AWS Lambda is another unique and interesting cloud compute service where you pay to simply run your code. This eliminates the need to purchase a computing platform to run and test your code.
+
+### Storage Services
+
+* EBS, Amazon Elastic Block Store, is a block storage service that you can use with the EC2 compute service.
+* Amazon Glacier is an archive storage solution that is extremely low cost and is usually used for compliance purposes.
+
+### Security Services
+
+* GuardDuty offers detection services against threats to protect your AWS accounts.
+* Macie helps prevent data visibility to protect your sensitive data.
+
+### Database Services
+
+* Amazon RDS - This Database AWS service is easy to set up, operate, and scale a relational database in the cloud.
+* Amazon DynamoDB is a fast, fully managed NoSQL database service.
+
+Like this, AWS offers up to 175 services across multiple domains. We covered only a few examples in order to help you understand the plethora of services available. Both small and large-scale businesses can use a combination of these services to develop, deploy and test various applications without incurring the cost of owning the infrastructure/technology.
+
+In this lesson, we will refer to one of the popular AWS offerings, Amazon EC2, to explain various concepts and features. Let’s start with what Amazon EC2 is.
+
+### What is Amazon EC2?
+As mentioned briefly earlier, Amazon EC2, Elastic Cloud Compute is a computing capacity available in the AWS cloud that eliminates the need to worry about your applications’ compute requirements. The word elastic in its name basically signifies that EC2 is an on-demand compute service that allows you to not only scale up, but also scale down to adapt to your changing application requirements. Also, you only pay for what you use.
+
+This service eliminates the up-front investments in hardware and allows you to focus on your application performance for varying workloads.
+
+Now, let’s dig a little deeper with this concept by exploring the two major elements of Amazon EC2.
+
+### Instances
+
+An instance is more like a virtual machine in the Nutanix environment. It is a virtual computing server running your applications on an Amazon EC2. Just like how a virtual machine consists of its own OS, software, and applications and so on. An instance will also include its own configuration and applications. Each instance works as a virtual private server.
+
+### AMI
+
+The instances are launched from a template called an AMI, Amazon Machine Image. AMIs are virtual appliances that are used to create an instance. Similar to the AHV image in the Nutanix environment, AMIs are basically images containing the configurations such as OS, app server and the applications. Just like how you use an image to create a virtual machine, you use an AMI to create an instance.
+
+A single AMI can be used to launch multiple instances.
 
 
 
