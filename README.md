@@ -6606,7 +6606,7 @@ CM communities offer official and community-supported workload automation, which
 
 The configuration management option has begun to wane, however, with the onset of Docker containers and Kubernetes. These technologies have led application architecture towards immutable infrastructure artifacts, which are built and orchestrated with a minimum of runtime configuration — in contrast to entirely synthesized configuration during provisioning time. These more lightweight options optimize time, storage, and compute, so the next stage begins down that path.
 
-## Quiz: Configuration Managemen
+## Quiz: Configuration Management
 
 ### QUIZ QUESTION
 Which of the following statements are TRUE of configuration management?
